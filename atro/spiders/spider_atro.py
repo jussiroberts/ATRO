@@ -24,7 +24,7 @@ class AtroSpider(scrapy.Spider):
 
     def parse(self, response):
         #filename = response.url.split("/")[-2]
-        filename = "atro8.txt"
+        filename = "atro9.txt"
         titles = response.xpath('//div[@class="rslt"]/p//text()').extract()
         #titles = response.xpath('//div[@class="item-list"]//text()').extract()
         with open(filename, 'a') as f:
@@ -33,4 +33,4 @@ class AtroSpider(scrapy.Spider):
                 f.write('\n')
             #f.writelines(titles)
             #print titles
-         
+    closed("jeejee")
