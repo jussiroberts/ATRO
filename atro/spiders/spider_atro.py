@@ -33,4 +33,4 @@ class AtroSpider(scrapy.Spider):
                 f.write('\n')
             #f.writelines(titles)
             #print titles
-    closed("jeejee")
+    
