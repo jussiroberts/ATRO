@@ -3,34 +3,132 @@ import scrapy
 from atro.items import AtroItem
 from scrapy.contrib.spiders import CrawlSpider, Rule
 from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
+from scrapy.selector import Selector
+from scrapy.selector import Selector
+from scrapy.http     import Request
+from selenium import webdriver
+import lxml.html
+from lxml import etree
+from selenium.webdriver.common.by import By
+import time
+
 
 class AtroSpider(scrapy.Spider):
     name = "atrobot"
-    allowed_domains = ["ncbi.nlm.nih.gov/pubmed?term=als"]
-    #["oulu.fi/yliopisto/"]
+    allowed_domains = ["www.ncbi.nlm.nih.gov"]
     
     start_urls = [
     "http://www.ncbi.nlm.nih.gov/pubmed?term=als"
-        #"http://www.oulu.fi/yliopisto/"
     ]
 
-    rules = (
-        Rule(SgmlLinkExtractor( 
-            #restrict_xpaths=('//div[@class="active page_link next"]/a',)), follow=True),  
-            #restrict_xpaths=('//a[@id="EntrezSystem2.PEntrez.PubMed.Pubmed_ResultsPanel.Entrez_Pager.Page"]/@href')), follow=True), 
-        restrict_xpaths=('//a[@title="Next page of results"]/a/@href',)), follow= True),
-        )
-#response.xpath("//a[@id='pnnext']/@href")
+    extractor = SgmlLinkExtractor()
+
+    def __init__(self, **kwargs):
+        print kwargs
+        self.driver = webdriver.Firefox()
 
     def parse(self, response):
-        #filename = response.url.split("/")[-2]
-        filename = "atro9.txt"
-        titles = response.xpath('//div[@class="rslt"]/p//text()').extract()
-        #titles = response.xpath('//div[@class="item-list"]//text()').extract()
-        with open(filename, 'a') as f:
-            for t in titles:
-                f.write(t.encode("utf8"))
+        #filename = "atro_urls1.txt"
+        
+        base_url = 'http://www.ncbi.nlm.nih.gov'
+
+        wdr = self.driver
+        wdr.get(response.url)
+
+
+        #---PUBMED PAGE SETTINGS---            
+        #dsettings = wdr.find_element_by_link_text('Display Settings')
+        #dsettings.click()
+        #wdr.click("link=Display Settings:")
+        #wdr.click("id=ps100")
+        #wdr.click("//div[@id='display_settings_menu']/fieldset[2]/u1/li[5]/label")
+        #wdr.click("name=EntrezSystem2.PEntrez.Pmc.Pmc_ResultsPanel.Pmc_DisplayBar.SetDisplay")
+        #wdr.wait_for_page_to_load("30000")
+
+        #---GET PUBLICATION LINKS, NUMBER OF PAGES AND CURRENT PAGE FOR THE FIRST PAGE---
+        html = wdr.page_source
+        root = lxml.html.fromstring(html)
+        #links = root.xpath('//*[@class="title"]/a/@href')
+        #pages = root.xpath('//*[@class="num"]/@last')[0]
+        current = root.xpath('//*[@class="num"]/@value')[0]
+
+        #---CREATE AN ARRAY FOR THE LINKS---#
+        hrefs = []
+
+        hxs = Selector(response) #
+        links = hxs.xpath('//*[@class="title"]/a/@href').extract() #
+        hrefs.extend(links)
+        pages = hxs.xpath('//*[@class="num"]/@last').extract()[0] #
+
+        count = 0
+        print count, current, pages
+        print len(hrefs)
+#int(pages)
+
+        #---LOOP THROUGH THE RESULT PAGES, GETTING THE LINKS OF THE PUBLICATIONS---
+        #---CRAWLS ONLY TWO RESULT PAGES FOR NOW---
+        while int(current) < 2:
+            count = count + 1
+            print '....\n'
+            print count, current, pages
+
+            #---GO TO THE NEXT PAGE AND GET ALL THE PUBLICATION LINKS FROM THERE
+            try:
+                next = wdr.find_element_by_link_text('Next >')
+                next.click()
+                wdr.implicitly_wait(3)
+                html = wdr.page_source
+                root = lxml.html.fromstring(html)
+                links = root.xpath('//*[@class="title"]/a/@href')
+                current = root.xpath('//*[@class="num"]/@value')[0]
+                hrefs.extend(links)
+                print len(hrefs)
+
+            except Exception as ex:
+                print ex
+
+        for href in hrefs:
+            url = base_url + href
+            yield Request(url, self.parse_publication)
+            time.sleep(1)
+
+        wdr.quit()
+
+        #---PARSE METADATA TO A TEXTFILE---
+    def parse_publication(self, response):
+        status = response.status
+        url = response.url
+        filename = "atro1.txt"
+
+        if status == 200:
+            hxs = Selector(response)
+            #otsikko = hxs.select('//*[@class="content-title"]/text()').extract()
+            otsikko = hxs.xpath('//div[@class="rprt abstract"]/h1/text()').extract()
+            author = hxs.xpath('//div[@class="auths"]/a/text()').extract()
+            journal = hxs.xpath('//div[@class="cit"]/a/@title').extract()
+            abstract = hxs.xpath('//div[@class="abstr"]//p/abstracttext/text()').extract()
+            
+            with open(filename, 'a') as f:
+                for o in otsikko:
+                    f.write(o.encode("utf8"))
+                    f.write('\n')
+                for a in author:
+                    f.write(a.encode("utf8"))
+                    f.write('\n')
+                for j in journal:
+                    #j.replace('.', '')
+                    f.write(j.encode("utf8"))
+                    f.write('\n')
+                for a in abstract:
+                    f.write(a.encode("utf8"))
+                    f.write('\n')
+
                 f.write('\n')
-            #f.writelines(titles)
-            #print titles
+
+        else:
+            yield Request(url, self.parse_publication)
+
+
+     
+   
     

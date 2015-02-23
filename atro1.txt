@@ -1,0 +1,462 @@
+Cytoplasmic hGle1A regulates stress granules by modulation of translation.
+Aditi
+Folkmann AW
+Wente SR
+Molecular biology of the cell.
+When eukaryotic cells respond to stress, gene expression pathways change to selectively export and translate subsets of mRNAs. Translationally-repressed mRNAs accumulate in cytoplasmic foci known as stress granules (SGs). SGs are in dynamic equilibrium with the translational machinery, but mechanisms controlling this are unclear. Gle1 is required for DEAD-box protein function during mRNA export and translation. Here we document that human (h) Gle1 is a critical regulator of translation during stress. hGle1 is recruited to SGs, and hGLE1 siRNA-mediated knockdown perturbs SG assembly resulting in increased numbers of smaller SGs. The rate of SG disassembly is also delayed. Furthermore, SG hGle1-depletion defects correlate with translation perturbations and the hGle1 role in SGs is independent of mRNA export. Interestingly, we observe isoform specific roles for hGle1 wherein SG function requires hGle1A versus mRNA export requires hGle1B. We find that the SG defects in hGle1-depleted cells are rescued by puromycin or DDX3 expression. Together with recent links of hGLE1 mutations in ALS patients, these results uncover a paradigm for hGle1A modulating the balance between translation and SGs during stress and disease.
+
+What's in the Literature?
+Silvestri NJ
+Zivkovic S
+Wolfe GI
+Lacomis D
+Journal of clinical neuromuscular disease.
+In this issue, we review studies of the genetic risk of developing polyneuropathy from the chemotherapeutic agent paclitaxel. Increased susceptibility was related to PRX and ARHGEF10 mutations and to genes associated with axonogenesis. Several articles regarding the use of subcutaneous administration of intravenous immunoglobulin for treatment of neuropathies were also reviewed. We also comment on 2 recent studies that evaluated how intravenous immunoglobulin modulates the immune attack in chronic inflammatory demyelinating polyneuropathy. On a somewhat related topic, a recent study from Taiwan also addressed whether childhood allergic disorders increase the risk of developing another autoimmune disease, namely myasthenia gravis (MG). An article regarding a potential new MG autoantigen, cortactin, was assessed. A study of outcome measures for MG and another regarding a new mutation-in SNAP25B-in congenital myasthenic syndrome were covered. Regarding myopathy, articles involving neuromuscular respiratory dysfunction and hereditary myopathy with early respiratory failure and interesting histopathologic features were analyzed. Results of a large study on congenital myopathy from the Dubowitz Neuromuscular Centre were summarized, and a study of adult-onset centronuclear myopathy was covered. Results of a bimagrumab trial in inclusion body myositis are reported. Regarding amyotrophic lateral sclerosis (ALS), we reviewed studies regarding the category of ALS-Plus and associated features and in medical conditions that may be associated with risk of developing ALS. 
+
+Impact of Air Pollutants on Oxidative Stress in Common Autophagy-Mediated Aging Diseases.
+Numan MS
+Brown JP
+Michou L
+International journal of environmental research and public health.
+Atmospheric pollution-induced cellular oxidative stress is probably one of the pathogenic mechanisms involved in most of the common autophagy-mediated aging diseases, including neurodegenerative diseases such as amyotrophic lateral sclerosis (ALS), Alzheimer's, disease, as well as Paget's disease of bone with or without frontotemporal dementia and inclusion body myopathy. Oxidative stress has serious damaging effects on the cellular contents: DNA, RNA, cellular proteins, and cellular organelles. Autophagy has a pivotal role in recycling these damaged non-functional organelles and misfolded or unfolded proteins. In this paper, we highlight, through a narrative review of the literature, that when autophagy processes are impaired during aging, in presence of cumulative air pollution-induced cellular oxidative stress and due to a direct effect on air pollutant, autophagy-mediated aging diseases may occur.
+
+Linking RNA Dysfunction and Neurodegeneration in Amyotrophic Lateral Sclerosis.
+Barmada SJ
+Neurotherapeutics : the journal of the American Society for Experimental NeuroTherapeutics.
+The degeneration of motor neurons in amyotrophic lateral sclerosis (ALS) inevitably causes paralysis and death within a matter of years. Mounting genetic and functional evidence suggest that abnormalities in RNA processing and metabolism underlie motor neuron loss in sporadic and familial ALS. Abnormal localization and aggregation of essential RNA-binding proteins are fundamental pathological features of sporadic ALS, and mutations in genes encoding RNA processing enzymes cause familial disease. Also, expansion mutations occurring in the noncoding region of C9orf72-the most common cause of inherited ALS-result in nuclear RNA foci, underscoring the link between abnormal RNA metabolism and neurodegeneration in ALS. This review summarizes the current understanding of RNA dysfunction in ALS, and builds upon this knowledge base to identify converging mechanisms of neurodegeneration in ALS. Potential targets for therapy development are highlighted, with particular emphasis on early and conserved pathways that lead to motor neuron loss in ALS.
+
+Characteristics of Statewide Protocols for Emergency Medical Services in the United States.
+Kupas DF
+Schenk E
+Sholl JM
+Kamin R
+Prehospital emergency care : official journal of the National Association of EMS Physicians and the National Association of State EMS Directors.
+Abstract Objective. We sought to categorize and characterize the utilization of statewide emergency medical services (EMS) protocols as well as state recognition of specialty receiving facilities for trauma and time-sensitive conditions in the United States. Methods. A survey of all state EMS offices was conducted to determine which states use mandatory or model statewide EMS protocols and to characterize these protocols based on the process for authorizing such protocols. The survey also inquired as to which states formally recognize specialty receiving facilities for trauma, STEMI, stroke, cardiac arrest, and burn as well as whether or not states have mandatory or model statewide destination protocols for these specialty centers. Results. Thirty-eight states were found to have either mandatory or model statewide EMS protocols. Twenty-one states had mandatory statewide EMS protocols at either the basic life support (BLS) or advanced life support (ALS) level, and in 16 of these states, mandatory protocols covered both BLS and ALS levels of care. Seventeen states had model statewide protocols at either the BLS or ALS level, and in 14 of these states, the model protocols covered both BLS and ALS levels of care. Twenty states had separate protocols for the care of pediatric patients, while 18 states combined pediatric and adult care within the same protocols. When identified, the median age used to consider a patient for pediatric care was ≤14 years (range ≤8 to ≤17 years). Three states' protocols used a child's height based on a length-based dosage tool as the threshold for identifying a pediatric patient for care using their pediatric protocols. States varied in recognition of receiving centers for EMS patients with special medical needs: 46 recognized trauma centers, 25 recognized burn centers, 22 recognized stroke centers, 11 recognized centers capable of percutaneous coronary intervention for ST-elevation myocardial infarction, and 3 recognized centers for patients surviving cardiac arrest. Conclusion. Statewide mandated EMS treatment protocols exist in 21 states, and optional model protocol guidelines are provided by 17 states. There is wide variation in the format and characteristics of these protocols and the recognition of specialty receiving centers for patients with time-sensitive illnesses.
+
+Increased in vivo glial activation in patients with amyotrophic lateral sclerosis: Assessed with [(11)C]-PBR28.
+Zürcher NR
+Loggia ML
+Lawson R
+Chonde DB
+Izquierdo-Garcia D
+Yasek JE
+Akeju O
+Catana C
+Rosen BR
+Cudkowicz ME
+Hooker JM
+Atassi N
+NeuroImage. Clinical.
+Evidence from human post mortem, in vivo and animal model studies implicates the neuroimmune system and activated microglia in the pathology of amyotrophic lateral sclerosis. The study aim was to further evaluate in vivo neuroinflammation in individuals with amyotrophic lateral sclerosis using [(11)C]-PBR28 positron emission tomography. Ten patients with amyotrophic lateral sclerosis (seven males, three females, 38-68 years) and ten age- and [(11)C]-PBR28 binding affinity-matched healthy volunteers (six males, four females, 33-65 years) completed a positron emission tomography scan. Standardized uptake values were calculated from 60 to 90 min post-injection and normalized to whole brain mean. Voxel-wise analysis showed increased binding in the motor cortices and corticospinal tracts in patients with amyotrophic lateral sclerosis compared to healthy controls (p FWE < 0.05). Region of interest analysis revealed increased [(11)C]-PBR28 binding in the precentral gyrus in patients (normalized standardized uptake value = 1.15) compared to controls (1.03, p < 0.05). In patients those values were positively correlated with upper motor neuron burden scores (r = 0.69, p < 0.05), and negatively correlated with the amyotrophic lateral sclerosis functional rating scale (r = -0.66, p < 0.05). Increased in vivo glial activation in motor cortices, that correlates with phenotype, complements previous histopathological reports. Further studies will determine the role of [(11)C]-PBR28 as a marker of treatments that target neuroinflammation. 
+
+The use of magnetic resonance imaging in predicting the clinical outcome of spinal arteriovenous fistula.
+Shin DA
+Park KY
+Ji GY
+Yi S
+Ha Y
+Park SW
+Yoon do H
+Kim KN
+Yonsei medical journal.
+Magnetic resonance imaging (MRI) has been used to screen and follow-up spinal dural arteriovenous fistulae (SDAVF). The purpose of this study was to evaluate the association between MRI findings and neurologic function in SDAVF. This study also investigated clinical features and treatment results of SDAVF.
+A total of 15 consecutive patients who underwent embolization or surgery for SDAVF were included. We treated seven (60%) patients with embolization and six (40%) with surgery. We analysed clinical features, MRI findings, treatment results, and neurologic function. Neurologic function was measured by the Aminoff-Logue disability scale (ALS).
+Patients with longer levels of intramedullary high signal intensity in preoperative T2-weighted images (T2WI) exhibited worse pre- and postoperative ALS scores (r=0.557, p=0.031; r=0.530, p=0.042, Pearson correlation). Preoperative ALS score was significantly correlated with postoperative ALS score (r=0.908, p=0.000, Pearson correlation). The number of levels showing intramedullary high signal intensity in T2WI decreased significantly postoperatively (5.2±3.1 vs. 1.0±1.4, p=0.001, Wilcoxon ranked test).
+The number of involved levels of high signal intensity in preoperative T2WI is useful for predicting pre- and postoperative neurologic function in SDAVF.
+
+Increased anxiety-like behavior and selective learning impairments are concomitant to loss of hippocampal interneurons in the presymptomatic SOD1(G93A) ALS mouse model.
+Quarta E
+Bravi R
+Scambi I
+Mariotti R
+Minciacchi D
+The Journal of comparative neurology.
+Amyotrophic lateral sclerosis (ALS), a fatal neurodegenerative disease primarily characterized by motor neuron death, bears damages beyond motor-related areas. In particular, cognitive impairments and hippocampal damages have been reported in ALS patients. We investigated spatial navigation learning and hippocampal interneurons in mutant SOD1(G93A) mice (mSOD1) model of ALS. Behavioral tests were performed using presymptomatic mSOD1. General motor activity was comparable to that of wild-type mice in the open-field test, in which, however mSOD1 exhibited increased anxiety-like behavior. In the Barnes maze test, mSOD1 displayed a delay in learning, outperformed wild-type mice during the first probe trial, and exhibited impaired long-term memory. Stereological counts of parvalbumin-positive interneurons, crucial for hippocampal physiology and known to be altered in other CNS regions of mSOD1, were also performed. At postnatal day (P) 56, the population of parvalbumin-positive interneurons in mSOD1 was already reduced in CA1 and in CA3, and at P90 the reduction extended to the dentate gyrus. Loss of parvalbumin-positive hippocampal interneurons occurred mostly during the presymptomatic stage. Western Blot analysis showed that hippocampal PV expression levels were reduced in mSOD1 already at P56. The hippocampal alterations of mSOD1 could, at least in part, account for increased anxiety-like behavior and deficits in spatial navigation learning. Our study provides evidence for cognitive alterations and damages to the GABAergic system in the hippocampus of murine ALS, thereby revealing selective deficits antecedent to the onset of motor symptoms. This article is protected by copyright. All rights reserved.
+
+Accepting or declining non-invasive ventilation or gastrostomy in amyotrophic lateral sclerosis: patients' perspectives.
+Greenaway LP
+Martin NH
+Lawrence V
+Janssen A
+Al-Chalabi A
+Leigh PN
+Goldstein LH
+Journal of neurology.
+The objective was to identify factors associated with decisions made by patients with amyotrophic lateral sclerosis (ALS) to accept or decline non-invasive ventilation (NIV) and/or gastrostomy in a prospective population-based study. Twenty-one people with ALS, recruited from the South-East ALS Register who made an intervention decision during the study timeframe underwent a face-to-face in-depth interview, with or without their informal caregiver present. Sixteen had accepted an intervention (11 accepted gastrostomy, four accepted NIV and one accepted both interventions). Five patients had declined gastrostomy. Thematic analysis revealed three main themes: (1) patient-centric factors (including perceptions of control, acceptance and need, and aspects of fear); (2) external factors (including roles played by healthcare professionals, family, and information provision); and (3) the concept of time (including living in the moment and the notion of 'right thing, right time'). Many aspects of these factors were inter-related. Decision-making processes for the patients were found to be complex and multifaceted and reinforce arguments for individualised (rather than 'algorithm-based') approaches to facilitating decision-making by people with ALS who require palliative interventions.
+
+Small-fibre neuropathy related to bulbar and spinal-onset in patients with ALS.
+Truini A
+Biasiotta A
+Onesti E
+Di Stefano G
+Ceccanti M
+La Cesa S
+Pepe A
+Giordano C
+Cruccu G
+Inghilleri M
+Journal of neurology.
+We aimed at seeking more precise diagnostic information on the sensory nervous system involvement described in patients with amyotrophic lateral sclerosis (ALS). We investigated large myelinated nerve fibres with nerve conduction study and small-nerve fibres with Quantitative Sensory Testing (QST) (assessing thermal-pain perceptive thresholds) and skin biopsy (assessing intraepidermal nerve fibre density) in 24 consecutive patients with ALS, 11 with bulbar-onset and 13 with spinal-onset. In 23 of the 24 patients, regardless of ALS onset, nerve conduction study invariably showed large myelinated fibre sparing. In patients with bulbar-onset ALS, QST found normal thermal-pain perceptive thresholds and skin biopsy disclosed normal intraepidermal nerve fibre density. Conversely, in patients with spinal-onset, thermal-pain thresholds were abnormal and distal intraepidermal nerve fibre density was reduced. Sensory nervous system involvement in ALS differs according to disease onset. Patients with spinal-onset but not those with bulbar-onset ALS have concomitant distal small-fibre neuropathy. Neurologists should therefore seek this ALS-related non-motor feature to improve its diagnosis and treatment.
+
+Autophagy receptor defects and ALS-FTLD.
+Majcher V
+Goode A
+James V
+Layfield R
+Molecular and cellular neurosciences.
+Various pathophysiological mechanisms have been implicated in the ALS-FTLD clinicopathological spectrum of neurodegenerative disorders. Here we focus on the role of autophagy, an intracellular catabolic pathway, in these conditions. Growing evidence suggests that the autophagic process can be disturbed in ALS-FTLD, including by genetic mutations affecting autophagy receptor proteins (ubiquilin-2, optineurin, SQSTM1/p62) and regulators (VCP). Such mutations may impair clearance of autophagy substrates with pathological consequences. Recent studies have also uncovered a direct connection between autophagy and RNA processing, supporting an integrated model connecting several ALS-FTLD associated gene products. This article is part of a Special Issue entitled SI: Neuronal Protein.
+
+Cortical excitability changes distinguish the motor neuron disease phenotypes from hereditary spastic paraplegia.
+Geevasinga N
+Menon P
+Sue CM
+Kumar KR
+Ng K
+Yiannikas C
+Kiernan MC
+Vucic S
+European journal of neurology : the official journal of the European Federation of Neurological Societies.
+Cortical hyperexcitability has been identified as an important pathogenic mechanism in motor neuron disease (MND). The issue as to whether cortical hyperexcitability is a common process across the MND phenotypes, including amyotrophic lateral sclerosis (ALS) and primary lateral sclerosis (PLS), remains unresolved. Separately, the clinical distinction between PLS and 'mimic disorders' such as hereditary spastic paraparesis (HSP) may be difficult, potentially delaying diagnosis. Consequently, the aim of the present study was to determine the nature and spectrum of cortical excitability changes across the MND phenotypes, and to determine whether the presence of cortical dysfunction distinguishes PLS from HSP.
+Cortical excitability studies were undertaken on a cohort of 14 PLS, 82 ALS and 13 HSP patients with mutations in the spastin gene.
+Cortical hyperexcitability, as heralded by reduction of short interval intracortical inhibition (PLS 0.26%, -3.8% to 1.4%; ALS -0.15%, -3.6% to 7.0%; P < 0.01) and cortical silent period duration (CSP
+ 172.2 ± 5.4 ms; CSP
+ 178.1 ± 5.1 ms; P < 0.001), along with an increase in intracortical facilitation was evident in ALS and PLS phenotypes, although appeared more frequently in ALS. Inexcitability of the motor cortex was more frequent in PLS (PLS 71%, ALS 24%, P < 0.0001). Cortical excitability was preserved in HSP.
+Cortical dysfunction appears to be an intrinsic process across the MND phenotypes, with cortical inexcitability predominating in PLS and cortical hyperexcitability predominating in ALS. Importantly, cortical excitability was preserved in HSP, thereby suggesting that the presence of cortical dysfunction could help differentiate PLS from HSP in a clinical setting.
+
+The distinct genetic pattern of ALS in Turkey and novel mutations.
+Özoğuz A
+Uyan Ö
+Birdal G
+Iskender C
+Kartal E
+Lahut S
+Ömür Ö
+Agim ZS
+Eken AG
+Sen NE
+Kavak P
+Saygı C
+Sapp PC
+Keagle P
+Parman Y
+Tan E
+Koç F
+Deymeer F
+Oflazer P
+Hanağası H
+Gürvit H
+Bilgiç B
+Durmuş H
+Ertaş M
+Kotan D
+Akalın MA
+Güllüoğlu H
+Zarifoğlu M
+Aysal F
+Döşoğlu N
+Bilguvar K
+Günel M
+Keskin Ö
+Akgün T
+Özçelik H
+Landers JE
+Brown RH
+Başak AN
+Neurobiology of aging.
+The frequency of amyotrophic lateral sclerosis (ALS) mutations has been extensively investigated in several populations; however, a systematic analysis in Turkish cases has not been reported so far. In this study, we screened 477 ALS patients for mutations, including 116 familial ALS patients from 82 families and 361 sporadic ALS (sALS) cases. Patients were genotyped for C9orf72 (18.3%), SOD1 (12.2%), FUS (5%), TARDBP (3.7%), and UBQLN2 (2.4%) gene mutations, which together account for approximately 40% of familial ALS in Turkey. No SOD1 mutations were detected in sALS patients; however, C9orf72 (3.1%) and UBQLN2 (0.6%) explained 3.7% of sALS in the population. Exome sequencing revealed mutations in OPTN, SPG11, DJ1, PLEKHG5, SYNE1, TRPM7, and SQSTM1 genes, many of them novel. The spectrum of mutations reflect both the distinct genetic background and the heterogeneous nature of the Turkish ALS population.
+
+Detection of explosives on the surface of banknotes by Raman hyperspectral imaging and independent component analysis.
+Almeida MR
+Correa DN
+Zacca JJ
+Logrado LP
+Poppi RJ
+Analytica chimica acta.
+The aim of this study was to develop a methodology using Raman hyperspectral imaging and chemometric methods for identification of pre- and post-blast explosive residues on banknote surfaces. The explosives studied were of military, commercial and propellant uses. After the acquisition of the hyperspectral imaging, independent component analysis (ICA) was applied to extract the pure spectra and the distribution of the corresponding image constituents. The performance of the methodology was evaluated by the explained variance and the lack of fit of the models, by comparing the ICA recovered spectra with the reference spectra using correlation coefficients and by the presence of rotational ambiguity in the ICA solutions. The methodology was applied to forensic samples to solve an automated teller machine explosion case. Independent component analysis proved to be a suitable method of resolving curves, achieving equivalent performance with the multivariate curve resolution with alternating least squares (MCR-ALS) method. At low concentrations, MCR-ALS presents some limitations, as it did not provide the correct solution. The detection limit of the methodology presented in this study was 50μgcm(-2). 
+
+Neuroproteomics tools in clinical practice.
+Shevchenko G
+Konzer A
+Musunuri S
+Bergquist J
+Biochimica et biophysica acta.
+Neurodegenerative disorders such as Alzheimer's disease (AD), Parkinson's disease (PD), and amyotrophic lateral sclerosis (ALS) are characterized by neuronal impairment that leads to disease-specific changes in the neuronal proteins. The early diagnosis of these disorders is difficult, thus, the need for identifying, developing and using valid clinically applicable biomarkers that meet the criteria of precision, specificity and repeatability is very vital. The application of rapidly emerging technology such as mass spectrometry (MS) in proteomics has opened new avenues to accelerate biomarker discovery, both for diagnostic as well as for prognostic purposes. This review summarizes the most recent advances in the mass spectrometry-based neuroproteomics and analyses the current and future directions in the biomarker discovery for the neurodegenerative diseases. This article is part of a Special Issue entitled: Neuroproteomics: Applications in Neuroscience and Neurology.
+
+[Resuscitation].
+Reith S
+Burgmaier M
+Medizinische Klinik, Intensivmedizin und Notfallmedizin.
+The primary aim of cardiopulmonary resuscitation after cardiac arrest is to achieve the return of spontaneous circulation (ROSC). However, following ROSC the clinical and neurologic outcome is mainly influenced by adequate treatment in the postresuscitation period. There are several novel recommendations in the current 2010 guidelines of the European Resuscitation Council (ERC) concerning advanced life support (ALS). In addition to established standards for mechanical, electrical (defibrillation), and pharmacological resuscitation during the initial phase, the guidelines moreover deal with recommendations for standardized therapy in the postresuscitation period. Major aspects concerning the therapy of the postcardiac arrest syndrome include temperature management with therapeutic hypothermia, mechanical ventilation and the extent of oxygenation and blood glucose control. Thus, the initial cardiopulmonary resuscitation and the following postresuscitation treatment have to be considered as merging therapy concepts. Only a standardized therapeutic approach in these different phases of treatment will result in successful resuscitation with high rates of survival and good neurologic outcome. 
+
+MiR-206, a Key Modulator of Skeletal Muscle Development and Disease.
+Ma G
+Wang Y
+Li Y
+Cui L
+Zhao Y
+Zhao B
+Li K
+International journal of biological sciences.
+MicroRNAs (miRNAs) have recently emerged as fundamental post-transcriptional regulators inhibit gene expression linked to various biological processes. MiR-206 is one of the most studied and best characterized miRNA to date, which specifically expressed in skeletal muscle. In this review, we summarized the results of studies of miR-206 with emphasis on its function in skeletal muscle development. Importantly, dysregulation of miR-206 has been linked to many disorders in skeletal muscle such as Duchenne muscular dystrophy (DMD) and amyotrophic lateral sclerosis (ALS), and circulating miR-206 has highlighted its potential as a diagnose biomarker. In addition, a mutation in the 3' untranslated region (3'-UTR) of the 
+ gene in the Texel sheep creating a target site for the miR-206 and miR-1 leads to inhibition of myostatin expression, which likely to cause the muscular hypertrophy phenotype of this breed of sheep. Therefore, miR-206 may become novel target for ameliorating skeletal muscle-related disorders and optimization of muscle quantity of domestic animals.
+
+SnapShot: Genetics of ALS and FTD.
+Guerreiro R
+Brás J
+Hardy J
+Cell.
+Frontotemporal dementia (FTD) and amyotrophic lateral sclerosis (ALS) are considered to be part of a spectrum. Clinically, FTD patients present with dementia frequently characterized by behavioral and speech problems. ALS patients exhibit alterations of voluntary movements caused by degeneration of motor neurons. Both syndromes can be present within the same family or even in the same person. The genetic findings for both diseases also support the existence of a continuum, with mutations in the same genes being found in patients with FTD, ALS, or FTD/ALS. 
+
+Is Fluorescence Under an Alternate Light Source Sufficient to Accurately Diagnose Subclinical Bruising?
+Lombardi M
+Canter J
+Patrick PA
+Altman R
+Journal of forensic sciences.
+This single-blinded, randomized validation study was conducted to evaluate whether fluorescence under alternate light sources (ALS) is sufficient to diagnose subclinical bruising (bruising not visible under white light). Standardized trauma was induced on randomly selected ventral forearms. On days 1, 7, and 14 investigators independently examined case forearms under white light for perceived bruising and under ALS for fluorescence and compared body maps. 56 case and 62 control forearms (n = 118) were examined. Sensitivity of ALS on days 1, 7, and 14 was 76.8%, 69.6%, and 60.7%, respectively, compared to 69.6%, 60.0%, and 32.1% for white light. The specificity of ALS on days 1, 7, and 14 was 51.6%, 59.7%, and 53.2%, respectively, compared to 71.0%, 81.4%, and 86.9% for white light. ALS has increased sensitivity yet low specificity compared to white light in accurately detecting bruises. Fluorescence under ALS is not sufficient to accurately or responsibly diagnose subclinical bruising.
+
+Spontaneous Resolution of Acute Rejection and Tolerance Induction With IL-2 Fusion Protein in Vascularized Composite Allotransplantation.
+Jindal R
+Unadkat J
+Zhang W
+Zhang D
+Ng TW
+Wang Y
+Jiang J
+Lakkis F
+Rubin P
+Lee WP
+Gorantla VS
+Zheng XX
+American journal of transplantation : official journal of the American Society of Transplantation and the American Society of Transplant Surgeons.
+Vascularized composite allotransplantation (VCA) has emerged as a treatment option for treating nonlife-threatening conditions. Therefore, in order to make VCA a safe reconstruction option, there is a need to minimize immunosuppression, develop tolerance-inducing strategies and elucidate the mechanisms of VCA rejection and tolerance. In this study we explored the effects of hIL-2/Fc (a long-lasting human IL-2 fusion protein), in combination with antilymphocyte serum (ALS) and short-term cyclosporine A (CsA), on graft survival, regulatory T cell (Treg) proliferation and tolerance induction in a rat hind-limb transplant model. We demonstrate that hIL-2/Fc therapy tips the immune balance, increasing Treg proliferation and suppressing effector T cells, and permits VCA tolerance as demonstrated by long-term allograft survival and donor-antigen acceptance. Moreover, we observe two distinct types of acute rejection (AR), progressive and reversible, within hIL-2/Fc plus ALS and CsA treated recipients. Our study shows differential gene expression profiles of FoxP3 versus GzmB, Prf1 or interferon-γ in these two types of AR, with reversible rejection demonstrating higher Treg to Teff gene expression. This correlation of gene expression profile at the first clinical sign of AR with VCA outcomes can provide the basis for further inquiry into the mechanistic aspects of VCA rejection and future drug targets.
+
+Somatosensory Spatial Attention Modulates Amplitudes, Latency, and Latency Jitter of Laser-Evoked Brain Potentials.
+Franz M
+Nickel MM
+Ritter A
+Miltner WH
+Weiss T
+Journal of neurophysiology.
+Several studies provided evidence that the amplitudes of laser-evoked potentials (LEPs) are modulated by attention. However, previous reports were based on across-trial averaging of LEP responses at the expense of losing information about inter-trial variability related to attentional modulation. The aim of this study was to investigate the effects of somatosensory spatial attention on single-trial parameters (i.e., amplitudes, latency, and latency jitter) of LEP components (N2 and P2). Twelve subjects participated in a sustained spatial attention paradigm while noxious laser stimuli (left hand) and noxious electrical stimuli (right hand) were sequentially delivered to the dorsum of the respective hand with non-noxious airpuffs randomly interspersed within the sequence of noxious stimuli. Participants were instructed to mentally count all stimuli (i.e. noxious and non-noxious) applied to the attended location. Laser stimuli, presented to the attended hand (ALS), elicited enhanced single-trial ampli-tudes of the N2 component in comparison to unattended laser stimuli (ULS). In contrast, sin-gle-trial amplitudes of the P2 component were not significantly affected by spatial attention. Single-trial latencies of the N2 and P2 were significantly smaller for ALS vs. ULS. Additionally, the across-trial latency jitter of the N2 component was reduced for ALS. Conversely, the la-tency jitter of the P2 component was smaller for ULS compared to ALS. Using single-trial analysis, the study provided new insights into brain dynamics of LEPs related to spatial atten-tion. Our results indicate that single-trial parameters of LEP components are differentially modulated by spatial attention.
+
+Importance of sample size for the estimation of repeater f waves in amyotrophic lateral sclerosis.
+Fang J
+Liu MS
+Guan YZ
+Cui B
+Cui LY
+Chinese medical journal.
+In amyotrophic lateral sclerosis (ALS), repeater F waves are increased. Accurate assessment of repeater F waves requires an adequate sample size.
+We studied the F waves of left ulnar nerves in ALS patients. Based on the presence or absence of pyramidal signs in the left upper limb, the ALS patients were divided into two groups: One group with pyramidal signs designated as P group and the other without pyramidal signs designated as NP group. The Index repeating neurons (RN) and Index repeater F waves (Freps) were compared among the P, NP and control groups following 20 and 100 stimuli respectively. For each group, the Index RN and Index Freps obtained from 20 and 100 stimuli were compared.
+In the P group, the Index RN (P = 0.004) and Index Freps (P = 0.001) obtained from 100 stimuli were significantly higher than from 20 stimuli. For F waves obtained from 20 stimuli, no significant differences were identified between the P and NP groups for Index RN (P = 0.052) and Index Freps (P = 0.079); The Index RN (P < 0.001) and Index Freps (P < 0.001) of the P group were significantly higher than the control group; The Index RN (P = 0.002) of the NP group was significantly higher than the control group. For F waves obtained from 100 stimuli, the Index RN (P < 0.001) and Index Freps (P < 0.001) of the P group were significantly higher than the NP group; The Index RN (P < 0.001) and Index Freps (P < 0.001) of the P and NP groups were significantly higher than the control group.
+Increased repeater F waves reflect increased excitability of motor neuron pool and indicate upper motor neuron dysfunction in ALS. For an accurate evaluation of repeater F waves in ALS patients especially those with moderate to severe muscle atrophy, 100 stimuli would be required.
+
+[Calpain plays a crucial role in TDP-43 pathology].
+Yamashita T
+Kwak S
+Rinshō shinkeigaku = Clinical neurology.
+Amyotrophic lateral sclerosis (ALS) is the most common adult-onset motor neuron disease affecting healthy middle-aged individuals. Mislocalization of TAR DNA binding protein of 43 kDa (TDP-43) or TDP-43 pathology observed in the spinal motor neurons is the pathological hallmark of ALS. The mechanism generating TDP-43 pathology remained uncertain. Several reports suggested that cleavage of TDP-43 into aggregation-prone fragments might be the earliest event. Therefore, elucidation of the protease(s) that is responsible for TDP-43 cleavage in the motor neurons is awaited. ALS-specific molecular abnormalities other than TDP-43 pathology in the motor neurons of sporadic ALS patients include inefficient RNA editing at the GluA2 glutamine/arginine (Q/R) site, which is specifically catalyzed by adenosine deaminase acting on RNA 2 (ADAR2). We have developed the conditional ADAR2 knockout (AR2) mice, in which the ADAR2 gene is targeted in motor neurons. We found that Ca(2+)-dependent cysteine protease calpain cleaved TDP-43 into aggregation-prone fragments, which initiated TDP-43 mislocalization in the motor neurons expressing abnormally abundant Ca(2+)-permeable AMPA receptors. Here we summarized the molecular cascade leading to TDP-43 pathology observed in the motor neurons of AR2 mice and discussed possible roles of dysregulation of calpain-dependent cleavage of TDP-43 in TDP-43 pathology observed in neurological diseases in general. 
+
+[Neuroinflammation in amyotrophic lateral sclerosis].
+Endo F
+Yamanaka K
+Rinshō shinkeigaku = Clinical neurology.
+Neuroinflammation, characterized by activated astrocytes and microglia, infiltrated T cells, and the subsequent production of inflammatory mediators, is a pathological hallmark of amyotrophic lateral sclerosis (ALS). Since microglia produce proinflammatory cytokines and other neurotoxic or protective molecules and astrocytes reduce their glutamate uptake, these functional changes in glial cells are considered to play important roles in neurodegeneration. However, what regulates the neuroprotective response in neuroinflammation of ALS has not been clarified. In this regard, we identify astrocyte-derived transforming growth factor-β1 (TGF-β1) as a negative regulator of neuroprotective inflammatory response by microglia and T cells. Understanding the pathomechanism of neuroinflammation of ALS leads to the development of new therapies that target glial cells and T cells. 
+
+[Motor nerve hyperexcitability in ALS: its pathophysiology and treatment].
+Shibuya K
+Misawa S
+Kuwabara S
+Rinshō shinkeigaku = Clinical neurology.
+Wide-spread fasciculations are prominent clinical features in patients with amyotrophic lateral sclerosis (ALS), specifically seen in ALS among disorders with neurogenic muscle atrophy. Fasciculations frequently arise from the motor nerve terminals, and the hyperexcitability of motor axons appears to constitute the pathophysiology of the disease. Neurophysiologic investigations of the upper and lower motor neurons/axons have shown increased excitability. The altered excitability is supposed to relate to motor neuron death. Based on these findings, a clinical trial of mexiletine (non-selective sodium channel blocker) is ongoing. 
+
+[Fasciculation potentials in ALS-significance, and relationship with clinical features].
+Bokuda K
+Shimizu T
+Rinshō shinkeigaku = Clinical neurology.
+The Awaji criteria proposed in 2008 re-evaluated electrophysiological findings and emphasized the diagnostic significance of fasciculation potentials (FPs) in amyotrophic lateral sclerosis (ALS). FPs were regarded to be equivalent to denervation potentials (fib-psw) in terms of clinical significance. The implication is that FPs are closely related to the progressive denervation process of muscles in ALS. The characteristic features of FP in ALS are complexity and instability. Complex FPs (CFPs) are thought to originate in distal axonal sprouts, associated with the reinnervation process. These differ from FPs observed in other pathological states, which are thought to originate from anterior horn or nerve root. CFPs may be useful for early diagnosis of ALS patients and should be evaluated in the EMG examination. 
+
+[Fasciculation potential and ALS diagnosis].
+Sonoo M
+Higashihara M
+Rinshō shinkeigaku = Clinical neurology.
+Fasciculations and fasciculation potentials (FPs) have been long known as a characteristic feature of amyotrophic lateral sclerosis (ALS). In this article, the history of the researches on fasciculation and FPs is first reviewed. The word and concept of fasciculation was first properly defined by Denny-Brown and Pennybacker (1938). It is noteworthy that they already stressed the necessity of strict discrimination of FPs from the "contraction fasciculation", a remnant of large voluntary motor unit potentials (MUPs), in this early milestone paper. FPs are rarely observed in neurogenic diseases other than ALS or disorders presenting with conduction block, i. e. they retain a high specificity in ALS diagnosis. Despite such usefulness, FPs were devaluated in the revised El-Escorial criteria. It is welcome that their value has been restored in the newer Awaji criteria. In the actual practice, correct identification of FPs would be a critical point. Remnant of voluntary MUPs is the greatest FP mimic to be differentiated. The key point for differentiation is the firing rhythm. FPs are characterized by a low-frequency and quite irregular firing, showing clustering of discharges. In contrast, voluntary MUPs are characterized by a semiregular firing. 
+
+Curcumin binds to the pre-fibrillar aggregates of Cu/Zn superoxide dismutase (SOD1) and alters its amyloidogenic pathway resulting in reduced cytotoxicity.
+Bhatia NK
+Srivastava A
+Katyal N
+Jain N
+Khan MA
+Kundu B
+Deep S
+Biochimica et biophysica acta.
+Amyotrophic Lateral Sclerosis (ALS) is a fatal neurodegenerative disease that affects motor neurons. Unfortunately, effective therapeutics against this disease is still not available. Almost 20% of familial ALS (fALS) is suggested to be associated with pathological deposition of superoxide dismutase (SOD1). Evidences suggest that SOD1-containing pathological inclusions in ALS exhibit amyloid like properties. An effective strategy to combat ALS may be to inhibit amyloid formation of SOD1 using small molecules. In the present study, we observed the fibrillation of one of the premature forms of SOD1 (SOD1 with reduced disulfide) in the presence of curcumin. Using ThT binding assay, AFM, TEM images and FTIR, we demonstrate that curcumin inhibits the DTT-induced fibrillation of SOD1 and favors the formation of smaller and disordered aggregates of SOD1. The enhancement in curcumin fluorescence on the addition of oligomers and pre-fibrillar aggregates of SOD1 suggests binding of these species to curcumin. Docking studies indicate that putative binding site of curcumin may be the amyloidogenic regions of SOD1. Further, there is a significant increase in SOD1 mediated toxicity in the regime of pre-fibrillar and fibrillar aggregates which is not evident in curcumin containing samples. All these data suggest that curcumin reduces toxicity by binding to the amyloidogenic regions of the species on the aggregation pathway and blocking the formation of the toxic species. Nanoparticles of curcumin with higher aqueous solubility show similar aggregation control as that of curcumin bulk. This suggests a potential role for curcumin in the treatment of ALS.
+
+Discovery of 4'-Chloromethyl-2'-deoxy-3',5'-di-O-isobutyryl-2'-fluorocytidine (ALS-8176), A First-in-Class RSV Polymerase Inhibitor for Treatment of Human Respiratory Syncytial Virus Infection.
+Wang G
+Deval J
+Hong J
+Dyatkina N
+Prhavc M
+Taylor J
+Fung A
+Jin Z
+Stevens SK
+Serebryany V
+Liu J
+Zhang Q
+Tam Y
+Chanda SM
+Smith DB
+Symons JA
+Blatt LM
+Beigelman L
+Journal of medicinal chemistry.
+Respiratory syncytial virus (RSV) is a leading pathogen of childhood and is associated with significant morbidity and mortality. To date, ribavirin is the only approved small molecule drug, which has limited use. The only other RSV drug is palivizumab, a monoclonal antibody, which is used for RSV prophylaxis. Clearly, there is an urgent need for small molecule RSV drugs. This article reports the design, synthesis, anti-RSV activity, metabolism, and pharmacokinetics of a series of 4'-substituted cytidine nucleosides. Among tested compounds 4'-chloromethyl-2'-deoxy-2'-fluorocytidine (2c) exhibited the most promising activity in the RSV replicon assay with an EC
+ of 0.15 μM. The 5'-triphosphate of 2c (2c-TP) inhibited RSV polymerase with an IC
+ of 0.02 μM without appreciable inhibition of human DNA and RNA polymerases at 100 μM. ALS-8176 (71), the 3',5'-di-O-isobutyryl prodrug of 2c, demonstrated good oral bioavailability and a high level of 2c-TP in vivo. Compound 71 is a first-in-class nucleoside RSV polymerase inhibitor that demonstrated excellent anti-RSV efficacy and safety in a phase 2 clinical RSV challenge study.
+
+Therapeutic Development in Amyotrophic Lateral Sclerosis.
+Bucchia M
+Ramirez A
+Parente V
+Simone C
+Nizzardo M
+Magri F
+Dametti S
+Corti S
+Clinical therapeutics.
+Amyotrophic lateral sclerosis (ALS) is the most common motor neuron disease in adults. It is almost invariably lethal within a few years after the onset of symptoms. No effective treatment is currently available beyond supportive care and riluzole, a putative glutamate release blocker linked to modestly prolonged survival. This review provides a general overview of preclinical and clinical advances during recent years and summarizes the literature regarding emerging therapeutic approaches, focusing on their molecular targets.
+A systematic literature review of PubMed was performed, identifying key clinical trials involving molecular therapies for ALS. In addition, the ALS Therapy Development Institute website was carefully analyzed, and a selection of ALS clinical trials registered at ClinicalTrials.gov has been included.
+In the last several years, strategies have been developed to understand both the genetic and molecular mechanisms of ALS. Several therapeutic targets have been actively pursued, including kinases, inflammation inhibitors, silencing of key genes, and modulation or replacement of specific cell populations. The majority of ongoing clinical trials are investigating the safety profiles and tolerability of pharmacologic, gene, and cellular therapies, and have begun to assess their effects on ALS progression.
+Currently, no therapeutic effort seems to be efficient, but recent findings in ALS could help accelerate the discovery of an effective treatment for this disease.
+
+Visual outdoor response of multiple wild bee species: highly selective stimulation of a single photoreceptor type by sunlight-induced fluorescence.
+Rao S
+Ostroverkhova O
+Journal of comparative physiology. A, Neuroethology, sensory, neural, and behavioral physiology.
+Bees have ultraviolet (UV), blue and green photoreceptor types in their compound eyes with which they locate food sources in landscapes that change continuously in cues emanating from plants and backgrounds against which they are perceived. The complexity of bee vision has been elucidated through studies examining individual species under laboratory conditions. Here, we used a bee-attractive fluorescent blue trap as a model for analyzing visual signals in operation outdoors, and across bee species. We manipulated trap color (appearance to humans under light with weak UV component) and UV-induced fluorescence emission, and aligned field capture results with bee vision models. Our studies show that the bees were attracted to traps that under solar illumination exhibited strong fluorescence emission exclusively in the blue spectral region. Through quantitative analysis, we established that strong spectral overlap of trap emittance with the photosensitivity characteristic of the blue receptor type and minimal overlap with those of the other two receptor types is the most critical property of attractive traps. A parameter has been identified which predicts the degree of attractiveness of the traps and which captures trends in the field data across wild bee species and for a diversity of backgrounds.
+
+Tauroursodeoxycholic acid in the treatment of patients with amyotrophic lateral sclerosis.
+Elia AE
+Lalli S
+Monsurrò MR
+Sagnelli A
+Taiello AC
+Reggiori B
+La Bella V
+Tedeschi G
+Albanese A
+European journal of neurology : the official journal of the European Federation of Neurological Societies.
+Tauroursodeoxycholic acid (TUDCA) is a hydrophilic bile acid that is produced in the liver and used for treatment of chronic cholestatic liver diseases. Experimental studies suggest that TUDCA may have cytoprotective and anti-apoptotic action, with potential neuroprotective activity. A proof of principle approach was adopted to provide preliminary data regarding the efficacy and tolerability of TUDCA in a series of patients with amyotrophic lateral sclerosis (ALS).
+As a proof of principle, using a double-blind placebo controlled design, 34 ALS patients under treatment with riluzole who were randomized to placebo or TUDCA (1 g twice daily for 54 weeks) were evaluated after a lead-in period of 3 months. The patients were examined every 6 weeks. The primary outcome was the proportion of responders [those subjects with improvement of at least 15% in the Amyotrophic Lateral Sclerosis Functional Rating Scale Revised (ALSFRS-R) slope during the treatment period compared to the lead-in phase]. Secondary outcomes included between-treatment comparison of ALSFRS-R at study end, comparison of the linear regression slopes for ALSFFRS-R mean scores and the occurrence of adverse events.
+Tauroursodeoxycholic acid was well tolerated; there were no between-group differences for adverse events. The proportion of responders was higher under TUDCA (87%) than under placebo (P = 0.021; 43%). At study end baseline-adjusted ALSFRS-R was significantly higher (P = 0.007) in TUDCA than in placebo groups. Comparison of the slopes of regression analysis showed slower progression in the TUDCA than in the placebo group (P < 0.01).
+This pilot study provides preliminary clinical data indicating that TUDCA is safe and may be effective in ALS.
+
+T-cell acute lymphoid leukemia resembling Burkitt leukemia cell morphology: A case report.
+Yue Q
+Liu X
+Chen L
+Liu Z
+Chen W
+Oncology letters.
+Biphenotypic acute leukemia (BAL) is an uncommon type of cancer, which accounts for <5% of all adult ALs. Based upon a previously described scoring system, the European Group for the Immunological Classification of Leukemias (EGIL) proposed a set of diagnostic criteria for BAL. This scoring system is based upon the number and degree of specificity of several markers for myeloid or T/B-lymphoid blasts. The present study describes a case of T-cell acute lymphoblastic leukemia (T-ALL) with Burkitt-like cytology, which according to the French-American-British classification, corresponded to a diagnosis of Burkitt type L3 ALL. Flow cytometry analysis demonstrated that the blasts were positive for T-lymphoid markers, cytoplasmic cluster of differentiation (CD)3, CD7 and CD56, and myeloid markers, CD13, CD33 and CD15. At first, a diagnosis of BAL was suggested by the EGIL score, however, according to the 2008 World Health Organization criteria, a case of T-ALL with aberrant myeloid markers was established. The study also reviewed the literature and discussed the limitations of the EGIL scoring system in clinical decision making, to aid in the selection of an appropriate therapeutic regimen.
+
+Demographics of patients having cataract surgery after laser in situ keratomileusis.
+Iijima K
+Kamiya K
+Shimizu K
+Igarashi A
+Komatsu M
+Journal of cataract and refractive surgery.
+To retrospectively assess the demographics of patients having cataract surgery in eyes with previous laser in situ keratomileusis (LASIK).
+Department of Ophthalmology, Kitasato University, Kanagawa, and Sanno Hospital, Tokyo, Japan.
+Retrospective case series.
+This study evaluated eyes of consecutive patients scheduled for cataract surgery after previous LASIK (Group 1). The control groups comprised eyes with axial lengths (ALs) matched with ALS in Group 1 (Group 2) and all eyes scheduled for cataract surgery (Group 3). Assessed were age, sex, corrected distance visual acuity, manifest refraction, keratometry (K) readings, corneal astigmatism, and corneal higher-order aberrations (HOAs).
+Group 1 comprised 40 eyes of 40 patients; Group 2, 606 eyes of 606 patients; and Group 3, 3642 eyes of 3642 patients. The mean age at cataract surgery of patients in Group 1 was 54.6 years ± 8.1 (SD), which was significantly younger than in Group 2 (by approximately 10 years) and Group 3 (by approximately 15 years) (P < .001, Student t test). In Group 1, 70.0% of patients were men, a significantly higher percentage than in Groups 2 and 3 (P < .05, Fisher exact test). The rate of corneal HOAs was significantly higher in Group 1 than in Groups 2 and 3 (P < .05, Student t test). There were no significant differences in other demographics except in K readings.
+A long AL and an increase in corneal HOAs might contribute to a tendency for cataract surgery to be performed earlier in eyes in which LASIK has been performed.
+No author has a financial or proprietary interest in any material or method mentioned.
+
+CHCHD2 mutations in autosomal dominant late-onset Parkinson's disease: a genome-wide linkage and sequencing study.
+Funayama M
+Ohe K
+Amo T
+Furuya N
+Yamaguchi J
+Saiki S
+Li Y
+Ogaki K
+Ando M
+Yoshino H
+Tomiyama H
+Nishioka K
+Hasegawa K
+Saiki H
+Satake W
+Mogushi K
+Sasaki R
+Kokubo Y
+Kuzuhara S
+Toda T
+Mizuno Y
+Uchiyama Y
+Ohno K
+Hattori N
+The Lancet. Neurology.
+Identification of causative genes in mendelian forms of Parkinson's disease is valuable for understanding the cause of the disease. We did genetic studies in a Japanese family with autosomal dominant Parkinson's disease to identify novel causative genes.
+We did a genome-wide linkage analysis on eight affected and five unaffected individuals from a family with autosomal dominant Parkinson's disease (family A). Subsequently, we did exome sequencing on three patients and whole-genome sequencing on one patient in family A. Variants were validated by Sanger sequencing in samples from patients with autosomal dominant Parkinson's disease, patients with sporadic Parkinson's disease, and controls. Participants were identified from the DNA bank of the Comprehensive Genetic Study on Parkinson's Disease and Related Disorders (Juntendo University School of Medicine, Tokyo, Japan) and were classified according to clinical information obtained by neurologists. Splicing abnormalities of CHCHD2 mutants were analysed in SH-SY5Y cells. We used the Fisher's exact test to calculate the significance of allele frequencies between patients with sporadic Parkinson's disease and unaffected controls, and we calculated odds ratios and 95% CIs of minor alleles.
+We identified a missense mutation (CHCHD2, 182C>T, Thr61Ile) in family A by next-generation sequencing. We obtained samples from a further 340 index patients with autosomal dominant Parkinson's disease, 517 patients with sporadic Parkinson's disease, and 559 controls. Three CHCHD2 mutations in four of 341 index cases from independent families with autosomal dominant Parkinson's disease were detected by CHCHD2 mutation screening: 182C>T (Thr61Ile), 434G>A (Arg145Gln), and 300+5G>A. Two single nucleotide variants (-9T>G and 5C>T) in CHCHD2 were confirmed to have different frequencies between sporadic Parkinson's disease and controls, with odds ratios of 2·51 (95% CI 1·48-4·24; p=0·0004) and 4·69 (1·59-13·83, p=0·0025), respectively. One single nucleotide polymorphism (rs816411) was found in CHCHD2 from a previously reported genome-wide association study; however, there was no significant difference in its frequency between patients with Parkinson's disease and controls in a previously reported genome-wide association study (odds ratio 1·17, 95% CI 0·96-1·19; p=0·22). In SH-SY5Y cells, the 300+5G>A mutation but not the other two mutations caused exon 2 skipping.
+CHCHD2 mutations are associated with, and might be a cause of, autosomal dominant Parkinson's disease. Further genetic studies in other populations are needed to confirm the pathogenicity of CHCHD2 mutations in autosomal dominant Parkinson's disease and susceptibility for sporadic Parkinson's disease, and further functional studies are needed to understand how mutant CHCHD2 might play a part in the pathophysiology of Parkinson's disease.
+Japan Society for the Promotion of Science; Japanese Ministry of Education, Culture, Sports, Science and Technology; Japanese Ministry of Health, Labour and Welfare; Takeda Scientific Foundation; Cell Science Research Foundation; and Nakajima Foundation.
+
+Wavelet-based characterization of gait signal for neurological abnormalities.
+Baratin E
+Sugavaneswaran L
+Umapathy K
+Ioana C
+Krishnan S
+Gait & posture.
+Studies conducted by the World Health Organization (WHO) indicate that over one billion suffer from neurological disorders worldwide, and lack of efficient diagnosis procedures affects their therapeutic interventions. Characterizing certain pathologies of motor control for facilitating their diagnosis can be useful in quantitatively monitoring disease progression and efficient treatment planning. As a suitable directive, we introduce a wavelet-based scheme for effective characterization of gait associated with certain neurological disorders. In addition, since the data were recorded from a dynamic process, this work also investigates the need for gait signal re-sampling prior to identification of signal markers in the presence of pathologies. To benefit automated discrimination of gait data, certain characteristic features are extracted from the wavelet-transformed signals. The performance of the proposed approach was evaluated using a database consisting of 15 Parkinson's disease (PD), 20 Huntington's disease (HD), 13 Amyotrophic lateral sclerosis (ALS) and 16 healthy control subjects, and an average classification accuracy of 85% is achieved using an unbiased cross-validation strategy. The obtained results demonstrate the potential of the proposed methodology for computer-aided diagnosis and automatic characterization of certain neurological disorders.
+
+Distribution assessment and quantification of counterfeit melamine in powdered milk by NIR imaging methods.
+Huang Y
+Tian K
+Min S
+Xiong Y
+Du G
+Food chemistry.
+This paper presents a rapid calculation method for the imaging process in the identification and quantification of prohibited additives in milk. Data abstraction methods such as principal component analysis (PCA), classical least squares regression (CLS), and alternative least squares regression (ALS) were used. Different multivariate calculations provided possibilities of quantifying near-infrared (NIR) spectral data cube obtained from the surface of the complex mixture. The results of principal component decomposition confirmed that sample mixture identification is feasible using the PCA-CCI methods. Subsequently, CLSI was used for the direct quantitative analysis of the specific component. Behaving more conveniently than PLS without modeling, CLSI can obtain quantitative information as that melamine generally distribute at the low concentration range of 0-0.5w/w. Moreover, ALSI can quantify the target component with higher accuracy than CLSI. Standard error of residue to predicted value is 0.0838. Lack of fit is 0.0841. Explanation of variables in the mixture is 99.30%, illustrating that the selective lack of rank is insignificant. Obviously, the most intuitive distribution images are constructed by ALSI among four imaging methods. 
+
+The protective effect of growth hormone on Cu/Zn superoxide dismutase-mutant motor neurons.
+Chung JY
+Kim HJ
+Kim M
+BMC neuroscience.
+BackgroundAmyotrophic lateral sclerosis (ALS) is characterized by selective degeneration of motor neurons. The gene encoding Cu/Zn superoxide dismutase (SOD1) is responsible for 20% of familial ALS cases. Growth hormone (GH) concentrations are low in the cerebrospinal fluid of patients with ALS; however, its association with motoneuronal death is not known. We tested the neuroprotective effects of GH on human SOD-1-expressing cultured motor neurons and SOD1G93A transgenic mice.ResultsIn cultured motor neurons, cytotoxicity was induced by A23187, GNSO, or homocysteine, and the effects of GH were determined by MTT, bax, PARP cleavage pattern, Hoechst nuclear staining, MAPK, and PI3K assay. In SOD-1 transgenic mice, rotarod motor performance was evaluated. Survival analysis of motoneuronal loss was done using cresyl violet, GFAP, and Bcl-2 staining. GH prevents motorneuronal death caused by GSNO and homocysteine, but not that by A23187. It activates MAPK and PI3K. GH-treated mice showed prolonged survival with improved motor performance and weight loss. GH decreased cresyl violet positive motoneuronal loss with strong Bcl-2 and less GFAP immunoreactivity.ConclusionsOur results demonstrate that GH has a protective effect on mutant SOD-1-expressing motor neurons.
+
+From nucleation to widespread propagation: A prion-like concept for ALS.
+Maniecka Z
+Polymenidou M
+Virus research.
+Propagation of pathological protein assemblies via a prion-like mechanism has been suggested to drive neurodegenerative diseases, such as Parkinson's and Alzheimer's. Recently, amyotrophic lateral sclerosis (ALS)-linked proteins, such as SOD1, TDP-43 and FUS were shown to follow self-perpetuating seeded aggregation, thereby adding ALS to the group of prion-like disorders. The cell-to-cell spread of these pathological protein assemblies and their pathogenic mechanism is poorly understood. However, as ALS is a non-cell autonomous disease and pathology in glial cells was shown to contribute to motor neuron damage, spreading mechanisms are likely to underlie disease progression via the interplay between affected neurons and their neighboring glial cells.
+
+Gene expression changes in spinal motoneurons of the SOD1(G93A) transgenic model for ALS after treatment with G-CSF.
+Henriques A
+Kastner S
+Chatzikonstantinou E
+Pitzer C
+Plaas C
+Kirsch F
+Wafzig O
+Krüger C
+Spoelgen R
+Gonzalez De Aguilar JL
+Gretz N
+Schneider A
+Frontiers in cellular neuroscience.
+Amyotrophic lateral sclerosis (ALS) is an incurable fatal motoneuron disease with a lifetime risk of approximately 1:400. It is characterized by progressive weakness, muscle wasting, and death ensuing 3-5 years after diagnosis. Granulocyte-colony stimulating factor (G-CSF) is a drug candidate for ALS, with evidence for efficacy from animal studies and interesting data from pilot clinical trials. To gain insight into the disease mechanisms and mode of action of G-CSF, we performed gene expression profiling on isolated lumbar motoneurons from SOD1(G93A) mice, the most frequently studied animal model for ALS, with and without G-CSF treatment.
+Motoneurons from SOD1(G93A) mice present a distinct gene expression profile in comparison to controls already at an early disease stage (11 weeks of age), when treatment was initiated. The degree of deregulation increases at a time where motor symptoms are obvious (15 weeks of age). Upon G-CSF treatment, transcriptomic deregulations of SOD1(G93A) motoneurons were notably restored. Discriminant analysis revealed that SOD1 mice treated with G-CSF has a transcriptom close to presymptomatic SOD1 mice or wild type mice. Some interesting genes modulated by G-CSF treatment relate to neuromuscular function such as CCR4-NOT or Prss12.
+Our data suggest that G-CSF is able to re-adjust gene expression in symptomatic SOD1(G93A) motoneurons. This provides further arguments for G-CSF as a promising drug candidate for ALS.
+
