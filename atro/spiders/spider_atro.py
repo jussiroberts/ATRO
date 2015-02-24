@@ -14,8 +14,7 @@ from selenium.webdriver.common.by import By
 import time
 import psycopg2
 
-#JoonaTest
-#jonittest
+#markorepairs
 #MIIKKAtest
 #testcomment
 #jokujuttunen
