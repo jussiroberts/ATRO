@@ -14,6 +14,7 @@ from selenium.webdriver.common.by import By
 import time
 import psycopg2
 
+#testcomment
 #jokujuttunen
 class AtroSpider(scrapy.Spider):
     name = "atrobot"
