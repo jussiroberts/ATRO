@@ -14,6 +14,7 @@ from selenium.webdriver.common.by import By
 import time
 import psycopg2
 
+#Joonan testi jutska yhdys sana
 #markorepairs
 #MIIKKAtest
 #testcomment
