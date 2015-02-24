@@ -14,7 +14,7 @@ from selenium.webdriver.common.by import By
 import time
 import psycopg2
 
-#jonitest
+#MIIKKAtest
 #testcomment
 #jokujuttunen
 class AtroSpider(scrapy.Spider):
