@@ -7,10 +7,12 @@ from scrapy.selector import Selector
 from scrapy.selector import Selector
 from scrapy.http     import Request
 from selenium import webdriver
+from pyvirtualdisplay import Display#only needed on the RaspberryPi
 import lxml.html
 from lxml import etree
 from selenium.webdriver.common.by import By
 import time
+import psycopg2
 
 
 class AtroSpider(scrapy.Spider):
@@ -25,6 +27,8 @@ class AtroSpider(scrapy.Spider):
 
     def __init__(self, **kwargs):
         print kwargs
+        display = Display(visible=0, size=(800, 600))#only needed on the RaspberryPi
+        display.start()#only needed on the RaspberryPi
         self.driver = webdriver.Firefox()
 
     def parse(self, response):
@@ -90,15 +94,15 @@ class AtroSpider(scrapy.Spider):
         for href in hrefs:
             url = base_url + href
             yield Request(url, self.parse_publication)
-            time.sleep(1)
+            time.sleep(0.5)
 
         wdr.quit()
 
-        #---PARSE METADATA TO A TEXTFILE---
+        #---PARSE METADATA TO DB---
     def parse_publication(self, response):
         status = response.status
         url = response.url
-        filename = "atro1.txt"
+        #filename = "atro1.txt"
 
         if status == 200:
             hxs = Selector(response)
@@ -107,23 +111,30 @@ class AtroSpider(scrapy.Spider):
             author = hxs.xpath('//div[@class="auths"]/a/text()').extract()
             journal = hxs.xpath('//div[@class="cit"]/a/@title').extract()
             abstract = hxs.xpath('//div[@class="abstr"]//p/abstracttext/text()').extract()
-            
-            with open(filename, 'a') as f:
-                for o in otsikko:
-                    f.write(o.encode("utf8"))
-                    f.write('\n')
-                for a in author:
-                    f.write(a.encode("utf8"))
-                    f.write('\n')
-                for j in journal:
-                    #j.replace('.', '')
-                    f.write(j.encode("utf8"))
-                    f.write('\n')
-                for a in abstract:
-                    f.write(a.encode("utf8"))
-                    f.write('\n')
+			
+            try:
+                conn = psycopg2.connect("dbname='newdb' user='jussi' host='localhost' password='helevetti'")
+            except:
+                print "Failed to establish connection to database."
+            cur = conn.cursor()
 
-                f.write('\n')
+            for o in otsikko:
+                SQL = "INSERT INTO testpublication (otsikko, author, journal, abstract) VALUES (%s, %s, %s, %s);"
+                data = (o, "1","1","1")
+                cur.execute(SQL, data)
+                conn.commit()
+            #for a in author:
+            cur.execute("UPDATE testpublication SET author = %s WHERE otsikko = %s;", (author, o))
+            conn.commit()
+            for j in journal:
+                cur.execute("UPDATE testpublication SET journal = %s WHERE otsikko = %s;", (j, o)) 
+                conn.commit()
+            for a in abstract:
+                cur.execute("UPDATE testpublication SET abstract = %s WHERE otsikko = %s;", (a, o))
+                conn.commit()
+
+            cur.close()
+            conn.close()
 
         else:
             yield Request(url, self.parse_publication)
