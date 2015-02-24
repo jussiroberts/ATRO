@@ -14,7 +14,7 @@ from selenium.webdriver.common.by import By
 import time
 import psycopg2
 
-#jokujuttu
+#jokujuttunen
 class AtroSpider(scrapy.Spider):
     name = "atrobot"
     allowed_domains = ["www.ncbi.nlm.nih.gov"]
