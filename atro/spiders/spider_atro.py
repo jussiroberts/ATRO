@@ -44,15 +44,13 @@ class AtroSpider(scrapy.Spider):
         wdr.get(response.url)
 
 
-        #---PUBMED PAGE SETTINGS---            
-        #dsettings = wdr.find_element_by_link_text('Display Settings')
-        #dsettings.click()
-        #wdr.click("link=Display Settings:")
-        #wdr.click("id=ps100")
-        #wdr.click("//div[@id='display_settings_menu']/fieldset[2]/u1/li[5]/label")
-        #wdr.click("name=EntrezSystem2.PEntrez.Pmc.Pmc_ResultsPanel.Pmc_DisplayBar.SetDisplay")
-        #wdr.wait_for_page_to_load("30000")
-
+        #---PUBMED PAGE SETTINGS--- 
+        #Sets the amount of results per page to 5 (for testing purposes), 'ps200' for 200 per page          
+        dsettings = wdr.find_element_by_link_text('20 per page')
+        dsettings.click()
+        pagesetting = wdr.find_element_by_id('ps5')
+        pagesetting.click()
+      
         #---GET PUBLICATION LINKS, NUMBER OF PAGES AND CURRENT PAGE FOR THE FIRST PAGE---
         html = wdr.page_source
         root = lxml.html.fromstring(html)
