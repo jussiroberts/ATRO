@@ -1,6 +1,10 @@
 # ATRO
 Laita Python ja Scrapy ympäristöt eka kuntoon.
 
+Postgre-tietokantayhteyttä varten tarvitset lisäksi psycopg2 kirjaston, sekä crawlaamiseen seleniumin.
+
+Lataa myös psycopg2, 
+
 Näin käynnistät ATROn:
 
 1: navigoi komentorivillä ATRO kansioon
