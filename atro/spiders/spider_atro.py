@@ -78,7 +78,7 @@ class AtroSpider(scrapy.Spider):
 
         #---LOOP THROUGH THE RESULT PAGES, GETTING THE LINKS OF THE PUBLICATIONS---
         #---CRAWLS ONLY TWO RESULT PAGES FOR NOW---
-        while int(current) < 1:
+        while int(current) < 10:
             count = count + 1
             print '....\n'
             print count, current, pages

@@ -27,7 +27,7 @@ class AtroPipeline(object):
             cur.execute("INSERT INTO author (name) VALUES (%s);", (a,))
             #conn.commit()
                 #cur.execute("INSERT INTO author_publication (author_id, pub_id) VALUES (%s, %s);", ())
-            cur.execute("INSERT INTO author_publication (author_id, pub_id) SELECT author_id, pub_id FROM author, publication WHERE author.name = (%s) AND publication.name = (%s);", (a, t)
+            cur.execute("INSERT INTO author_publication (author_id, pub_id) SELECT author_id, pub_id FROM author, publication WHERE author.name = (%s) AND publication.name = (%s);", (a, t))
             conn.commit()
             #for j in journal:
              #   cur.execute("UPDATE testpublication SET journal = %s WHERE otsikko = %s;", (j, o)) 
