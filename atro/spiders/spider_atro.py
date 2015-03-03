@@ -7,10 +7,10 @@ from scrapy.selector import Selector
 from scrapy.selector import Selector
 from scrapy.http     import Request
 from selenium import webdriver
-from pyvirtualdisplay import Display#only needed on the RaspberryPi
+from pyvirtualdisplay import Display #only needed on the RaspberryPi
 import lxml.html
 from lxml import etree
-from selenium.webdriver.common.by import By
+#from selenium.webdriver.common.by import By
 import time
 import psycopg2
 
@@ -31,9 +31,12 @@ class AtroSpider(scrapy.Spider):
 
     def __init__(self, **kwargs):
         print kwargs
-        display = Display(visible=0, size=(800, 600))#only needed on the RaspberryPi
-        display.start()#only needed on the RaspberryPi
+        display = Display(visible=0, size=(800, 600)) #only needed on the RaspberryPi
+        display.start() #only needed on the RaspberryPi
         self.driver = webdriver.Firefox()
+
+    #def __del__(self):
+        #self.driver.dispose()
 
     def parse(self, response):
         #filename = "atro_urls1.txt"
@@ -45,12 +48,14 @@ class AtroSpider(scrapy.Spider):
 
 
         #---PUBMED PAGE SETTINGS--- 
-        #Sets the amount of results per page to 5 (for testing purposes), 'ps200' for 200 per page          
+        #Sets the amount of results per page to 5 (for testing purposes), 'ps200' for 200 per page     
+
         dsettings = wdr.find_element_by_link_text('20 per page')
         dsettings.click()
         pagesetting = wdr.find_element_by_id('ps5')
         pagesetting.click()
-      
+       
+        
         #---GET PUBLICATION LINKS, NUMBER OF PAGES AND CURRENT PAGE FOR THE FIRST PAGE---
         html = wdr.page_source
         root = lxml.html.fromstring(html)
@@ -73,7 +78,7 @@ class AtroSpider(scrapy.Spider):
 
         #---LOOP THROUGH THE RESULT PAGES, GETTING THE LINKS OF THE PUBLICATIONS---
         #---CRAWLS ONLY TWO RESULT PAGES FOR NOW---
-        while int(current) < 2:
+        while int(current) < 1:
             count = count + 1
             print '....\n'
             print count, current, pages
@@ -108,6 +113,14 @@ class AtroSpider(scrapy.Spider):
 
         if status == 200:
             hxs = Selector(response)
+            item = AtroItem()
+            item['title'] = hxs.xpath('//div[@class="rprt abstract"]/h1/text()').extract()
+            item['author'] = hxs.xpath('//div[@class="auths"]/a/text()').extract()
+            yield item
+
+        else:
+            yield Request(url, self.parse_publication)
+"""
             #otsikko = hxs.select('//*[@class="content-title"]/text()').extract()
             otsikko = hxs.xpath('//div[@class="rprt abstract"]/h1/text()').extract()
             author = hxs.xpath('//div[@class="auths"]/a/text()').extract()
@@ -115,31 +128,31 @@ class AtroSpider(scrapy.Spider):
             abstract = hxs.xpath('//div[@class="abstr"]//p/abstracttext/text()').extract()
 			
             try:
-                conn = psycopg2.connect("dbname='newdb' user='jussi' host='localhost' password='helevetti'")
+                conn = psycopg2.connect("dbname='jonitestdb' user='jussi' host='localhost' password='helevetti'")
             except:
                 print "Failed to establish connection to database."
             cur = conn.cursor()
 
             for o in otsikko:
-                SQL = "INSERT INTO testpublication (otsikko, author, journal, abstract) VALUES (%s, %s, %s, %s);"
-                data = (o, "1","1","1")
-                cur.execute(SQL, data)
+                cur.execute("INSERT INTO publication (name) VALUES (%s);", (o,))
                 conn.commit()
-            #for a in author:
-            cur.execute("UPDATE testpublication SET author = %s WHERE otsikko = %s;", (author, o))
-            conn.commit()
-            for j in journal:
-                cur.execute("UPDATE testpublication SET journal = %s WHERE otsikko = %s;", (j, o)) 
+                #SELECT ID???
+
+            for a in author:
+                cur.execute("INSERT INTO author (name) VALUES (%s);", (a,))
+                #cur.execute("INSERT INTO author_publication (author_id, pub_id) VALUES (%s, %s);", ())
                 conn.commit()
-            for a in abstract:
-                cur.execute("UPDATE testpublication SET abstract = %s WHERE otsikko = %s;", (a, o))
-                conn.commit()
+            #for j in journal:
+             #   cur.execute("UPDATE testpublication SET journal = %s WHERE otsikko = %s;", (j, o)) 
+              #  conn.commit()
+            #for a in abstract:
+             #   cur.execute("UPDATE testpublication SET abstract = %s WHERE otsikko = %s;", (a, o))
+              #  conn.commit()
 
             cur.close()
             conn.close()
-
-        else:
-            yield Request(url, self.parse_publication)
+"""
+       
 
 
      

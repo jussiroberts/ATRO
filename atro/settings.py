@@ -15,6 +15,9 @@ NEWSPIDER_MODULE = 'atro.spiders'
 COOKIES_ENABLED = False
 ROBOTSTXT_OBEY = True
 USER_AGENT = 'bot'
+ITEM_PIPELINES = {
+    'atro.pipelines.AtroPipeline': 300
+}
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'atro (+http://www.yourdomain.com)'
