@@ -16,12 +16,13 @@ class AtroPipeline(object):
             print "Failed to establish connection to database."
         cur = conn.cursor()
 
-        for t in item['title']:
-            cur.execute("INSERT INTO publication (name) VALUES (%s);", (t,))
+        for t in item['title']:           
+            cur.execute("INSERT INTO publication (name) SELECT %s WHERE NOT EXISTS (SELECT name FROM publication WHERE name = %s);", (t,t))
             conn.commit()
 
         for a in item['author']:
-            cur.execute("INSERT INTO author (name) VALUES (%s);", (a,))
+            #cur.execute("INSERT INTO author (name) VALUES (%s);", (a,))
+            cur.execute("INSERT INTO author (name) SELECT %s WHERE NOT EXISTS (SELECT name FROM author WHERE name = %s);", (a,a))
             cur.execute("INSERT INTO author_publication (author_id, pub_id) SELECT author_id, pub_id FROM author, publication WHERE author.name = (%s) AND publication.name = (%s);", (a, t))
             conn.commit()      
 

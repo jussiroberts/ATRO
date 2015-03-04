@@ -18,8 +18,8 @@ class AtroSpider(scrapy.Spider):
     allowed_domains = ["www.ncbi.nlm.nih.gov"]
     
     start_urls = [
-    #"http://www.ncbi.nlm.nih.gov/pubmed?term=als"
-    "http://www.ncbi.nlm.nih.gov/pubmed/?term=Zhang+X"
+    "http://www.ncbi.nlm.nih.gov/pubmed?term=als"
+    
     ]
 
     extractor = SgmlLinkExtractor()
@@ -69,6 +69,7 @@ class AtroSpider(scrapy.Spider):
 
         #---LOOP THROUGH THE RESULT PAGES, GETTING THE LINKS OF THE PUBLICATIONS---
         #---CRAWLS ONLY TWO RESULT PAGES FOR NOW---
+        
         while int(current) < 2:
             #count = count + 1
      
