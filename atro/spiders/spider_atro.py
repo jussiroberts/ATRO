@@ -17,18 +17,24 @@ class AtroSpider(scrapy.Spider):
     name = "atrobot"
     allowed_domains = ["www.ncbi.nlm.nih.gov"]
     
-    start_urls = [
-    "http://www.ncbi.nlm.nih.gov/pubmed?term=als"
-    
-    ]
+    #start_urls = [
+    #"http://www.ncbi.nlm.nih.gov/pubmed?term=als"
+    #]
 
     extractor = SgmlLinkExtractor()
 
-    def __init__(self, **kwargs):
+    def __init__(self, *args, **kwargs):
+        super(AtroSpider, self).__init__(*args, **kwargs)
         print kwargs
         display = Display(visible=0, size=(800, 600)) #only needed on the RaspberryPi
         display.start() #only needed on the RaspberryPi
         self.driver = webdriver.Firefox()
+        self.start_urls = [
+        'http://www.ncbi.nlm.nih.gov/pubmed?term=' % keyword
+        ]
+        #profile = webdriver.FirefoxProfile()
+        #profile.native_events_enabled = False
+        #self.driver = webdriver.Firefox(profile)
 
     #def __del__(self):
         #self.driver.dispose()
@@ -41,11 +47,10 @@ class AtroSpider(scrapy.Spider):
         #---PUBMED PAGE SETTINGS--- 
         #Sets the amount of results per page to 5 (for testing purposes), 'ps200' for 200 per page     
 
-        dsettings = wdr.find_element_by_link_text('20 per page')
-        dsettings.click()
-        pagesetting = wdr.find_element_by_id('ps5')
-        pagesetting.click()
-        wdr.implicitly_wait(1)
+        #dsettings = wdr.find_element_by_link_text('20 per page')
+        #dsettings.click()
+        #pagesetting = wdr.find_element_by_id('ps5')
+        #pagesetting.click()
         
         #---GET PUBLICATION LINKS, NUMBER OF PAGES AND CURRENT PAGE FOR THE FIRST PAGE---
         html = wdr.page_source
@@ -97,6 +102,7 @@ class AtroSpider(scrapy.Spider):
             yield Request(url, self.parse_publication)
             time.sleep(0.5)
 
+
         wdr.quit()
 
         #---PARSE METADATA TO DB---
@@ -109,6 +115,8 @@ class AtroSpider(scrapy.Spider):
             item = AtroItem()
             item['title'] = hxs.xpath('//div[@class="rprt abstract"]/h1/text()').extract()
             item['author'] = hxs.xpath('//div[@class="auths"]/a/text()').extract()
+            item['abstract'] = hxs.xpath('//div[@class="abstr"]//p/abstracttext/text()').extract()
+            #item['abstract'] = hxs.xpath('//div[@class="abstr"]//text()').extract()
             yield item
 
         else:
