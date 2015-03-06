@@ -7,11 +7,13 @@ from scrapy.selector import Selector
 from scrapy.selector import Selector
 from scrapy.http     import Request
 from selenium import webdriver
+from selenium.common.exceptions import TimeoutException
 from pyvirtualdisplay import Display #only needed on the RaspberryPi
 import lxml.html
 from lxml import etree
 import time
 import psycopg2
+
 
 class AtroSpider(scrapy.Spider):
     name = "atrobot"
@@ -26,11 +28,11 @@ class AtroSpider(scrapy.Spider):
     def __init__(self, *args, **kwargs):
         super(AtroSpider, self).__init__(*args, **kwargs)
         print kwargs
-        display = Display(visible=0, size=(800, 600)) #only needed on the RaspberryPi
-        display.start() #only needed on the RaspberryPi
+        self.display = Display(visible=0, size=(800, 600)) #only needed on the RaspberryPi
+        self.display.start() #only needed on the RaspberryPi
         self.driver = webdriver.Firefox()
         self.start_urls = [
-        'http://www.ncbi.nlm.nih.gov/pubmed?term=' % keyword
+        'http://www.ncbi.nlm.nih.gov/pubmed?term=als'
         ]
         #profile = webdriver.FirefoxProfile()
         #profile.native_events_enabled = False
@@ -41,7 +43,10 @@ class AtroSpider(scrapy.Spider):
 
     def parse(self, response):
         base_url = 'http://www.ncbi.nlm.nih.gov'
+        #self.display.start()
         wdr = self.driver
+        #dis = self.display
+
         wdr.get(response.url)
 
         #---PUBMED PAGE SETTINGS--- 
@@ -104,7 +109,7 @@ class AtroSpider(scrapy.Spider):
 
 
         wdr.quit()
-
+        self.display.stop()
         #---PARSE METADATA TO DB---
     def parse_publication(self, response):
         status = response.status
@@ -122,9 +127,3 @@ class AtroSpider(scrapy.Spider):
         else:
             yield Request(url, self.parse_publication)
 
-       
-
-
-     
-   
-    
