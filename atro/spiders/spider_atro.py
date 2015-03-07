@@ -7,7 +7,6 @@ from scrapy.selector import Selector
 from scrapy.selector import Selector
 from scrapy.http     import Request
 from selenium import webdriver
-from selenium.common.exceptions import TimeoutException
 from pyvirtualdisplay import Display #only needed on the RaspberryPi
 import lxml.html
 from lxml import etree
@@ -29,26 +28,24 @@ class AtroSpider(scrapy.Spider):
         super(AtroSpider, self).__init__(*args, **kwargs)
         print kwargs
         self.display = Display(visible=0, size=(800, 600)) #only needed on the RaspberryPi
+        print "starting virtual display .."
         self.display.start() #only needed on the RaspberryPi
-        self.driver = webdriver.Firefox()
+        print "Done."
+        print "starting webdriver .."
+        profile = webdriver.FirefoxProfile('/etc/iceweasel/profile')
+        self.driver = webdriver.Firefox(profile)
+        print "Done."
         self.start_urls = [
         'http://www.ncbi.nlm.nih.gov/pubmed?term=als'
         ]
-        #profile = webdriver.FirefoxProfile()
-        #profile.native_events_enabled = False
-        #self.driver = webdriver.Firefox(profile)
-
     #def __del__(self):
         #self.driver.dispose()
 
     def parse(self, response):
         base_url = 'http://www.ncbi.nlm.nih.gov'
-        #self.display.start()
         wdr = self.driver
-        #dis = self.display
-
         wdr.get(response.url)
-
+		
         #---PUBMED PAGE SETTINGS--- 
         #Sets the amount of results per page to 5 (for testing purposes), 'ps200' for 200 per page     
 
