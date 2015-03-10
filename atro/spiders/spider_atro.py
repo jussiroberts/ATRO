@@ -7,37 +7,35 @@ from scrapy.selector import Selector
 from scrapy.selector import Selector
 from scrapy.http     import Request
 from selenium import webdriver
-from pyvirtualdisplay import Display #only needed on the RaspberryPi
+#from pyvirtualdisplay import Display #only needed on the RaspberryPi
 import lxml.html
 from lxml import etree
 import time
-import psycopg2
 
 
 class AtroSpider(scrapy.Spider):
     name = "atrobot"
     allowed_domains = ["www.ncbi.nlm.nih.gov"]
     
-    #start_urls = [
-    #"http://www.ncbi.nlm.nih.gov/pubmed?term=als"
-    #]
+    start_urls = [
+    "http://www.ncbi.nlm.nih.gov/pubmed?term=als"
+    ]
 
     extractor = SgmlLinkExtractor()
 
     def __init__(self, *args, **kwargs):
         super(AtroSpider, self).__init__(*args, **kwargs)
         print kwargs
-        self.display = Display(visible=0, size=(800, 600)) #only needed on the RaspberryPi
-        print "starting virtual display .."
-        self.display.start() #only needed on the RaspberryPi
-        print "Done."
-        print "starting webdriver .."
-        profile = webdriver.FirefoxProfile('/etc/iceweasel/profile')
-        self.driver = webdriver.Firefox(profile)
-        print "Done."
-        self.start_urls = [
-        'http://www.ncbi.nlm.nih.gov/pubmed?term=als'
-        ]
+        #self.display = Display(visible=0, size=(800, 600)) #only needed on the RaspberryPi
+        #print "starting virtual display .."
+        #self.display.start() #only needed on the RaspberryPi
+        #print "Done."
+        #print "starting webdriver .."
+        #profile = webdriver.FirefoxProfile('/etc/iceweasel/profile')
+        #self.driver = webdriver.Firefox(profile)
+        self.driver = webdriver.Firefox()
+        #print "Done."
+       
     #def __del__(self):
         #self.driver.dispose()
 
@@ -45,7 +43,7 @@ class AtroSpider(scrapy.Spider):
         base_url = 'http://www.ncbi.nlm.nih.gov'
         wdr = self.driver
         wdr.get(response.url)
-		
+        
         #---PUBMED PAGE SETTINGS--- 
         #Sets the amount of results per page to 5 (for testing purposes), 'ps200' for 200 per page     
 
@@ -117,8 +115,18 @@ class AtroSpider(scrapy.Spider):
             item = AtroItem()
             item['title'] = hxs.xpath('//div[@class="rprt abstract"]/h1/text()').extract()
             item['author'] = hxs.xpath('//div[@class="auths"]/a/text()').extract()
+            item['journal'] = hxs.xpath('//div[@class="cit"]/a/@title').extract()
+            item['otherinfo'] = hxs.xpath('//div[@class="cit"]/text()').extract()
+
+
             item['abstract'] = hxs.xpath('//div[@class="abstr"]//p/abstracttext/text()').extract()
+
+            #item['abstract'] = hxs.xpath('//div[@class="abstr"]/text()').extract()
             #item['abstract'] = hxs.xpath('//div[@class="abstr"]//text()').extract()
+            #copyright info
+            #item['abstract'] = str(hxs.xpath('//div[@class="abstr"]/div[1]/p/text()').extract())
+
+            item['keywords'] = hxs.xpath('//div[@class="keywords"]/p/text()').extract()
             yield item
 
         else:
