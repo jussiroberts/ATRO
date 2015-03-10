@@ -27,9 +27,11 @@ class AtroPipeline(object):
                 #for info in otherinfolist:
                  #   if info == 'doi:':
                   #      f.write('doi: {0}\n'.format(info,))
-                index = otherinfolist.index('doi:') + 1
-                f.write('doi: {0}\n'.format(otherinfolist[index],))
-                
+                try:    
+                    index = otherinfolist.index('doi:') + 1
+                    f.write('doi: {0}\n'.format(otherinfolist[index],))
+                except:
+                    print "No DOI for publication available"
                 #f.write('publication year: {0}\n'.format(p.encode('utf-8'),))
 
             for b in item['abstract']:
@@ -37,7 +39,8 @@ class AtroPipeline(object):
 
             for k in item['keywords']:
                 keywordstr = str(k.encode('utf-8'))
-                keywordlist = keywordstr.split("; ")    
+                keywordlist = keywordstr.split("; ")
+                 
                 for key in keywordlist:
                     f.write('keywords: {0}\n'.format(key,))
             f.write('Date crawled: {0}\n'.format(str(datetime.now()),))
