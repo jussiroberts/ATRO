@@ -26,13 +26,17 @@ class AtroSpider(scrapy.Spider):
     def __init__(self, *args, **kwargs):
         super(AtroSpider, self).__init__(*args, **kwargs)
         print kwargs
-        #self.display = Display(visible=0, size=(800, 600)) #only needed on the RaspberryPi
-        #print "starting virtual display .."
-        #self.display.start() #only needed on the RaspberryPi
-        #print "Done."
-        #print "starting webdriver .."
-        #profile = webdriver.FirefoxProfile('/etc/iceweasel/profile')
-        #self.driver = webdriver.Firefox(profile)
+
+        #Old Raspberry Pi code
+        """
+        self.display = Display(visible=0, size=(800, 600)) #only needed on the RaspberryPi
+        print "starting virtual display .."
+        self.display.start() #only needed on the RaspberryPi
+        print "Done."
+        print "starting webdriver .."
+        profile = webdriver.FirefoxProfile('/etc/iceweasel/profile')
+        self.driver = webdriver.Firefox(profile)
+        """
         self.driver = webdriver.Firefox()
         #print "Done."
        
