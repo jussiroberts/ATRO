@@ -6,7 +6,6 @@ from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
 from scrapy.selector import Selector
 from scrapy.selector import Selector
 from scrapy.http     import Request
-from selenium import webdriver
 #from pyvirtualdisplay import Display #only needed on the RaspberryPi
 import lxml.html
 from lxml import etree
@@ -20,142 +19,54 @@ class AtroSpider(scrapy.Spider):
     
    
 
-    def start_requests(self):
-       
-        alphabet = 'abcdefghijklm'
-        for alpha in alphabet:
-            searchterm = alpha
-            searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+'[Author]'
-            yield Request(searchterm, self.parse)
-            time.sleep(0.5)
-
-        for alpha in alphabet:
-            for beta in alphabet:
-                searchterm = alpha+beta
-                searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+beta+'[Author]'
-                yield Request(searchterm, self.parse)
-                time.sleep(0.5)
-
-        for alpha in alphabet:
-            for beta in alphabet:
-                for gamma in alphabet:
-                    searchterm = alpha+beta+gamma
-                    searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+beta+gamma+'*[Author]'
-                    yield Request(searchterm, self.parse)
-                    time.sleep(0.5)
-
     def __init__(self, searchterm=None, *args, **kwargs):
         super(AtroSpider, self).__init__(*args, **kwargs)
         print kwargs
 
-        #self.start_urls = [
-        #"http://www.ncbi.nlm.nih.gov/pubmed?term=%s" % searchterm
-        #]
-    
-     
-            
-        #Old Raspberry Pi code
-        """
-        self.display = Display(visible=0, size=(800, 600)) #only needed on the RaspberryPi
-        print "starting virtual display .."
-        self.display.start() #only needed on the RaspberryPi
-        print "Done."
-        print "starting webdriver .."
-        profile = webdriver.FirefoxProfile('/etc/iceweasel/profile')
-        self.driver = webdriver.Firefox(profile)
-        """
-        self.driver = webdriver.Firefox()
-        time.sleep(5)
-        #print "Done."
-    
-    #def __del__(self):
-        #self.driver.dispose()
+        self.start_urls = [
+        'http://www.ncbi.nlm.nih.gov/m/pubmed/?term=aa*[Author]&page=%d' %(n) for n in range(1, 2079)
+        #'http://www.ncbi.nlm.nih.gov/m/pubmed/?term=aa[Author]'
+        ]
 
     def parse(self, response):
-        count = 0
-        base_url = 'http://www.ncbi.nlm.nih.gov'
-        wdr = self.driver
-        wdr.get(response.url)
-        
-        #---PUBMED PAGE SETTINGS--- 
-        #Sets the amount of results per page to 5 (for testing purposes), 'ps200' for 200 per page     
-
-        #dsettings = wdr.find_element_by_link_text('20 per page')
-        #dsettings.click()
-        #pagesetting = wdr.find_element_by_id('ps5')
-        #pagesetting.click()
-        
-        #---GET PUBLICATION LINKS, NUMBER OF PAGES AND CURRENT PAGE FOR THE FIRST PAGE---
-        html = wdr.page_source
-        root = lxml.html.fromstring(html)
-        #links = root.xpath('//*[@class="title"]/a/@href')
-        #pages = root.xpath('//*[@class="num"]/@last')[0]
-        current = root.xpath('//*[@class="num"]/@value')[0]
-
-        #---CREATE AN ARRAY FOR THE LINKS---#
+        base_url = 'http://www.ncbi.nlm.nih.gov/m/pubmed'
         hrefs = []
-
-        hxs = Selector(response) #
-        links = hxs.xpath('//*[@class="title"]/a/@href').extract() #
+        parsedhrefs = []
+        hxs = Selector(response) 
+        links = hxs.xpath('//*[@class="d"]//li/a/@href').extract()
         hrefs.extend(links)
-        pages = hxs.xpath('//*[@class="num"]/@last').extract()[0] #
-
-        #count = 0
-        print ("Current page: {0}, Pages total: {1}".format(current, pages))
-        print ("{} publication URLs saved".format(len(hrefs)))
-#int(pages)
-
-        #---LOOP THROUGH THE RESULT PAGES, GETTING THE LINKS OF THE PUBLICATIONS---
-        #---CRAWLS ONLY TWO RESULT PAGES FOR NOW---
+        for link in hrefs:
+            if link.startswith('.'):
+                link = link[1:]
+                parsedhrefs.append(link)
+            with open('parsedURLS.txt', 'a') as f:
+                f.write(link+'\n')
         
-        while int(current) < 2:
-            #count = count + 1
-     
+       
 
-            #---GO TO THE NEXT PAGE AND GET ALL THE PUBLICATION LINKS FROM THERE
-            try:
-                next = wdr.find_element_by_link_text('Next >')
-                next.click()
-                wdr.implicitly_wait(0.5)
-                html = wdr.page_source
-                root = lxml.html.fromstring(html)
-                links = root.xpath('//*[@class="title"]/a/@href')
-                current = root.xpath('//*[@class="num"]/@value')[0]
-                hrefs.extend(links)
-                print '....\n'
-                print ("Current page: {0}, Pages total: {1}".format(current, pages))
-                print ("{} publication URLs saved".format(len(hrefs)))
-               
 
-            except Exception as ex:
-                print ex
+        for link in parsedhrefs:
+            url = base_url + link
 
-        for href in hrefs:
-            url = base_url + href
-            count += 1
             yield Request(url, self.parse_publication)
-
-            time.sleep(0.5)
-            with open('urls.txt', 'a') as f:
-                f.write('urls\n {0}, count {1}'.format(url, count))
-
-        wdr.quit()
         
         #---PARSE METADATA TO DB---
     def parse_publication(self, response):
         status = response.status
         url = response.url
 
+
+
         if status == 200:
             hxs = Selector(response)
             item = AtroItem()
-            item['title'] = hxs.xpath('//div[@class="rprt abstract"]/h1/text()').extract()
+            item['title'] = hxs.xpath('//div[@class="a"]/h2/text()').extract()
             item['author'] = hxs.xpath('//div[@class="auths"]/a/text()').extract()
             item['journal'] = hxs.xpath('//div[@class="cit"]/a/@title').extract()
             item['otherinfo'] = hxs.xpath('//div[@class="cit"]/text()').extract()
 
 
-            item['abstract'] = hxs.xpath('//div[@class="abstr"]//p/abstracttext/text()').extract()
+            item['abstract'] = hxs.xpath('//div[@class="ab"]/p/text()').extract()
 
             #item['abstract'] = hxs.xpath('//div[@class="abstr"]/text()').extract()
             #item['abstract'] = hxs.xpath('//div[@class="abstr"]//text()').extract()
