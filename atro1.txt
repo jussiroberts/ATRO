@@ -1,626 +1,467 @@
-title: SOD1 silencing in motoneurons or glia rescues neuromuscular function in ALS mice
-author: Dirren E
-author: Aebischer J
-author: Rochat C
-author: Towne C
-author: Schneider BL
-author: Aebischer P
-journal: Annals of clinical and translational neurology
-publication year: 2015
-doi: 10.1002/acn3.162
-abstract: Amyotrophic lateral sclerosis is an incurable disorder mainly characterized by motoneuron degeneration. Mutations in the superoxide dismutase 1 (SOD1) gene account for 20% of familial forms of the disease. Mutant SOD1 exerts multiple pathogenic effects through the gain of toxic properties in both neurons and glial cells. Here, we compare AAV-based gene therapy suppressing expression of mutant SOD1 in either motoneurons or astrocytes. AAV vectors encoding microRNA against human SOD1 were administered to (G93) (A)SOD1 mice either by intracerebroventricular injections in pups or by lumbar intrathecal injections in adults. Vector systems were designed to suppress SOD1 expression predominantly in either spinal motoneurons or astrocytes. Electrophysiological and behavioral tests were performed on treated animals to evaluate disease progression. Following vector injection in (G93) (A)SOD1 pups, efficient silencing of SOD1 expression was achieved in motoneurons and/or astrocytes. Most complete protection of motor units was obtained when targeting human SOD1 predominantly in motoneurons. Suppressing SOD1 mainly in astrocytes led to preserved muscle innervation despite only partial protection of spinal motoneurons. In both cases, injection in pups led to full recovery of neuromuscular function and significantly prolonged survival. Vector injections in adult mice also achieved significant protection of neuromuscular function, which was highest when motoneurons were targeted. These results suggest that AAV-mediated SOD1 silencing is an effective approach to prevent motoneuron degeneration caused by SOD1 mutation. AAV vectors suppressing SOD1 in motoneurons delay disease onset and show effective neuroprotection. On the other hand, AAV-based SOD1 silencing in astrocytes rescues neuromuscular function following initial denervation.
-Date crawled: 2015-03-11 09:11:42.502000
-...
-title: Novel F45S SOD1 Mutation in Amyotrophic Lateral Sclerosis Coexisting with Bullous Pemphigoid
-author: Oh SI
-author: Hong JH
-author: Choi BW
-author: Oh KW
-author: Park CK
-author: Kwon MJ
-author: Ki CS
-author: Ko JY
-author: Kim SH
-journal: Journal of clinical neurology (Seoul, Korea)
+title: [Progress in the personalized medicine using pharmacometabonomics]
+author: Huang Q
+author: A JY
+author: Zhou GH
+journal: Yao xue xue bao = Acta pharmaceutica Sinica
 publication year: 2014
-abstract: The coexistence of an autoimmune disease and amyotrophic lateral sclerosis (ALS) has led to the hypothesis that immune-mediated pathological mechanisms are overlapping in the two diseases. We report herein a rare coexistence of bullous pemphigoid (BP) in a novel mutation (F45S) of the gene encoding Cu/Zn superoxide dismutase (SOD1) in an ALS patient, and discuss a role for the SOD1 mutation in this unusual overlap. A 57-year-old male with familial ALS, including vesicles and tense bullae on erythematous bases, was diagnosed with BP. Direct immunofluorescence revealed deposits of C3 and immunoglobulin G in the basement membrane zone. Direct sequencing of SOD1 in the patient revealed a novel mutation (c.137T>C; F45S). We report a novel SOD1 mutation in ALS, which was combined with BP. This novel SOD1 mutation could affect the phenotype of a combined autoimmune disease and matrix metalloproteinase-9. There may therefore be common factors linking BP and ALS with the SOD1 mutation.
-keywords: amyotrophic lateral sclerosis
-keywords: autoimmunity
-keywords: bullous pemphigoid
-keywords: superoxide dismutase
-Date crawled: 2015-03-11 09:11:43.582000
+abstract: Pharmacometabonomics, as an emerging branch of system biology, has been increasingly used in personalized medicine and showed broad prospects. By means of metabonomics, the complicated and detailed metabolic profile of the patient is described, thus providing more detailed description of the disease phenotype. With this understanding, response of different individuals to the drugs are predicted or evaluated through inherent genetic information of the individual combined with the environmental factors. As a result, appropriate drugs and dosage are chosen, which greatly promotes the realization of the individualized therapy goals. This article describes the emerging field of pharmacometabonomics, and the research results of personalized medicine based on the pharmacometabonomics in recent years are reviewed in detail.
+Date crawled: 2015-03-13 12:28:15.747000
 ...
-title: Epidemiology of mild traumatic brain injury and neurodegenerative disease
-author: Gardner RC
-author: Yaffe K
-journal: Molecular and cellular neurosciences
+title: Osteomyelitis in pycnodysostosis - report of 2 clinical cases
+author: S R
+author: B PR
+author: B S
+author: Prakash S
+journal: Journal of clinical and diagnostic research : JCDR
 publication year: 2015
-doi: 10.1016/j.mcn.2015.03.001
-abstract: Every year an estimated 42 million people worldwide suffer a mild traumatic brain injury (MTBI) or concussion. More severe traumatic brain injury (TBI) is a well-established risk factor for a variety of neurodegenerative diseases including Alzheimer's disease, Parkinson's disease, and amyotrophic lateral sclerosis (ALS). Recently, large epidemiological studies have additionally identified MTBI as a risk factor for dementia. The role of MTBI in risk of PD or ALS is less well established. Repetitive MTBI and repetitive sub-concussive head trauma has been linked to increased risk for a variety of neurodegenerative diseases including chronic traumatic encephalopathy (CTE). CTE is a unique neurodegenerative tauopathy first described in boxers but more recently described in a variety of contact sport athletes, military veterans, and civilians exposed to repetitive MTBI. Studies of repetitive MTBI and CTE have been limited by referral bias, lack of consensus clinical criteria for CTE, challenges of quantifying MTBI exposure, and potential for confounding. The prevalence of CTE is unknown and the amount of MTBI or sub-concussive trauma exposure necessary to produce CTE is unclear. This review will summarize the current literature regarding the epidemiology of MTBI, post-TBI dementia and Parkinson's disease, and CTE while highlighting methodological challenges and critical future directions of research in this field.
-keywords: Chronic traumatic encephalopathy
-keywords: Concussion
-keywords: Epidemiology
-keywords: Mild traumatic brain injury
-keywords: Neurodegenerative disease
-keywords: Traumatic brain injury
-Date crawled: 2015-03-11 09:11:44.142000
+doi: 10.7860/JCDR/2015/10114.5461
+abstract: Pycnodysostosis is a rare craniofacial syndrome characterized by dwarfism, cranial anomalies, diffuse osteosclerosis where multiple fracture of long bones and osteomyelitis of jaw are frequent complications. This clinical entity was first described in 1962 by Maroteaux and Lamy. This article presents two clinical cases of pycnodysostosis with their clinical and radiological characteristics. 
+keywords: Osteomyelitis
+keywords: Pathological fracture
+keywords: Pycnodysostosis
+Date crawled: 2015-03-13 12:28:25.141000
 ...
-title: Apparent diffusion coefficients distinguish amyotrophic lateral sclerosis from cervical spondylotic myelopathy
-author: Koike Y
-author: Kanazawa M
-author: Terajima K
-author: Watanabe K
-author: Ohashi M
-author: Endo N
-author: Shimohata T
-author: Nishizawa M
-journal: Clinical neurology and neurosurgery
+title: Merkel cell carcinoma within poroma: Report of two cases
+author: Molina-Ruiz AM
+author: C B
+author: Requena L
+author: Rütten A
+journal: Journal of cutaneous pathology
 publication year: 2015
-doi: 10.1016/j.clineuro.2015.02.009
-abstract: Fifty percent of patients with amyotrophic lateral sclerosis (ALS) have cervical spondylotic myelopathy (CSM) as a complication. Because patients with ALS do not develop bulbar signs and symptoms at onset, differentiating them from patients with CSM is sometimes difficult. We aimed to determine whether the apparent diffusion coefficients (ADCs) of intracranial corticospinal tracts can be used to distinguish between patients with ALS and those with CSM. We evaluated 19 consecutive patients with ALS who did not have CSM by cervical MRI, 16 patients with CSM, and 11 healthy controls. We examined the mean ADCs in the precentral gyrus, the corona radiata, the posterior limbs of the internal capsule (PLIC), and the cerebral peduncle by 3T magnetic resonance imaging (MRI). The mean ADCs in the intracranial corticospinal tracts in patients with ALS were compared with those in patients with CSM. The mean ADCs in the intracranial corticospinal tracts in patients with ALS were compared with those in patients with CSM (p<0.05). Additionally, the mean ADCs in the precentral gyrus, the PLIC, and the cerebral peduncle in the patients with ALS, including the patients who were initially diagnosed as having clinically possible ALS on the basis of the revised El Escorial criteria and did not develop bulbar symptoms at onset, were also higher than those in patients with CSM (p<0.05). Elevated ADCs in the intracranial corticospinal tracts might be useful for distinguishing ALS from CSM in the early stage of the disease.
-keywords: 3T brain magnetic resonance imaging (MRI)
-keywords: Amyotrophic lateral sclerosis (ALS)
-keywords: Apparent diffusion coefficient (ADC)
-keywords: Cervical spondylotic myelopathy (CSM)
-keywords: Intracranial corticospinal tracts
-Date crawled: 2015-03-11 09:11:44.692000
-...
-title: Diagnosing amyotrophic lateral sclerosis (ALS) in ENT
-author: Harrison L
-author: Wills A
-author: Beasley N
-journal: Clinical otolaryngology : official journal of ENT-UK ; official journal of Netherlands Society for Oto-Rhino-Laryngology & Cervico-Facial Surgery
-publication year: 2013
+doi: 10.1111/cup.12468
 abstract: 
-Date crawled: 2015-03-11 09:11:46.292000
+Date crawled: 2015-03-13 12:28:25.175000
 ...
-title: Proteomic analyses reveal that loss of TDP-43 affects RNA processing and intracellular transport
-author: Štalekar M
-author: Yin X
-author: Rebolj K
-author: Darovic S
-author: Troakes C
-author: Mayr M
-author: Shaw CE
-author: Rogelj B
-journal: Neuroscience
+title: LBP Blockade Augments the Protective Effect of G-CSF in a Rat Sepsis Model
+author: Anding L
+author: Stefanie W
+author: Haoshu F
+author: A CR
+author: Jürgen R
+author: Olaf D
+author: Uta D
+journal: Shock (Augusta, Ga.)
 publication year: 2015
-doi: 10.1016/j.neuroscience.2015.02.046
-abstract: Transactive response DNA-binding protein 43 (TDP-43) is a predominantly nuclear, ubiquitously expressed RNA and DNA-binding protein. It recognises and binds to UG repeats and is involved in pre-mRNA splicing, mRNA stability and microRNA metabolism. TDP-43 is essential in early embryonic development but accumulates in cytoplasmic aggregates in amyotrophic lateral sclerosis (ALS) and tau-negative frontotemporal lobar degeneration (FTLD). It is not known yet whether cytoplasmic aggregates of TDP-43 are toxic or protective but they are often associated with a loss of TDP-43 from the nucleus and neurodegeneration may be caused by a loss of normal TDP-43 function or a gain of toxic function. Here we present a proteomic study to analyse the effect of loss of TDP-43 on the proteome. MS data are available via ProteomeXchange with identifier PXD001668. Our results indicate that TDP-43 is an important regulator of RNA metabolism and intracellular transport. We show that Ran-binding protein 1 (RanBP1), DNA methyltransferase 3 alpha (Dnmt3a) and chromogranin B (CgB) are downregulated upon TDP-43 knockdown. Subsequently, transportin 1 level is increased as a result of RanBP1 depletion. Improper regulation of these proteins and the subsequent disruption of cellular processes may play a role in the pathogenesis of the TDP-43 proteinopathies ALS and FTLD.
-keywords: Amyotrophic lateral sclerosis
-keywords: Comparative proteomics
-keywords: Frontotemporal lobar degeneration
-keywords: Intracellular transport
-keywords: RanBP1
-keywords: TDP-43
-Date crawled: 2015-03-11 09:11:46.322000
-...
-title: Oxidative stress and mitochondrial damage: importance in non-SOD1 ALS
-author: Carrì MT
-author: Valle C
-author: Bozzo F
-author: Cozzolino M
-journal: Frontiers in cellular neuroscience
-publication year: 2015
-doi: 10.3389/fncel.2015.00041
-abstract: It is well known that mitochondrial damage (MD) is both the major contributor to oxidative stress (OS) (the condition arising from unbalance between production and removal of reactive oxygen species) and one of the major consequences of OS, because of the high dependance of mitochondrial function on redox-sensitive targets such as intact membranes. Conditions in which neuronal cells are not able to cope with MD and OS seem to lead or contribute to several neurodegenerative diseases including Amyotrophic Lateral Sclerosis (ALS), at least in the most studied superoxide dismutase 1 (SOD1)-linked genetic variant. As summarized in this review, new evidence indicates that MD and OS play a role also in non-SOD1 ALS and thus they may represent a target for therapy despite previous failures in clinical trials. 
-keywords: ALS
-keywords: Amyotrophic Lateral Sclerosis
-keywords: mitochondria
-keywords: neurodegeneration
-keywords: oxidative stress
-Date crawled: 2015-03-11 09:11:46.992000
-...
-title: Novel Atomic Force Microscopy Based Biopanning for Isolation of Morphology Specific Reagents against TDP-43 Variants in Amyotrophic Lateral Sclerosis
-author: Williams SM
-author: Venkataraman L
-author: Tian H
-author: Khan G
-author: Harris BT
-author: Sierks MR
-journal: Journal of visualized experiments : JoVE
-publication year: 2015
-doi: 10.3791/52584
-abstract: Because protein variants play critical roles in many diseases including TDP-43 in Amyotrophic Lateral Sclerosis (ALS), alpha-synuclein in Parkinson's disease and beta-amyloid and tau in Alzheimer's disease, it is critically important to develop morphology specific reagents that can selectively target these disease-specific protein variants to study the role of these variants in disease pathology and for potential diagnostic and therapeutic applications. We have developed novel atomic force microscopy (AFM) based biopanning techniques that enable isolation of reagents that selectively recognize disease-specific protein variants. There are two key phases involved in the process, the negative and positive panning phases. During the negative panning phase, phages that are reactive to off-target antigens are eliminated through multiple rounds of subtractive panning utilizing a series of carefully selected off-target antigens. A key feature in the negative panning phase is utilizing AFM imaging to monitor the process and confirm that all undesired phage particles are removed. For the positive panning phase, the target antigen of interest is fixed on a mica surface and bound phages are eluted and screened to identify phages that selectively bind the target antigen. The target protein variant does not need to be purified providing the appropriate negative panning controls have been used. Even target protein variants that are only present at very low concentrations in complex biological material can be utilized in the positive panning step. Through application of this technology, we acquired antibodies to protein variants of TDP-43 that are selectively found in human ALS brain tissue. We expect that this protocol should be applicable to generating reagents that selectively bind protein variants present in a wide variety of different biological processes and diseases. 
-Date crawled: 2015-03-11 09:11:47.552000
-...
-title: Fine-mapping of a major QTL controlling angular leaf spot resistance in common bean (Phaseolus vulgaris L.)
-author: Keller B
-author: Manzanares C
-author: Jara C
-author: Lobaton JD
-author: Studer B
-author: Raatz B
-journal: TAG. Theoretical and applied genetics. Theoretische und angewandte Genetik
-publication year: 2015
-title: Microvascular disturbance with decreased pericyte coverage is prominent in the ventral horn of patients with amyotrophic lateral sclerosis
-author: Yamadera M
-author: Fujimura H
-author: Inoue K
-author: Toyooka K
-author: Mori C
-author: Hirano H
-author: Sakoda S
-journal: Amyotrophic lateral sclerosis & frontotemporal degeneration
-publication year: 2015
-abstract: In amyotrophic lateral sclerosis (ALS) there is emerging evidence for vasculature disturbance. The aim of this study was to investigate the area of predominant vasculature disturbance in ALS. We used immunohistochemistry to quantitatively evaluate the microvascular density (MVD) and pericyte coverage (PC) in the lumbar spinal cord of 25 ALS patients and six controls. In controls, MVD was almost equal in the ventral horn (VH) and dorsal horn (DH). In the VH of ALS, MVD was significantly increased, and PC was significantly decreased compared with the DH in ALS and the VH in controls (p < 0.001), possibly reflecting that PC is an essential requirement for the vasculature in the VH. We then found a significant relationship between the severity of aberrant angiogenesis and the use of artificial respiratory support (ARS). In conclusion, vasculature disturbance is observed in all ALS patients including patients with ARS. Therefore, breakdown of the blood-spinal cord barrier due to aberrant angiogenesis with decreased PC may be responsible for the predominant neuronal death in the VH in ALS.
-keywords: Amyotrophic lateral sclerosis
-keywords: angiogenesis
-keywords: artificial respiratory support
-keywords: microvascular density
-keywords: pericyte
-Date crawled: 2015-03-11 09:11:48.702000
-...
-title: Identifying the primary site of pathogenesis in amyotrophic lateral sclerosis - vulnerability of lower motor neurons to proximal excitotoxicity
-author: Blizzard CA
-author: Southam KA
-author: Dawkins E
-author: Lewis KE
-author: King AE
-author: Clark JA
-author: Dickson TC
-journal: Disease models & mechanisms
-publication year: 2015
-doi: 10.1242/dmm.018606
-abstract: There is a desperate need for targeted therapeutic interventions that slow the progression of amyotrophic lateral sclerosis (ALS). ALS is a disorder with heterogeneous onset, which then leads to common final pathways involving multiple neuronal compartments that span both the central and peripheral nervous system. It is believed that excitotoxic mechanisms might play an important role in motor neuron death in ALS. However, little is known about the mechanisms by which excitotoxicity might lead to the neuromuscular junction degeneration that characterizes ALS, or about the site at which this excitotoxic cascade is initiated. Using a novel compartmentalised model of site-specific excitotoxin exposure in lower motor neurons in vitro, we found that spinal motor neurons are vulnerable to somatodendritic, but not axonal, excitotoxin exposure. Thus, we developed a model of somatodendritic excitotoxicity in vivo using osmotic mini pumps in Thy-1-YFP mice. We demonstrated that in vivo cell body excitotoxin exposure leads to significant motor neuron death and neuromuscular junction (NMJ) retraction. Using confocal real-time live imaging of the gastrocnemius muscle, we found that NMJ remodelling preceded excitotoxin-induced NMJ degeneration. These findings suggest that excitotoxicity in the spinal cord of individuals with ALS might result in a die-forward mechanism of motor neuron death from the cell body outward, leading to initial distal plasticity, followed by subsequent pathology and degeneration. 
-keywords: Amyotrophic lateral sclerosis
-keywords: Excitotoxicity
-keywords: Excitotoxin exposure
-keywords: Lower motor neuron
-keywords: Motor neuron disease
-Date crawled: 2015-03-11 09:11:48.742000
-...
-title: The association between manual mode defibrillation, pre-shock pause duration and appropriate shock delivery when employed by basic life support paramedics during out-of-hospital cardiac arrest
-author: Cheskes S
-author: Hillier M
-author: Byers A
-author: Verbeek PR
-author: Drennan IR
-author: Zhan C
-author: Morrison LJ
-journal: Resuscitation
-publication year: 2015
-doi: 10.1016/j.resuscitation.2015.02.022
-abstract: Pre-shock pause duration of <20s is associated with improved survival after cardiac arrest. Manual mode defibrillation has been associated with the shortest duration of pre-shock pause but is largely practiced by advanced life support paramedics (ALS) whereas defibrillator only paramedics (basic life support or BLS) routinely use the defibrillator in automatic mode. We sought to explore the relationship between manual mode defibrillation, pre-shock pause duration and rate of inappropriate shocks when defibrillation is provided by ALS vs. BLS trained in manual mode defibrillation. We performed a retrospective review of all treated non-traumatic adult out-of-hospital cardiac arrest (OHCA) presenting in a shockable rhythm over a one year period beginning January 1, 2012. Our primary outcome measure was the proportion of manual mode shocks delivered by BLS with pre-shock pause duration of <20s when compared to ALS. Our secondary outcome measures were the duration of pre-, post- and peri-shock pause and the proportion of appropriate shocks (defined as correct identification and shock delivery to patients in a shockable rhythm) delivered by either level of paramedic. This study had a power of 90% to detect an absolute difference of 15% between paramedic levels in proportion of shocks delivered with pre-shock pause duration <20s. Among 2019 treated OHCA, 335 (20%) presented in a shockable rhythm. Manual defibrillation was performed in 155 (46%) of these cases (196 shocks by ALS, 143 shocks by BLS). There were no differences in the proportion of shocks delivered with pre-shock pause duration <20s (ALS 82.8% vs. BLS 84.8%, p=65) nor pre-shock pause duration (s) (median, Q1, Q3); ALS: 12.0 (7.0,17.0) vs. BLS: 11.0 (5.0,17.0), p=.13 while BLS had a significantly shorter peri-shock pause duration (s) (median, Q1, Q3); ALS: 17.0 (12.0, 23.0) vs. BLS: 15.0 (9.0, 22.0), p=05. There were no differences in the rate of inappropriate shocks (ALS 1.0% vs. BLS 0.7%), p=1.0 between levels of paramedics. Manual mode defibrillation by BLS paramedics produced similar measures of pre-shock pause duration when compared to ALS paramedics without increasing the incidence of inappropriate shocks. Further study is required to determine the potential impact of BLS manual mode defibrillation on clinical outcomes.
-keywords: Cardiopulmonary resuscitation
-keywords: Heart arrest
-keywords: Resuscitation
-keywords: Survival
-Date crawled: 2015-03-11 09:11:50.342000
-...
-title: Laboratory evaluation of suspected motor neuron disease: A survey of physicians
-author: Sanderson AB
-author: Novak JC
-author: Nash SM
-author: Kolb SJ
-author: Kissel JT
-journal: Muscle & nerve
-publication year: 2015
-doi: 10.1002/mus.24639
-abstract: The clinical diagnosis of amyotrophic lateral sclerosis (ALS) relies on exclusion of mimic syndromes, but there are no specific guidelines regarding the extent of laboratory testing required. A survey was sent to 274 physicians listed in the Neuromuscular Section of the American Academy of Neurology. The survey asked how often they order 21 different laboratory tests in patients suspected of having ALS. Ninety-nine responses were received (36% response rate). Greater than 75% ordered serum creatine kinase, chemistry panel, and thyroid functions often or always. Fewer than 25% tested for serum complement, hexosaminidase A, spinal muscular atrophy, Kennedy disease, heavy metals, or human T-cell lymphotrophic virus often or always. Twelve other tests had intermediate responses. There is a lack of consensus among respondents regarding the laboratory evaluation of suspected ALS. Prospective studies are needed to define the diagnostic yield and cost-effectiveness of laboratory testing in this population. This article is protected by copyright. All rights reserved.
-keywords: amyotrophic lateral sclerosis
-keywords: consensus
-keywords: diagnosis
-keywords: laboratory
-keywords: survey
-Date crawled: 2015-03-11 09:11:50.912000
-...
-title: Engineering Enhanced Protein Disaggregases for Neurodegenerative Disease
-author: Jackrel ME
-author: Shorter J
-journal: Prion
-publication year: 2015
-title: Comparative study of behavioural tests in the SOD1G93A mouse model of amyotrophic lateral sclerosis
-author: Oliván S
-author: Calvo AC
-author: Rando A
-author: Muñoz MJ
-author: Zaragoza P
-author: Osta R
-journal: Experimental animals / Japanese Association for Laboratory Animal Science
-publication year: 2014
-abstract: In preclinical trials, a sensitive functional test is required to detect changes in the motor behaviour of the SOD1G93A mouse model of amyotrophic lateral sclerosis (ALS). We evaluated changes in body weight and motor impairment in behavioural tests, such as the rotarod, the hanging-wire test and the treadmill, of transgenic and wild type mice. We found differences in detection of the onset of symptoms and progression of the disease between the different tests assessed. Moreover, the data showed significant gender differences in the motor behaviour of this mouse model. The rotarod and the hanging-wire test were more sensitive to detect early motor impairment. Moreover, the results suggested that the rotarod and hanging-wire became the most accurate tests rather than treadmill to characterise the ALS disease phenotype.
-Date crawled: 2015-03-11 09:11:51.542000
-...
-title: MRI abnormalities of peripheral nerve and muscle are common in amyotrophic lateral sclerosis and share features with multifocal motor neuropathy
-author: Staff NP
-author: Amrami KK
-author: Howe BM
-journal: Muscle & nerve
-publication year: 2015
-doi: 10.1002/mus.24630
-abstract: Introduction: MRI of peripheral nerve and muscle in patients with ALS may be performed to investigate alternative diagnoses including multifocal motor neuropathy (MMN). MRI findings of peripheral nerve and muscle are not well described in these conditions, making interpretation of results difficult. Methods: We examined systematically the peripheral nerve and muscle MRI findings in patients with ALS (n=60) and MMN (n=8). Results: In patients with ALS and MMN, abnormal MRIs were common (85% and 75%, respectively) but did not correlate with disease severity. Peripheral nerve MRI abnormalities were similar in frequency (ALS: 58% vs. MMN: 63%) with most changes being of mild-to-moderate severity. Muscle MRI changes were more common in ALS (57% vs. 33%), and no muscle atrophy was seen in patients with MMN. Discussion: MRI abnormalities of peripheral nerve and muscle in ALS and MMN are common and share some features. This article is protected by copyright. All rights reserved.
-keywords: ALS
-keywords: MR neurography
-keywords: MRI
-keywords: amyotrophic lateral sclerosis
-keywords: multifocal motor neuropathy
-Date crawled: 2015-03-11 09:11:52.102000
-...
-title: U1 snRNP is mislocalized in ALS patient fibroblasts bearing NLS mutations in FUS and is required for motor neuron outgrowth in zebrafish
-author: Yu Y
-author: Chi B
-author: Xia W
-author: Gangopadhyay J
-author: Yamazaki T
-author: Winkelbauer-Hurt ME
-author: Yin S
-author: Eliasse Y
-author: Adams E
-author: Shaw CE
-author: Reed R
-journal: Nucleic acids research
-publication year: 2015
-abstract: Mutations in FUS cause amyotrophic lateral sclerosis (ALS), but the molecular pathways leading to neurodegeneration remain obscure. We previously found that U1 snRNP is the most abundant FUS interactor. Here, we report that components of the U1 snRNP core particle (Sm proteins and U1 snRNA), but not the mature U1 snRNP-specific proteins (U1-70K, U1A and U1C), co-mislocalize with FUS to the cytoplasm in ALS patient fibroblasts harboring mutations in the FUS nuclear localization signal (NLS). Similar results were obtained in HeLa cells expressing the ALS-causing FUS R495X NLS mutation, and mislocalization of Sm proteins is RRM-dependent. Moreover, as observed with FUS, knockdown of any of the U1 snRNP-specific proteins results in a dramatic loss of SMN-containing Gems. Significantly, knockdown of U1 snRNP in zebrafish results in motor axon truncations, a phenotype also observed with FUS, SMN and TDP-43 knockdowns. Our observations linking U1 snRNP to ALS patient cells with FUS mutations, SMN-containing Gems, and motor neurons indicate that U1 snRNP is a component of a molecular pathway associated with motor neuron disease. Linking an essential canonical splicing factor (U1 snRNP) to this pathway provides strong new evidence that splicing defects may be involved in pathogenesis and that this pathway is a potential therapeutic target.
-Date crawled: 2015-03-11 09:11:52.142000
-...
-title: Latent instabilities in metallic LaNiO3 films by strain control of Fermi-surface topology
-author: Yoo HK
-author: Hyun SI
-author: Moreschini L
-author: Kim HD
-author: Chang YJ
-author: Sohn CH
-author: Jeong da W
-author: Sinn S
-author: Kim YS
-author: Bostwick A
-author: Rotenberg E
-author: Shim JH
-author: Noh TW
-journal: Scientific reports
-publication year: 2015
-doi: 10.1038/srep08746
-abstract: Strain control is one of the most promising avenues to search for new emergent phenomena in transition-metal-oxide films. Here, we investigate the strain-induced changes of electronic structures in strongly correlated LaNiO3 (LNO) films, using angle-resolved photoemission spectroscopy and the dynamical mean-field theory. The strongly renormalized eg-orbital bands are systematically rearranged by misfit strain to change its fermiology. As tensile strain increases, the hole pocket centered at the A point elongates along the kz-axis and seems to become open, thus changing Fermi-surface (FS) topology from three- to quasi-two-dimensional. Concomitantly, the FS shape becomes flattened to enhance FS nesting. A FS superstructure with Q1 = (1/2,1/2,1/2) appears in all LNO films, while a tensile-strained LNO film has an additional Q2 = (1/4,1/4,1/4) modulation, indicating that some instabilities are present in metallic LNO films. Charge disproportionation and spin-density-wave fluctuations observed in other nickelates might be their most probable origins. 
-Date crawled: 2015-03-11 09:11:52.702000
-...
-title: Letter to the Editor on a paper by Hsiao C-T, Tsai P-C, Liao Y-C, Lee Y-C, Soong B-W. C9ORF72 repeat expansion is not a significant cause of late-onset cerebellar ataxia syndrome. J Neurol Sci 2014;347:322-324
-author: Plutino M
-author: Chaussenot A
-author: Ait-El-Mkadem S
-author: Bannwarth S
-author: Genin EC
-author: Rouzier C
-author: Augé G
-author: Sacconi S
-author: Pouget J
-author: Paquis-Flucklinger V
-journal: Journal of the neurological sciences
-publication year: 2015
-doi: 10.1016/j.jns.2015.02.025
-abstract: 
-keywords: Amyotrophic lateral sclerosis (ALS)
-keywords: CHCHD10
-keywords: Cerebellar ataxia
-keywords: Frontotemporal dementia (FTD)
-keywords: Mitochondrial disease
-Date crawled: 2015-03-11 09:11:53.782000
-...
-title: Fourier transform infrared imaging and microscopy studies of Pinus radiata pulps regarding the simultaneous saccharification and fermentation process
-author: Castillo Rdel P
-author: Araya J
-author: Troncoso E
-author: Vinet S
-author: Freer J
-journal: Analytica chimica acta
-publication year: 2015
-doi: 10.1016/j.aca.2015.01.032
-abstract: The distribution and chemical patterns of lignocellulosic components at microscopic scale and their effect on the simultaneous saccharification and fermentation process (SSF) in the production of bioethanol from Pinus radiata pulps were analyzed by the application of diverse microscopical techniques, including scanning electronic microscopy (SEM), confocal laser scanning microscopy (CLSM) and attenuated total reflectance (ATR) - Fourier transform infrared microspectroscopy. This last technique was accompanied with multivariate methods, including principal component analysis (PCA) and multivariate curve resolution with alternating least squares (MCR-ALS) to evaluate the distribution patterns and to generate pure spectra of the lignocellulosic components of fibers. The results indicate that the information obtained by the techniques is complementary (ultrastructure, confocality and chemical characterization) and that the distribution of components affects the SSF yield, identifying lignin coalescence droplets as a characteristic factor to increase the SSF yield. Therefore, multivariate analysis of the infrared spectra enabled the in situ identification of the cellulose, lignin and lignin-carbohydrates arrangements. These techniques could be used to investigate the lignocellulosic components distribution and consequently their recalcitrance in many applications where minimal sample manipulation and microscale chemical information is required. 
-keywords: Infrared microspectroscopy
-keywords: Multivariate image analysis
-keywords: Organosolv pretreatment
-keywords: Simultaneous saccharification and fermentation
-Date crawled: 2015-03-11 09:11:55.382000
-...
-title: Extraction of Pure Spectral Signatures and Corresponding Chemical Maps from EPR Imaging Data Sets: Identifying Defects on a CaF2 Surface Due to a Laser Beam Exposure
-author: Abou Fadel M
+title: N-3-(oxododecanoyl)-L-homoserine lactone promotes the induction of regulatory T-cells by preventing human dendritic cell maturation
+author: Li Y
+author: Zhou H
+author: Zhang Y
+author: Chen C
+author: Huang B
+author: Qu P
+author: Zeng J
+author: E S
 author: Zhang X
-author: de Juan A
-author: Tauler R
-author: Vezin H
-author: Duponchel L
-journal: Analytical chemistry
+author: Liu J
+journal: Experimental biology and medicine (Maywood, N.J.)
 publication year: 2015
-abstract: A calcium fluoride (CaF ) plate was exposed to pulsed laser irradiations inducing surface morphological and ionization changes on its surface. More precisely surface damages mainly correspond to intrinsic defects. Electron paramagnetic resonance (EPR) hyperspectral imaging is a powerful technique able to characterize the defects formed on the CaF  surface. Indeed, EPR hyperspectral images provide spatial and spectral information about the sample studied. In fact, these images possess a great potential to obtain accurate and reliable knowledge about the chemical composition and the distribution of the component due to the presence of the spatial aspect. However, the complexity of such hyperspectral data sets imposes the use of advanced chemometric tools to extract valuable information on the considered physicochemical system. Therefore, Multivariate Curve Resolution-Alternating Least Squares (MCR-ALS) is proposed to identify and locate the different constituents in the images. The originality of this work is that it reports on the application of MCR-ALS, for the first time, on electron paramagnetic resonance (EPR) imaging data sets that will furnish the distribution maps and the spectral signatures of all components present in the sample. The results show the identification of different intrinsic defects on a CaF  sample from the sole information in the raw image measurements and, therefore, confirm the potential of this methodology and the important role of spatial information contained in the image.
-Date crawled: 2015-03-11 09:11:55.412000
+title: Oral malignant melanoma
+author: G JR
+author: M RK
+author: D SK
+author: T RS
+author: Madhavi A
+journal: Journal of clinical and diagnostic research : JCDR
+publication year: 2015
+doi: 10.7860/JCDR/2015/11699.5490
+abstract: 
+keywords: Hard palate
+keywords: Malignant lesion
+keywords: Oral melanoma
+Date crawled: 2015-03-13 12:29:01.308000
 ...
-title: Reliability of the modified Thomas test using a lumbo-plevic stabilization
-author: Kim GM
-author: Ha SM
-journal: Journal of physical therapy science
-publication year: 2015
-doi: 10.1589/jpts.27.447
-abstract: [Purpose] The purpose of this study was to examine the test-retest reliability of the modified Thomas test using lumbo-pelvic stabilization. [Subjects] Thirteen subjects (male=10, female=3) with hip flexor tightness voluntarily participated in the study. [Methods] The participants underwent the modified Thomas test under three conditions: 1) the general modified Thomas test (GM), 2) active lumbo-pelvic stabilization (ALS), and 3) passive lumbo-pelvic stabilization (PLS). Intra-class correlation coefficients (ICC) were used to determine the test-retest reliability of the knee joint angle measurement under three conditions. The standard error of measurement (SEM) and minimal detectable difference (95% confidence interval) (MDD(95)) were calculated for each measurement to assess absolute consistency. [Results] The ALS (ICC = 0.99) and PLS (ICC = 0.98) methods for the modified Thomas test were more reliable than GM method (ICC = 0.97). The MDD(95) score for the ALS method, 2.35 degrees, indicated that a real difference existed between two testing sessions compared with the scores for the PLS (3.70 degrees) and GM methods (4.17 degrees) [Conclusion] Lumbo-pelvic stabilization is one of the considerations for precise measurement and may help to minimize measurement error when evaluating hip flexor tightness using the modified Thomas test. 
-keywords: Lumbo-pelvic stabilization
-keywords: Modified Thomas test
-Date crawled: 2015-03-11 09:11:55.982000
-...
-title: Surgical treatment of spinal dural arteriovenous fistula: management and long-term outcome in a single-center series
-author: Schuss P
-author: Daher FH
-author: Greschus S
-author: Vatter H
-author: Güresir E
-journal: World neurosurgery
-publication year: 2015
-doi: 10.1016/j.wneu.2015.02.026
-title: Anterior Lumbar Spine Surgery: A Systematic Review and Meta-Analysis of Associated Complications
-author: Bateman DK
-author: Millhouse PW
-author: Shahi N
-author: Kadam A
-author: Maltenfort M
-author: Koerner JD
-author: Vaccaro AR
-journal: The spine journal : official journal of the North American Spine Society
-publication year: 2015
-doi: 10.1016/j.spinee.2015.02.040
-abstract: The anterior approach to the lumbar spine is increasingly used to accomplish various surgical procedures. However, the incidence and risk factors for complications associated with ALS have not been fully elucidated. To identify and document types of complications and complication rates associated with anterior lumbar spine surgery (ALS), to determine risk factors for these events, and to evaluate the effect of measures employed to decrease complication rates. Systematic Review and Meta-Analysis METHODS: A systematic review of the English-language literature was conducted for articles published between January 1992 and December 2013. A MEDLINE search was conducted to identify articles reporting complications associated with anterior lumbar spine surgery. For each complication, the data were combined using a generalized linear mixed model with a binomial probability distribution and a random effect based on the study. Predictors used were the type of procedure (Open, Minimally Invasive or Laparoscopic), the approach employed (transperitoneal [TP] vs. retroperitoneal [RP]), use of recombinant bone morphogenetic protein (rhBMP-2), use of preoperative CT angiography (CTA), and the utilization of an access surgeon. Open surgery was used as a reference category. Seventy-six articles met final inclusion criteria and reported complication rates in 11,410 patients who underwent arthrodesis and/or arthroplasty via laparoscopic, mini-open, and open techniques. The overall complication rate was 14.1%, with intraoperative and postoperative complication rates of 9.1% and 5.2%, respectively. Only 3% of patients required reoperation or revision procedures. The most common complications reported were: venous injury (3.2%); retrograde ejaculation (2.7%); neurologic injury (2%); prosthesis-related (2%); postoperative ileus (1.4%); superficial infection (1%); and others (1.3%). Laparoscopic and transperitoneal procedures were associated with higher complication rates, while lower complication rates were observed in patients receiving mini-open techniques. Our analysis indicated that the use of rhBMP-2 was associated with increased rates of retrograde ejaculation; however, there may be limitations in interpreting these data. Data regarding the use of preoperative CTA and an access surgeon were limited and demonstrated mixed benefit. Overall complication rates with anterior lumbar spine surgery are relatively low, with the most common complications occurring at a rate of 1-3%. Complication rates are related to surgical technique, approach, and implant characteristics. Further randomized controlled trails are needed to validate the use of preventative measures including CTA and the use of an access surgeon.
-keywords: Anterior approach
-keywords: bone morphogenetic protein
-keywords: complications
-keywords: lumbar spine surgery
-keywords: retrograde ejaculation
-keywords: systematic review
-Date crawled: 2015-03-11 09:11:57.122000
-...
-title: End-of-life management in patients with amyotrophic lateral sclerosis
-author: Connolly S
-author: Galvin M
-author: Hardiman O
-journal: The Lancet. Neurology
-publication year: 2015
-doi: 10.1016/S1474-4422(14)70221-2
-abstract: Most health-care professionals are trained to promote and maintain life and often have difficulty when faced with the often rapid decline and death of people with terminal illnesses such as amyotrophic lateral sclerosis (ALS). By contrast, data suggest that early and open discussion of end-of-life issues with patients and families allows time for reflection and planning, can obviate the introduction of unwanted interventions or procedures, can provide reassurance, and can alleviate fear. Patients' perspectives regarding end-of-life interventions and use of technologies might differ from those of the health professionals involved in their care, and health-care professionals should recognise this and respect the patient's autonomy. Advance care directives can preserve autonomy, but their legal validity and use varies between countries. Clinical management of the end of life should aim to maximise quality of life of both the patient and caregiver and, when possible, incorporate appropriate palliation of distressing physical, psychosocial, and existential distress. Training of health-care professionals should include the development of communication skills that help to sensitively manage the inevitability of death. The emotional burden for health-care professionals caring for people with terminal neurological disease should be recognised, with structures and procedures developed to address compassion, fatigue, and the moral and ethical challenges related to providing end-of-life care.
-Date crawled: 2015-03-11 09:11:57.152000
-...
-title: Does dysfunction of the mirror neuron system contribute to symptoms in amyotrophic lateral sclerosis?
-author: Eisen A
-author: Lemon R
-author: Kiernan MC
-author: Hornberger M
-author: Turner MR
-journal: Clinical neurophysiology : official journal of the International Federation of Clinical Neurophysiology
-publication year: 2015
-doi: 10.1016/j.clinph.2015.02.003
-abstract: There is growing evidence that mirror neurons, initially discovered over two decades ago in the monkey, are present in the human brain. In the monkey, mirror neurons characteristically fire not only when it is performing an action, such as grasping an object, but also when observing a similar action performed by another agent (human or monkey). In this review we discuss the origin, cortical distribution and possible functions of mirror neurons as a background to exploring their potential relevance in amyotrophic lateral sclerosis (ALS). We have recently proposed that ALS (and the related condition of frontotemporal dementia) may be viewed as a failure of interlinked functional complexes having their origins in key evolutionary adaptations. This can include loss of the direct projections from the corticospinal tract, and this is at least part of the explanation for impaired motor control in ALS. Since, in the monkey, corticospinal neurons also show mirror properties, ALS in humans might also affect the mirror neuron system. We speculate that a defective mirror neuron system might contribute to other ALS deficits affecting motor imagery, gesture, language and empathy.
-keywords: Amyotrophic lateral sclerosis
-keywords: Cognition
-keywords: Empathy
-keywords: Mirror neurons
-keywords: Motor cortex
-Date crawled: 2015-03-11 09:11:58.232000
-...
-title: An Iranian familial amyotrophic lateral sclerosis pedigree with p.Val48Phe causing mutation in SOD1: a genetic and clinical report
-author: Alavi A
-author: Khani M
-author: Nafissi S
-author: Shamshiri H
-author: Elahi E
-journal: Iranian journal of basic medical sciences
+title: Psychological evaluation of patients in critical care/intensive care unit and patients admitted in wards
+author: Sharma B G
+author: Evs M
+author: Ms K
+author: B G
+journal: Journal of clinical and diagnostic research : JCDR
 publication year: 2014
-abstract: Amyotrophic lateral sclerosis (ALS), a fatal progressive neurodegenerative disorder, is the most common motor neuron disease in European populations. Approximately 10% of ALS cases are familial (FALS) and the other patients are considered as sporadic ALS (SALS). Among many ALS causing genes that have been identified, mutations in SOD1 and C9orf72 are the most common genetic causes of the disease. In Iranian patients, it has been shown that SOD1, as compared to C9orf72, plays a much more prominent role. To date, more than 170 mutations have been reported in SOD1. Genotype/phenotype correlation with respect to either different causative genes or different mutations of a specific gene has not been well established. Five exons of SOD1 and flanking intronic sequences of an Iranian FALS proband were screened for mutations by direct sequencing. Also, the clinical features of the proband were described. Heterozygous p.Val48Phe causing mutation was identified in SOD1. Age at onset was 29 years and site of the first presentation was the lower extremity in the proband. The p.Val48Phe causing mutation appears to cause early onset of ALS.
-keywords: ALS
-keywords: Aamyotrophic lateral sclerosis
-keywords: SOD1
-keywords: Superoxide dismutase 1 gene
-keywords: p.Val48Phe
-Date crawled: 2015-03-11 09:11:58.802000
+doi: 10.7860/JCDR/2014/10293.5297
+abstract: Psychological assessment for depression, anxiety and stress among ICU patients and the patients admitted to ward in a hospital in India. This aspect did not get much attention in India so far. Such studies were common in developed countries. Therefore we decided in this study, to analyse the psychological status responses from the hospitalised patients in Mangalore using a validated questionnaire. To assess and compare the depression, anxiety and stress Scores from the patients admitted in Intensive Care Unit (ICU) and those admitted to ward. Eighty patients admitted to hospital, 40 from ICU and 40 admitted to ward were recruited. They were explained the procedure and after taking an informed consent, they were administered Depression, Anxiety, Stress Scale (DASS) Questionnaire, which contains 42-item questionnaire which includes three self-report scales designed to measure the negative emotional states of depression, anxiety and stress. The responses were computed and tabulated. We analysed the responses with Student's t-test and Chi-square test, p<0.05 accepted as statistically significant. The results revealed significantly elevated stress, depression and anxiety among the ICU patients when compared to those in the ward (p<0.001). Above normal anxiety and stress levels were also seen in the ward patients, compared to the scores in normal range. 50% and 25% respectively showed mild and normal depression scores in ward patients, compared to 12% and 5% in those admitted to ICU. This trend was also true for Anxiety and stress scores. From the results we found that there were elevated depression, anxiety and stress levels among the patients and this was significantly higher in ICU patients. Various factors could influence the psychological wellbeing of the patients, including the hospital environment, care givers, presence of family members nearby apart from the seriousness of illness, apprehensions about possibility of death. Such studies were rare among Indian patients. The findings of this study could be useful in incorporating suitable psychological help to the patients in hospitals to improve their recovery and wellbeing.
+keywords: Anxiety
+keywords: Depression
+keywords: Indian hospital
+keywords: Intensive care unit
+keywords: Stress
+Date crawled: 2015-03-13 12:29:06.467000
 ...
-title: Molecular Dynamics of the Diels-Alder Reactions of Tetrazines with Alkenes, and N2 Extrusions from Adducts
-author: Törk L
-author: Jiménez-Osés G
-author: Doubleday C
-author: Liu F
-author: Houk KN
-journal: Journal of the American Chemical Society
-publication year: 2015
-abstract: The cycloadditions of tetrazines with cyclopropenes and other strained alkenes have become among the most valuable bioorthogonal reactions. These reactions lead to bicyclic Diels-Alder adducts that spontaneously lose N2. We report quantum mechanical (QM) and quasi-classical molecular dynam-ics (QMD) simulations on a number of these reactions, with special attention to stereoelectronic and dynamic effects on spontaneous N2 loss from these adducts. QM calculations show that the barrier to N2 loss is low, and MD calculations show that the intermediate is frequently bypassed dynamically. There is a large preference for N2 loss anti to the cyclopropane moiety rather than syn from adducts formed from reactions with cyclopropenes. This is explained by the interactions of the Walsh orbit-als of the cyclopropane group with the breaking C-N bonds in N2 loss. Dynamical effects opposing the QM preferences have also been discovered involving the coupling of vibrations associated with the formation of the new C-C bonds in the cycloaddition step, and those of the breaking C-N bonds during subsequent N2 loss. This dynamic matching leads to pronounced non-statistical effects on the lifetimes of Diels-Alder intermediates. An unusual oscillatory behavior of the rate of decay of the intermediate has been identified and attributed to specific vibrational coupling.
-Date crawled: 2015-03-11 09:11:59.382000
+title: Epigenetic targets of arsenic: emphasis on epigenetic modifications during carcinogenesis
+author: Roy RV
+author: Son YO
+author: Pratheeshkumar P
+author: Wang L
+author: Hitron JA
+author: Divya SP
+author: D R
+author: Kim D
+author: Yin Y
+author: Zhang Z
+author: Shi X
+journal: Journal of environmental pathology, toxicology and oncology : official organ of the International Society for Environmental Toxicology and Cancer
+publication year: 2015;34(1):63-84.
+abstract: DNA methylation and histone modification promote opening and closure of chromatin structure, which affects gene expression without altering the DNA sequence. Epigenetic markers regulate the dynamic nature of chromatin structure at different levels: DNA, histone, noncoding RNAs, as well as the higher-order chromatin structure. Accumulating evidence strongly suggests that arsenic-induced carcinogenesis involves frequent changes in the epigenetic marker. However, progress in identifying arsenic-induced epigenetic changes has already been made using genome-wide approaches; the biological significance of these epigenetic changes remains unknown. Moreover, arsenic-induced changes in the chromatin state alter gene expression through the epigenetic mechanism. The current review provides a summary of recent literature regarding epigenetic changes caused by arsenic in carcinogenesis. We highlight the transgenerational studies needed to explicate the biological significance and toxicity of arsenic over a broad spectrum. 
+Date crawled: 2015-03-13 12:29:06.507000
 ...
-title: MIR and NIR group spectra of n-alkanes and 1-chloroalkanes
-author: Kwaśniewicz M
-author: Czarnecki MA
-journal: Spectrochimica acta. Part A, Molecular and biomolecular spectroscopy
-publication year: 2015
-doi: 10.1016/j.saa.2015.01.134
-abstract: Numerous attempts were undertaken to resolve the absorption originating from different parts of alkanes. The separation of the contributions from the terminal and midchain methylene units was observed only in the spectra of solid alkanes at low temperatures. On the other hand, for liquid alkanes this effect was not reported as yet. In this study, ATR-IR, Raman and NIR spectra of eight n-alkanes and seven 1-chloroalkanes in the liquid phase were measured from 1000 to 12,000cm . The spectra were analyzed by using two-dimensional (2D) correlation approach and chemometrics methods. It was shown that in 2D asynchronous contour plots, constructed from the spectra of n-alkanes and 1-chloroalkanes, the methylene band was resolved into two components. These two components were assigned to the terminal and midchain methylene groups. For the first time, the contributions from these two molecular fragments were resolved in the spectra of liquid n-alkanes and 1-chloroalkanes. MCR-ALS resolved these spectra into two components that were assigned to the ethyl and midchain methylene groups. These components represent the group spectra that can be used for assignment, spectral analysis and prediction of unknown spectra. The spectral prediction based on the group spectra provides very good results for n-alkanes, especially in the first and second overtone regions.
-keywords: 1-Chloroalkanes
-keywords: Chemometrics
-keywords: Group MIR/NIR spectra
-keywords: Spectral prediction
-keywords: Two-dimensional correlation analysis
-keywords: n-Alkanes
-Date crawled: 2015-03-11 09:11:59.412000
+title: Association of Elevated first Trimester Serum Uric Acid Levels with Development of GDM
+author: C R
+author: Samal S
+author: Ghose S
+journal: Journal of clinical and diagnostic research : JCDR
+publication year: 2014
+doi: 10.7860/JCDR/2014/8063.5226
+abstract: Early intervention and appropriate treatment in patients with GDM will help in preventing the adverse maternal and fetal outcome and protect them from long term complications. Several studies have shown the association of hyperuricemia with GDM. This study was undertaken to find out the association of elevated first trimester uric acid with development of GDM. This prospective observational study was conducted in Mahatma Gandhi Medical Collage and Research Institute, Pondicherry, India, between November 2010 and May 2012. A total of 70 pregnant women were included and parameters like age, parity, BMI, history of DM, serum uric acid at <15 weeks and at 24 to 28 weeks and one step test at 24 to 28 weeks were noted and compared. There was no significant correlation between the demographic variables and GDM, but a moderate significance noted between the family history of DM and one step test (p=0.048). Though there is a proportional increase in the serum uric acid with increase in the BMI, it was not statistically significant. A significant correlation was seen between BMI and risk of development of GDM (p= 0.001). Though there is a significant correlation between serum uric acid at <15 weeks and at 24 to 28 weeks, serum uric acid at <15 weeks of gestation is a better predictor of GGI and GDM (Pearson's correlation = 0.735). There is increase in the risk of development of GDM with increased levels of serum uric acid in the first trimester. Uric acid levels at <15 weeks of gestation is more significantly associated with risk of development of GDM than it's levels at 24 to 28 weeks of gestation.
+keywords: Gestational diabetes mellitus
+keywords: Hyperuricemia
+keywords: Serum uric acid
+Date crawled: 2015-03-13 12:29:06.549000
 ...
-title: The dual roles of immunity in ALS: Injury overrides protection
-author: Murdock BJ
-author: Bender DE
-author: Segal BM
-author: Feldman EL
-journal: Neurobiology of disease
+title: Development of a bio-inspired mechatronic chest wall simulator for evaluating the performances of opto-electronic plethysmography
+author: C M
+author: E S
+author: F B
+author: A S
+author: P S
+author: G L
+author: F B
+author: S A S
+author: S S
+journal: The open biomedical engineering journal
+publication year: 2014
+doi: 10.2174/1874120701408010120
+title: Complete mitochondrial genome of Chuanzhong black goat in southwest of China (Capra hircus)
+author: Huang YF
+author: Chen LP
+author: Zhao YJ
+author: Zhang H
+author: Na RS
+author: Zhao ZQ
+author: Zhang JH
+author: Jiang C
+author: Ma YH
+author: Sun YW
+author: E GX
+journal: Mitochondrial DNA
 publication year: 2015
-doi: 10.1016/j.nbd.2015.02.017
-abstract: Amyotrophic lateral sclerosis (ALS) is a progressive, fatal neurodegenerative disease affecting motor neurons. Disease progression is accompanied by a multi-phased immune response, and recent studies indicate that the immune system is not simply a bystander during disease, but plays an active role in shaping ALS pathology. The role of the immune system during ALS progression is highly complex, however, as it has been found to have a role in both enhancing neurodegeneration as well as protecting the central nervous system. Previous reports have established that the immune response can therefore be separated into two distinct phases: a protective Type 2 response followed by a neurotoxic Type 1 response. This review will address the two phases of the immune response in ALS and describe their roles during disease progression. More importantly, it will also examine the likely sources of immune polarization that are responsible for shifting immunity from the protective T2 phase to the neurotoxic T1 phase.
-keywords: Amyotrophic lateral sclerosis
-keywords: Central nervous system
-keywords: Debris clearance
-keywords: Immune response
-keywords: Monocytes
-keywords: Mutant SOD1
-keywords: Repair
-keywords: Toll-like receptors
-Date crawled: 2015-03-11 09:12:00.002000
+title: Left Ventricular Diastolic Dysfunction (LVDD) & Cardiovascular Autonomic Neuropathy (CAN) in Type 2 Diabetes Mellitus (DM): A Cross-Sectional Clinical Study
+author: S M
+author: H R
+journal: Journal of clinical and diagnostic research : JCDR
+publication year: 2015
+doi: 10.7860/JCDR/2015/10509.5497
+abstract: Cardiovascular autonomic neuropathy (CAN) is one of the major complications of Diabetes Mellitus (DM) seen in a significant number of patients, which is often ignored and is also least frequently diagnosed. It can be diagnosed by performing five standard non-invasive bedside autonomic function tests based on Cardiovascular reflexes, which are quite cumbersome. Studies have revealed an increase in mortality in the diabetic patients with CAN due to silent cardiac ischemia, sudden cardiac death, arrhythmias. The precursor of diabetic cardiomyopathy is Left ventricular diastolic dysfunction (LVDD). In the present study we are studying the association between LVDD and CAN, in order to identify high mortality risk patients by performing 2D Echo and looking at LVDD instead of performing the cumbersome bedside cardiovascular autonomic function tests. To study the association between LVDD and CAN in patients with Type 2 DM. This study is a cross-sectional observational study with a sample size of 100. Both outpatients and inpatients between 35 y and 65 y of age with Type 2 DM coming to Department of General Medicine, KIMS hospital, Bangalore were studied from November 2011 to October 2013.Patients with macrovascular complications, Hypertension, congenital & acquired heart diseases etc. were excluded from the study. The standard five autonomic function tests based on cardiovascular reflexes and 2D Echo were performed. Individual scores for each of the five tests were added to produce Ewing's score. Ewing's score of >2.5 is positive for CAN. Chi-square/ Fisher Exact test has been. There was a significant association between individual non-invasive bedside tests of Ewing's score and LVDD. Significant association was also seen between LVDD and positive Ewing's score. Positive Ewing's score is strongly associated with LVDD in patients with Type 2 DM in this study .This suggests that patients with LVDD have CAN and hence, are at increased risk of sudden cardiac death. As bedside tests are cumbersome, patients with LVDD on 2D Echo can be concluded to have CAN.
+keywords: Cardiac death
+keywords: Diabetes mellitus
+title: Extramedullary plasmacytoma of gingiva and soft tissue in neck
+author: Nair SK
+author: Faizuddin M
+author: D J
+author: Malleshi SN
+author: Venkatesh R
+journal: Journal of clinical and diagnostic research : JCDR
+publication year: 2014
+doi: 10.7860/JCDR/2014/9305.5176
+abstract: Plasmacytoma is a malignant disease that present either in bone marrow (medullary plasmacytoma), within the bone (solitary plasmacytoma of bone), or outside of bone, as the extramedullary plasmacytoma. Extramedullary plasmacytoma accounts for 3% of all plasma cell tumours and approximately 90% of extramedullary plasmacytomas affect the head and neck region commonly affecting the nasal cavity, paranasal sinuses, tonsillar fossa and oral cavity. Multiple extramedullary plasmacytoma is defined when there is more than one extramedullary tumour of clonal plasma cells and such presentations are extremely rare. We report such a rare case of multiple extramedullary plasmacytoma involving gingiva and neck. Here is a case report of a 65-year-old female patient presenting with extramedullary plasmacytoma of the gingiva and soft tissue in neck. 
+keywords: Gingiva
+keywords: Plasmacytoma
+keywords: Soft tissue
+Date crawled: 2015-03-13 12:29:27.295000
 ...
-title: Detection of BMAA in the human central nervous system
-author: Berntzon L
-author: Ronnevi LO
-author: Bergman B
-author: Eriksson J
-journal: Neuroscience
+title: Implications of subcutaneous or intravenous delivery of trastuzumab; further insight from patient interviews in the PrefHer study
+author: L F
+author: S O
+author: C L
+author: K M
+author: J K
+author: V J
+journal: Breast (Edinburgh, Scotland)
 publication year: 2015
-doi: 10.1016/j.neuroscience.2015.02.032
-title: CHCH10 mutations in an Italian cohort of familial and sporadic amyotrophic lateral sclerosis patients
-author: Chiò A
-author: Mora G
-author: Sabatelli M
-author: Caponnetto C
-author: Traynor BJ
-author: Johnson JO
-author: Nalls MA
-author: Calvo A
-author: Moglia C
-author: Borghero G
-author: Monsurrò MR
-author: La Bella V
-author: Volanti P
-author: Simone I
-author: Salvi F
-author: Logullo FO
-author: Nilo R
-author: Battistini S
-author: Mandrioli J
-author: Tanel R
-author: Murru MR
-author: Mandich P
-author: Zollino M
-author: Conforti FL
-author: ITALSGEN Consortium
-author: Brunetti M
-author: Barberis M
-author: Restagno G
-author: Penco S
-author: Lunetta C
-journal: Neurobiology of aging
-publication year: 2015
-doi: 10.1016/j.neurobiolaging.2015.01.017
-title: Development of stage-dependent glycans on the Fc domains of IgG antibodies of ALS animals
-author: Edri-Brami M
-author: Sharoni H
-author: Hayoun D
-author: Skutelsky L
-author: Nemirovsky A
-author: Porgador A
-author: Lichtenstein RG
-journal: Experimental neurology
-publication year: 2015
-doi: 10.1016/j.expneurol.2015.02.023
-abstract: We recently revealed a unique glycan on the Fc domain of IgG antibodies in ALS patients that mediates antibody-dependent cell cytotoxicity (ADCC). This glycan has a bi-antennary structure that lacks the core fucose and sialic acid residues but contains a bisecting GlcNAc (A2BG2). Little is known, however, about the incidence of A2BG2 expression and IgG cytotoxicity under ALS conditions within well-defined clinical stages. Here, we characterize the IgG antibodies produced in ALS Tg mice by detecting intra- and extra-cellular antigens of motor neurons that express different glycan patterns during the disease. The increased number of innate immune cells found at the disease onset was insufficient to induce an optimal systemic T-cell response. Nevertheless, IgG antibodies were produced against intracellular antigens at the pre-symptomatic stage in the secondary lymphoid organs under the conditions of a poor systemic immune response. Moreover, while the glycosyltransferases of plasma B-cells that synthesize the Fc-glycans were regulated by IL-2 or IL-4, the observed glycosyltransferase pattern did not match that found in ALS Tg mice. We further found that A2BG2 glycan is specific for ALS, its quantity increased with disease progression and that the IgG antibodies identifying extracellular motor neuron antigens were developed at the final stage of the disease. Therefore, the most effective ADCC of motor neurons was observed at the end stage of the disease. We conclude that in ALS, IgG antibodies are produced despite the poor systemic immune response and that the frequency and quantity of A2BG2 glycan expression on the Fc domain depends on the clinical stage. Therefore, A2BG2 is a potential prognostic biomarker for ALS.
-keywords: A2BG2
-keywords: ALS
-keywords: Fc-N-glycan
-keywords: IgG antibodies
-Date crawled: 2015-03-11 09:12:02.112000
+doi: 10.1016/j.breast.2015.01.002
+abstract: The 2 Cohort randomised PrefHer trial examined the preferences of HER2+ve primary breast cancer patients for intravenous (IV) or subcutaneous (SC) delivery of trastuzumab via a Single Injectable Device (SID) or hand-held syringe (HHS). The novel approach and design of the study permitted an in-depth exploration of patients' experiences, the impact that different modes of delivery had on patients' well-being and implications for future management. The preferences, experiences and general comments of patients in the PrefHer study were collected via specific semi-structured interview schedules. Exploratory analyses of data were conducted using standard methodology. The final question invited patients to make further comments, which were divided into 9 thematic categories - future delivery, compliments, time/convenience, practical considerations, pain/discomfort, study design, side-effects, psychological impact, and perceived efficacy. 267/467 (57%) patients made 396 additional comments, 7 were neutral, 305 positive and 86 negative. The three top categories generating the largest number of comments were compliments and gratitude about staff and being part of PrefHer (75/396; 19%), the potential future delivery of SC trastuzumab (73/396; 18%), and practical considerations about SC administration (60/396; 15%). Eliciting patient preferences about routes of administration of drugs via comprehensive interviews within a randomised cross-over trial yielded rich and important information. The few negative comments made demonstrated a need for proper staff training in SC administration Patients were grateful to have been part of the trial, and would have liked to continue with SC delivery. The possibility of home administration in the future also seemed acceptable. 2010-024099-25.
+keywords: Breast cancer
+keywords: Drug administration
+keywords: Patient preferences
+keywords: Trastuzumab
+Date crawled: 2015-03-13 12:29:27.332000
 ...
-title: Exploring the interaction between O3 and NOx pollution patterns in the atmosphere of Barcelona, Spain using the MCR-ALS method
-author: Malik A
-author: Tauler R
-journal: The Science of the total environment
+title: Effective Factors on Patients' Satisfaction with Emergency Care Services using Factor Analysis: A Cross Sectional Study
+author: A DM
+author: A H
+author: A D
+author: F S
+author: K S
+journal: Journal of clinical and diagnostic research : JCDR
+publication year: 2014
+doi: 10.7860/JCDR/2014/8236.5162
+title: A randomized controlled trial on the effects of combined aerobic-resistance exercise on muscle strength and fatigue, glycemic control and health-related quality of life of type 2 diabetes patients
+author: Tomas-Carus P
+author: Ortega-Alonso A
+author: Pietiläinen KH
+author: Santos V
+author: Gonçalves G
+author: H H
+author: Ramos J
+author: Raimundo A
+journal: The Journal of sports medicine and physical fitness
 publication year: 2015
-doi: 10.1016/j.scitotenv.2015.01.105
-abstract: This work focuses on understanding the behaviour and patterns of three atmospheric pollutants namely, nitric oxide (NO), nitrogen dioxide (NO ), and ozone (O ) along with their mutual interactions in the atmosphere of Barcelona, North Spain. Hourly samples were collected for NO, NO  and O  from the same city location for three consecutive years (2010-2012). The study explores the seasonal, annual and weekday-weekend variations in their diurnal profiles along with the possible identification of their source and mutual interactions in the region. Multivariate Curve Resolution-Alternating Least Squares (MCR-ALS) was applied to the individual datasets of these pollutants, as well as to all of them simultaneously (augmented mode) to resolve the profiles related to their source and variation patterns in the atmosphere. The analysis of the individual datasets confirmed the source pattern variations in the concerned pollutant's profiles; and the resolved profiles for augmented datasets suggested for the mutual interaction of the pollutants along with their patterns variations, simultaneously. The study suggests vehicular pollution as the major source of atmospheric nitrogen oxides and presence of weekend ozone effect in the region.
-keywords: Atmospheric pollution
-keywords: Chemometrics
-keywords: Nitrogen oxides
-keywords: Ozone
-keywords: Vehicular pollution
-Date crawled: 2015-03-11 09:12:02.182000
+abstract: to evaluate the effects of a 12--weeks combined aerobic--resistance exercise therapy on fatigue and isokinetic muscle strength, glycemic control and health--related quality of life (HRQoL) in moderately affected type 2 diabetes (T2DM) patients. a randomized controlled trial design was employed. Forty--three T2DM patients were assigned to an exercise group (n = 22), performing 3 weekly sessions of 60 minutes of combined aerobic--resistance exercise for 12--weeks; or a no exercise control group (n = 21). Both groups were evaluated at a baseline and after 12--weeks of exercise therapy for: 1) muscle strength and fatigue by isokinetic dynamometry; 2) plasma glycated hemoglobin A1C (HbA1C); and 3) HRQoL utilizing the SF--36 questionnaire. the exercise therapy led to improvements in muscle fatigue in knee extensors (--55%) and increased muscle strength in knee flexors and extensors (+15 to +30%), while HbA1C decreased (--18%). In addition, the exercising patients showed sizeable improvements in HRQoL: physical function (+53%), vitality (+21%) and mental health (+40%). 12--weeks of combined aerobic--resistance exercise was highly effective to improve muscle strength and fatigue, glycemic control and several aspects of HRQoL in T2DM patients. These data encourage the use of aerobic and resistance exercise in the good clinical care of T2DM.
+Date crawled: 2015-03-13 12:29:37.718000
 ...
-title: In vitro studies in VCP-associated multisystem proteinopathy suggest altered mitochondrial bioenergetics
-author: Nalbandian A
-author: Llewellyn KJ
-author: Gomez A
-author: Walker N
-author: Su H
-author: Dunnigan A
-author: Chwa M
-author: Vesa J
-author: Kenney MC
-author: Kimonis VE
-journal: Mitochondrion
+title: Coronary stenting with cardiogenic shock due to acute ascending aortic dissection
+author: Hanaki Y
+author: Yumoto K
+author: I S
+author: Aoki H
+author: Fukuzawa T
+author: Watanabe T
+author: Kato K
+journal: World journal of cardiology
 publication year: 2015
-doi: 10.1016/j.mito.2015.02.004
-abstract: Mitochondrial dysfunction has recently been implicated as an underlying factor to several common neurodegenerative diseases, including Parkinson's disease, Alzheimer's and amyotrophic lateral sclerosis (ALS). Valosin containing protein (VCP)-associated multisystem proteinopathy is a new hereditary disorder associated with inclusion body myopathy, Paget disease of bone (PDB), frontotemporal dementia (FTD) and ALS. VCP has been implicated in several transduction pathways including autophagy, apoptosis and the PINK1/Parkin cascade of mitophagy. In this report, we characterized VCP patient and mouse fibroblasts/myoblasts to examine their mitochondrial dynamics and bioenergetics. Using the Seahorse XF-24 technology, we discovered decreased spare respiratory capacity (measurement of extra ATP that can be produced by oxidative phosphorylation in stressful conditions) and increased ECAR levels (measurement of glycolysis), and proton leak in VCP human fibroblasts compared with age- and sex-matched unaffected first degree relatives. We found decreased levels of ATP and membrane potential, but higher mitochondrial enzyme complexes II+III and complex IV activities in the patient VCP myoblasts when compared to the values of the control cell lines. These results suggest that mutations in VCP affect the mitochondria's ability to produce ATP, thereby resulting in a compensatory increase in the cells' mitochondrial complex activity levels. Thus, this novel in vitro model may be useful in understanding the pathophysiology and discovering new drug targets of mitochondrial dynamics and physiology to modify the clinical phenotype in VCP and related multisystem proteinopathies (MSP).
-keywords: ALS
-keywords: Frontotemporal dementia
-keywords: Inclusion body myopathy
-keywords: Mitochondrial bioenergetics
-keywords: Paget's disease of the bone
-keywords: Valosin containing protein
-Date crawled: 2015-03-11 09:12:02.232000
+doi: 10.4330/wjc.v7.i2.104
+abstract: A 65-year-old man developed chest pain under cardiogenic shock. Coronary angiography revealed severe stenosis from the ostium of the left main coronary artery (LMCA) to the left anterior descending artery (LAD). Intravascular ultrasound (IVUS) identified a large hematoma that originated from the aorta and extended into the LAD, thereby compressing the true lumen. Type A aortic dissection (TAAD) that involved the LMCA was diagnosed by IVUS. Coronary stenting was performed via the LMCA to the proximal LAD, which resulted in coronary blood flow restoration and no further propagation of dissection. Elective surgical aortic repair was performed 2 wk after the stenting. LMCA stenting under IVUS guidance is effective for prompt diagnosis and precise stent deployment in patients with cardiogenic shock due to TAAD with LMCA dissection. 
+keywords: Aortic dissection
+keywords: Coronary artery stenting
+keywords: Intravascular ultrasound
+keywords: Left main coronary artery
+keywords: Myocardial infarction
+Date crawled: 2015-03-13 12:29:37.763000
 ...
-title: Genetic ablation of ataxin-2 increases several global translation factors in their transcript abundance but decreases translation rate
-author: Fittschen M
-author: Lastres-Becker I
-author: Halbach MV
-author: Damrath E
-author: Gispert S
-author: Azizov M
-author: Walter M
-author: Müller S
-author: Auburger G
-journal: Neurogenetics
-publication year: 2015
-abstract: Spinocerebellar ataxia type 2 (SCA2) and amyotrophic lateral sclerosis (ALS) are neurodegenerative disorders, caused or modified by an unstable CAG-repeat expansion in the SCA2 gene, which encodes a polyglutamine (polyQ) domain expansion in ataxin-2 (ATXN2). ATXN2 is an RNA-binding protein and interacts with the poly(A)-binding protein PABPC1, localizing to ribosomes at the rough endoplasmic reticulum. Under cell stress, ATXN2, PABPC1 and small ribosomal subunits are relocated to stress granules, where mRNAs are protected from translation and from degradation. It is unknown whether ATXN2 associates preferentially with specific mRNAs or how it modulates RNA processing. Here, we investigated the RNA profile of the liver and cerebellum from Atxn2 knockout (Atxn2  ) mice at two adult ages, employing oligonucleotide microarrays. Prominent increases were observed for Lsm12/Paip1 (>2-fold), translation modulators known as protein interactor/competitor of ATXN2 and for Plin3/Mttp (>1.3-fold), known as apolipoprotein modulators in agreement with the hepatosteatosis phenotype of the Atxn2   mice. Consistent modest upregulations were also observed for many factors in the ribosome and the translation/secretion apparatus. Quantitative reverse transcriptase PCR in liver tissue validated >1.2-fold upregulations for the ribosomal biogenesis modulator Nop10, the ribosomal components Rps10, Rps18, Rpl14, Rpl18, Gnb2l1, the translation initiation factors Eif2s2, Eif3s6, Eif4b, Pabpc1 and the rER translocase factors Srp14, Ssr1, Sec61b. Quantitative immunoblots substantiated the increased abundance of NOP10, RPS3, RPS6, RPS10, RPS18, GNB2L1 in SDS protein fractions, and of PABPC1. In mouse embryonal fibroblasts, ATXN2 absence also enhanced phosphorylation of the ribosomal protein S6 during growth stimulation, while impairing the rate of overall protein synthesis rates, suggesting a block between the enhanced translation drive and the impaired execution. Thus, the physiological role of ATXN2 subtly modifies the abundance of cellular translation factors as well as global translation.
-Date crawled: 2015-03-11 09:12:02.272000
+title: Molecular Docking Study for Inhibitors of Aggregatibacter actinomycetamcomitans Toxins in Treatment of Aggressive Perioodontitis
+author: Raj L S M
+author: J J
+author: I K
+author: Krishna P S
+author: K A S
+journal: Journal of clinical and diagnostic research : JCDR
+publication year: 2014
+doi: 10.7860/JCDR/2014/10067.5133
+abstract: Periodontitis is a chronic inflammatory disease of the periodontal tissues causing periodontal attachment loss and destruction of the alveolar bone which leads to mobility and loss of teeth. Aggregatibacter actinomycetemcomitans (Aa) is a gram negative, capnophilic, coccobacillus that plays an important role in aggressive Periodontitis. Aa produces a variety of virulence factors that facilitate the colonization, invasion and destruction of the periodontal tissues. Leukotoxin and cytolethal distending toxin (Cdt) are most important virulence factors of Aa. The three dimensional structure of leukotoxin was derived by Easy modeller software and Cdt was retrieved from RCSB database. The possible binding sites of toxins were searched using binding site prediction tool Q site finder. A total of 1000 ligands of flavanol derivatives were generated with the help of software ACD chemsketch. Rapid virtual screenings of these compounds were performed in the docking tool iGEMDOCK v2.0. Based on the binding energy, six ligands were selected for the further study. The selected six ligands were then analysed for drug relevant properties based on "Lipinski's rule of five" and other drug like properties. The accurate docking of six ligands was performed using docking tool iGEMDOCK v2.0. From the present study, it has been found that carboxyl {(2R,3R)-3,7 dihydroxy 4-oxo-2(3,4,5-trihydroxyphenyl)-3,4-dihydro2H-chromen-5-yl} oxonium, which is a novel compound can effectively act as an inhibitor for both the toxins. The leucotoxin and cytolethal distending toxin of Aa is found to be the major virulence factors involved in the causation of aggressive periodontitis. Hence the inhibitors of these toxins can be an effective drug in treatment of aggressive periodontitis.
+keywords: Aggregatibacter actinomycetamcomitans
+keywords: Aggressive periodontitis
+keywords: Cytolethal distending toxin
+keywords: Leucotoxin
+keywords: Molecular docking
+Date crawled: 2015-03-13 12:29:37.803000
 ...
-title: Hybrid p300-based brain-computer interface to improve usability for people with severe motor disability: electromyographic signals for error correction during a spelling task
-author: Riccio A
-author: Holz EM
-author: Aricò P
-author: Leotta F
-author: Aloise F
-author: Desideri L
-author: Rimondini M
-author: Kübler A
-author: Mattia D
-author: Cincotti F
-journal: Archives of physical medicine and rehabilitation
-publication year: 2015
-doi: 10.1016/j.apmr.2014.05.029
-abstract: To evaluate the impact of a hybrid control on usability of a P300-based brain-computer interface (BCI) system that was designed to control an assistive technology software and was integrated with an electromyographic channel for error correction. Proof-of-principle study with a convenience sample. Neurologic rehabilitation hospital. Participants (N=11) in this pilot study included healthy (n=8) and severely motor impaired (n=3) persons. The 3 people with severe motor disability were identified as potential candidates to benefit from the proposed hybrid BCI system for communication and environmental interaction. To eventually investigate the improvement in usability, we compared 2 modalities of BCI system control: a P300-based and a hybrid P300 electromyographic-based mode of control. System usability was evaluated according to the following outcome measures within 3 domains: (1) effectiveness (overall system accuracy and P300-based BCI accuracy); (2) efficiency (throughput time and users' workload); and (3) satisfaction (users' satisfaction). We also considered the information transfer rate and time for selection. Findings obtained in healthy participants were in favor of a higher usability of the hybrid control as compared with the nonhybrid. A similar trend was indicated by the observational results gathered from each of the 3 potential end-users. The proposed hybrid BCI control modality could provide end-users with severe motor disability with an option to exploit some residual muscular activity, which could not be fully reliable for properly controlling an assistive technology device. The findings reported in this pilot study encourage the implementation of a clinical trial involving a large cohort of end-users.
-keywords: ALS (amyotrophic lateral sclerosis)
-keywords: Assistive technology
-keywords: Brain injuries
-keywords: Brain-computer interfaces
-keywords: Event-related potentials
-keywords: P300
-keywords: Rehabilitation
-Date crawled: 2015-03-11 09:12:03.012000
+title: Feasibility study of immediate pharyngeal cooling initiation in cardiac arrest patients after arrival at the emergency room
+author: Takeda Y
+author: Kawashima T
+author: Kiyota K
+author: Oda S
+author: Morimoto N
+author: Kobata H
+author: Isobe H
+author: Honda M
+author: Fujimi S
+author: Onda J
+author: I S
+author: Sakamoto T
+author: Ishikawa M
+author: Nakano H
+author: Sadamitsu D
+author: Kishikawa M
+author: Kinoshita K
+author: Yokoyama T
+author: Harada M
+author: Kitaura M
+author: Ichihara K
+author: Hashimoto H
+author: Tsuji H
+author: Yorifuji T
+author: Nagano O
+author: Katayama H
+author: Ujike Y
+author: Morita K
+journal: Resuscitation
+publication year: 2014
+doi: 10.1016/j.resuscitation.2014.09.014
+title: Histopathological features of the gastroesophageal junction: an Eastern view
+author: Kim A
+author: Shin N
+author: Lee HJ
+author: Jo HJ
+author: Kim JY
+author: Kim YK
+author: Park DY
+author: Park WY
+author: I H
+author: Kim GH
+journal: Histology and histopathology
+publication year: 2014
+title: [Addiction, satisfaction, perception and beliefs about the causes of success in Spanish masters athletes]
+author: A ZS
+author: F RJ
+author: F AI
+journal: Adicciones
+publication year: 2014;26(2):106-15.
+abstract: The aim of this study was to know the addiction to training and the relationship between this and the intrinsic satisfaction, perceptions and beliefs about the causes of success in their sport in a heterogeneous sample of 401 Spanish master athletes (over 35 years of age) who completed the questionnaire electronically. Also, get sufficiently robust predictive models, by sex, of their addiction according to these psychological variables. On one hand, it was found that addiction to training was moderate in men and women, and being cause from different causes than in other populations of athletes. On the other, that it was predicted by high ego orientation and/or low task orientation. In addition, each of the less desirable subscales of addiction (tolerance, lack of control and abstinence and craving), although with significant differences by sex, were usually predicted by the also less desirable subscales of intrinsic satisfaction, perception and beliefs on the causes for success. By contrast, the most desirable subscale of addiction (pleasure and relaxation), although predicted by the most desirable and positive subscale of intrinsic satisfaction (fun), there was no gender matching in the prediction by the subscales of perceived beliefs on the causes for success. These data, taken all-together, indicates that their training addiction should be treated fostering task orientation and fun, while trying to reduce as far much as possible ego orientation. 
+Date crawled: 2015-03-13 12:29:58.468000
 ...
-title: Assistive device with conventional, alternative, and brain-computer interface inputs to enhance interaction with the environment for people with amyotrophic lateral sclerosis: a feasibility and usability study
-author: Schettini F
-author: Riccio A
-author: Simione L
-author: Liberati G
-author: Caruso M
-author: Frasca V
-author: Calabrese B
-author: Mecella M
-author: Pizzimenti A
-author: Inghilleri M
-author: Mattia D
-author: Cincotti F
-journal: Archives of physical medicine and rehabilitation
-publication year: 2015
-doi: 10.1016/j.apmr.2014.05.027
-title: Aspirin use associated with amyotrophic lateral sclerosis: a total population-based case-control study
-author: Tsai CP
-author: Lin FC
-author: Lee JK
-author: Lee CT
-journal: Journal of epidemiology / Japan Epidemiological Association
-publication year: 2015
-doi: 10.2188/jea.JE20140070
-abstract: The association of aspirin use and nonsteroid anti-inflammatory drug (NSAID) use with amyotrophic lateral sclerosis (ALS) risk is unclear. This study determined whether use of any individual compound is associated with ALS risk by conducting a total population-based case-control study in Taiwan. A total of 729 patients with newly diagnosed ALS who had a severely disabling disease certificate between January 1, 2002, and December 1, 2008, comprised the case group. These cases were compared with 7290 sex-, age-, residence-, and insurance premium-matched controls. Drug use by each Anatomical Therapeutic Chemical code was analyzed using conditional logistic regression models. False discovery rate (FDR)-adjusted P values were reported in order to avoid inflating false positives. Of the 1336 compounds, only the 266 with use cases exceeding 30 in our database were included in the screening analysis. Without controlling for steroid use, the analysis failed to reveal any compound that was inversely associated with ALS risk according to FDR criteria. After controlling for steroid use, we found use of the following compounds to be associated with ALS risk: aspirin, diphenhydramine (one of the antihistamines), and mefenamic acid (one of the NSAIDs). A multivariate analysis revealed that aspirin was independently inversely associated with ALS risk after controlling for diphenhydramine, mefenamic acid, and steroid use. The inverse association between aspirin and ALS was present predominately in patients older than 55 years. The results of this study suggested that aspirin use might reduce the risk of ALS, and the benefit might be more prominent for older people.
-Date crawled: 2015-03-11 09:12:03.612000
+title: Comparison of Serum Lipid Profile in HIV Positive Patients on ART with ART Naïve Patients
+author: V I
+author: V V
+author: Shekhanawar MS
+author: Rajeshwari
+author: M A
+author: D S
+journal: Journal of clinical and diagnostic research : JCDR
+publication year: 2014
+doi: 10.7860/JCDR/2014/9685.4979
+title: Identification of genotypes of Influenza A virus in Malaysia
+author: Mm R
+author: Kk W
+author: I I
+author: Zz R
+author: H A
+journal: Pakistan journal of medical sciences
+publication year: 2014
+doi: 10.12669/pjms.305.5224
+abstract: Influenza is considered as an emerging disease until today. The present study was undertaken to determine the prevalent genotypes of Influenza A virus in Malaysia. Influenza A virus was identified from respiratory specimens by real-time reverse transcriptase polymerase chain reaction (rRT-PCR). Phylogenetic analysis of the identified isolates was performed and genotypes were detected. A total number of 505 throat swabs and nasopharyngeal aspirates were examined by rRT-PCR at Universiti Kebangsaan Malaysia Medical Centre (UKMMC) in which 65(12.87%) were positive for influenza A. The identified isolates were successfully genotyped by phylogenetic analysis. The identified influenza A genotypes were: H1N1 (42), H3N2 (20) and H5N1 (3). The findings indicated that 3 genotypes were circulating in Malaysia during 2011 in which H1N1 was the predominant. RESULTS added new genotype (H5N1) identification record in Malaysia that may be added in data base of WHO and CDC.
+keywords: H1N1
+keywords: H3N2
+keywords: H5N1
+keywords: Influenza A
+keywords: Phylogenetic analysis
+keywords: rRT-PCR
+Date crawled: 2015-03-13 12:30:03.730000
 ...
-title: Antecedent Disease Is Less Prevalent in Amyotrophic Lateral Sclerosis
-author: Mitchell CS
-author: Hollinger SK
-author: Goswami SD
-author: Polak MA
-author: Lee RH
-author: Glass JD
-journal: Neuro-degenerative diseases
+title: Lysinibacillus acetophenoni sp. nov., a solvent tolerant bacterium isolated from acetophenone
+author: M A
+author: K R
+author: K V N S L
+author: Ch S
+author: Ch V R
+journal: International journal of systematic and evolutionary microbiology
 publication year: 2015
+doi: 10.1099/ijs.0.000170
+title: Utility of extra-oral aiming device in imaging periapical regions of posterior teeth
+author: S S
+author: P R
+author: B S
+author: G U
+journal: Journal of clinical and diagnostic research : JCDR
+publication year: 2014
+doi: 10.7860/JCDR/2014/9879.5037
+abstract: Intraoral film placement and the film holding equipments are not acceptable by many due to varied reasons. To evaluate the utility of extra-oral aiming device developed by Chia-hui chen for imaging the periapical regions of posterior teeth employing the technique suggested by saberi et al. The study subjects included 20 patients in the age group of 10-35 y. The subjects were further subdivided according to the area to be imaged into four groups, with 5 in each. Imaging was done using the device developed by chia-hui chen, with the method employed by newmann and saberi et al., The radiographs were then interpreted for complete coverage of the anatomical structure. The findings were recorded and subjected to Analysis of variance (ANOVA) statistical analysis. The visibility of imaging area was more in mandible (95%) than maxilla (86.5%). The overall accuracy was 90.75%. These findings were statistically non-significant (F- 2.152 & P-0.134). Among the reason for reduced accuracy, overlapping of the opposite arch (4%) was more common and the horizontal overlapping (0.5%) was least common. This technique is not meant to replace conventional intraoral radiography. It is a useful supplementary aid to our clinical practice.
+keywords: Bisecting angle
+keywords: Dental radiology
+keywords: Film holder
+keywords: Intra-oral
+keywords: Radiation
+Date crawled: 2015-03-13 12:30:08.937000
+...
+title: Highly active antiretroviral therapy during gestation: effects on a rat model of pregnancy
+author: F CL
+author: Simões RS
+author: Araujo Júnior Corresponding Author E
+author: Oliveira Filho RM
+author: Kulay Júnior L
+author: Nakamura MU
+journal: Ceská gynekologie / Ceská lékarská spolecnost J. Ev. Purkyne
+publication year: 2014
+title: Expression of the adaptor protein Tks5 in human cancer: prognostic potential
+author: Stylli SS
+author: Luwor RB
+author: Kaye AH
+author: I ST
+author: Hovens CM
+author: Lock P
+journal: Oncology reports
+publication year: 2014
+doi: 10.3892/or.2014.3310
+title: Bone Marrow-derived Cell Therapy for Oral Mucosal Repair after Irradiation
+author: I T
+author: Sumita Y
+author: Minamizato T
+author: Umebayashi M
+author: Liu Y
+author: Tran SD
+author: Asahina I
+journal: Journal of dental research
+publication year: 2014
+abstract: Oral mucositis (ulcer) is a serious and painful side effect for patients with head and neck cancer following radiation therapy. However, current clinical strategies cannot efficiently prevent the occurrence of oral mucositis. In this study, we investigated whether bone marrow-derived cells (BMDCs) prevented the occurrence and/or decreased the severity of radiation-induced oral mucositis. Fresh concentrated BMDCs from male C3H mice were transplanted intravenously into female mice after tongue irradiation. For 14 days postirradiation, the changes of body weight and the time courses of ulceration were observed. Until the ulcer reached maximum size (7 days postirradiation), macroscopic and histologic analyses of harvested tongues were performed to detect the behavior of donor BMDCs. Between 2 and 5 days postirradiation, BMDCs-transplanted mice showed more expression of stem cell markers (c-Kit, Sca-1) and EGFR and fewer apoptotic cells when compared with nontransplanted control mice (irradiation group). On day 7, there were fewer and smaller ulcers observed in the BMDCs-transplanted group. Tongues of these mice had preserved their epithelial thickness, and regenerative activities (blood vessels formation, cell proliferation) were higher than they were in the irradiation group. Fluorescently labeled BMDCs were not detected in tongue epithelium but rather in connective tissue (dermis) just below the basal cell layer. These findings suggest that exogenous BMDCs behave to reduce radiogenic oral mucositis in a paracrine manner.
+keywords: cell transplantaion
+keywords: epithelial tissue
+keywords: mucosal regeneration
+keywords: paracrine effect
+keywords: radiation injury
+keywords: stem cells
+Date crawled: 2015-03-13 12:30:29.581000
+...
+title: Macular detachment associated with peripapillary detachment in pathologic myopia
+author: Rajagopal J
+author: H CK 5th
+author: Ganesh S
+journal: Retinal cases & brief reports
+publication year: 2014
+doi: 10.1097/ICB.0000000000000014
+abstract: To report a new spectral domain optical coherence tomography finding of retinal herniation in a patient with macular detachment accompanying peripapillary detachment in pathologic myopia. Retrospective case report. A 47-year-old male patient with pathologic myopia and peripapillary detachment, pitlike defect, and associated macular detachment. Spectral domain optical coherence tomography scan showed intrachoroidal cavitation, discontinuity of retinal layers over the pitlike defect with herniation of retinal tissue through which communication between the choroidal cavity and subretinal space was seen. We report for the first time retinal herniation through pitlike dehiscence in pathologic myopia with intrachoroidal cavitation, and describe its association with macular detachment.
+Date crawled: 2015-03-13 12:30:29.618000
+...
+title: Evaluation of Treatment Outcome After Impacted Mandibular Third Molar Surgery With the Use of Autologous Platelet-Rich Fibrin: A Randomized Controlled Clinical Study
+author: Kumar N
+author: Prasad K
+author: Ramanujam L
+author: K R
+author: Dexith J
+author: Chauhan A
+journal: Journal of oral and maxillofacial surgery : official journal of the American Association of Oral and Maxillofacial Surgeons
+publication year: 2014
+doi: 10.1016/j.joms.2014.11.013
+title: Prevalence of Community-Acquired Methicillin-Resistant Staphylococcus aureus Nasal Colonization Among Children
+author: Shetty V
+author: Trumbull K
+author: Hegde A
+author: Shenoy V
+author: Prabhu R
+author: K S
+author: Palavecino E
+author: Shetty AK
+journal: Journal of clinical and diagnostic research : JCDR
+publication year: 2014
+doi: 10.7860/JCDR/2014/9986.5276
+abstract: Invasive infections from community-acquired methicillin-resistant Staphylococcus aureus (CA-MRSA) are increasingly being encountered in healthy children. Nasal colonization of MRSA is associated with increased risk for acquiring invasive disease. The objective of this study was to determine prevalence and risk factors for CA-MRSA nasal colonization among a healthy paediatric population and to determine antibiotic susceptibilities of S. aureus isolates. Using a cross-sectional study design, children aged 1mnth-17y attending well-child clinic at an academic hospital and a local public school in Mangalore, India were screened for S. aureus colonization via nasal swabs. A questionnaire was administered and data on risk factors for nasal colonization was collected. Samples were obtained from the anterior nares and cultured quantitatively. S. aureus isolates were confirmed by growth on selective media and coagulase testing. Disk diffusion antibiotic susceptibility tests were performed according to Clinical and Laboratory Standard Institute guidelines. Of the 500 children included in the study, S. aureus was isolated from the anterior nares in 126 (25%) children; four (3%) isolates were classified as CA-MRSA. Factors associated with S. aureus nasal colonization were children <6 y old (p=0.030) and members of joint families (p=0.044). Resistance to many classes of antibiotics were noted among S. aureus isolates including trimethoprim-sulfamethoxazole (39%), ciprofloxacin (16%), erythromycin (19%) and clindamycin (5%). Inducible clindamycin resistance (positive D test) was detected in 11 of the erythromycin-resistant strains not already classified as resistant to clindamycin. No resistance to vancomycin was observed. Children in India have a high rate of nasal colonization of S. aureus. Nasal colonization of community-associated methicillin-resistant S. aureus exists but is still low among healthy children. The high rate of resistance to many classes of antibiotics among S. aureus strains is of great concern warranting continued surveillance and antimicrobial stewardship.
+keywords: Children
+keywords: Disk diffusion test
+keywords: Karnataka
+keywords: Nasal carriage
+keywords: Staphylococcus aureus
+Date crawled: 2015-03-13 12:30:34.862000
+...
+title: Giant malignant peripheral nerve sheath tumor of the scalp
+author: F T
+author: A M M A
+author: B A de L
+author: T C C C
+author: R C L
+author: G H T S B
+author: H C
+journal: Acta neurologica Taiwanica
+publication year: 2012
+abstract: Malignant peripheral nerve sheath tumors (MPNST) constitute a group of soft tissue neoplasms with neurogenic origin. Association of MPNST with neurofibromatosis type 1 (NF1) has been frequently reported as a result of malignant transformation of a pre-existing plexiform neurofibroma. However, most of the cases are small and few have been described with giant dimensions. We describe a case of a giant MPNST in an unusual location (scalp), in a NF1 patient. A fifty-six years old woman with a history of NF1 since childhood was admitted due to a rapid growing of a scalp tumor in occipital region. The mass had 15 cm in the largest dimension and a central ulceration with purulent secretion. Computed tomography revealed no bone invasion. The tumor was surgically removed and the histopathological examination revealed a neurofibrosarcoma. The patient had a good post operatory evolution and notwithstanding the tumor size, no metastasis was found and she was discharged to oncologic follow-up. Given the poor prognosis of MPNST, patients with NF1 should be aware that neurofibromas can undergo malignant transformation and report signs such as rapid growth of a pre-existing lesion.
+Date crawled: 2015-03-13 12:30:40.018000
+...
+title: Clinicopathologic factors influencing the accuracy of EUS for superficial esophageal carcinoma
+author: Jung JI
+author: Kim GH
+author: I H
+author: Park do Y
+author: Kim TK
+author: Cho YH
+author: Sung YW
+author: Choi MK
+author: Lee BE
+author: Song GA
+journal: World journal of gastroenterology : WJG
+publication year: 2014
+doi: 10.3748/wjg.v20.i20.6322
+title: [Detection of the synthetic cannabinoid JWH-210 in the Valencia region]
+author: J C LC
+author: J M SR
+author: H RE
+author: A LR
+journal: Adicciones
+publication year: 2014;26(2):187-8.
+abstract: 
+Date crawled: 2015-03-13 12:30:40.105000
+...

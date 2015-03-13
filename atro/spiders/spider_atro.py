@@ -12,21 +12,48 @@ import lxml.html
 from lxml import etree
 import time
 
+#e.g >>> start_urls = ['http://www.a.com/%d_%d_%d' %(n,n+1,n+2) for n in range(0, 26)]
 
 class AtroSpider(scrapy.Spider):
     name = "atrobot"
     allowed_domains = ["www.ncbi.nlm.nih.gov"]
     
-    start_urls = [
-    "http://www.ncbi.nlm.nih.gov/pubmed?term=als"
-    ]
+   
 
-    extractor = SgmlLinkExtractor()
+    def start_requests(self):
+       
+        alphabet = 'abcdefghijklm'
+        for alpha in alphabet:
+            searchterm = alpha
+            searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+'[Author]'
+            yield Request(searchterm, self.parse)
+            time.sleep(0.5)
 
-    def __init__(self, *args, **kwargs):
+        for alpha in alphabet:
+            for beta in alphabet:
+                searchterm = alpha+beta
+                searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+beta+'[Author]'
+                yield Request(searchterm, self.parse)
+                time.sleep(0.5)
+
+        for alpha in alphabet:
+            for beta in alphabet:
+                for gamma in alphabet:
+                    searchterm = alpha+beta+gamma
+                    searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+beta+gamma+'*[Author]'
+                    yield Request(searchterm, self.parse)
+                    time.sleep(0.5)
+
+    def __init__(self, searchterm=None, *args, **kwargs):
         super(AtroSpider, self).__init__(*args, **kwargs)
         print kwargs
 
+        #self.start_urls = [
+        #"http://www.ncbi.nlm.nih.gov/pubmed?term=%s" % searchterm
+        #]
+    
+     
+            
         #Old Raspberry Pi code
         """
         self.display = Display(visible=0, size=(800, 600)) #only needed on the RaspberryPi
@@ -38,12 +65,14 @@ class AtroSpider(scrapy.Spider):
         self.driver = webdriver.Firefox(profile)
         """
         self.driver = webdriver.Firefox()
+        time.sleep(5)
         #print "Done."
-       
+    
     #def __del__(self):
         #self.driver.dispose()
 
     def parse(self, response):
+        count = 0
         base_url = 'http://www.ncbi.nlm.nih.gov'
         wdr = self.driver
         wdr.get(response.url)
@@ -96,19 +125,22 @@ class AtroSpider(scrapy.Spider):
                 print '....\n'
                 print ("Current page: {0}, Pages total: {1}".format(current, pages))
                 print ("{} publication URLs saved".format(len(hrefs)))
-
+               
 
             except Exception as ex:
                 print ex
 
         for href in hrefs:
             url = base_url + href
+            count += 1
             yield Request(url, self.parse_publication)
-            time.sleep(0.5)
 
+            time.sleep(0.5)
+            with open('urls.txt', 'a') as f:
+                f.write('urls\n {0}, count {1}'.format(url, count))
 
         wdr.quit()
-        self.display.stop()
+        
         #---PARSE METADATA TO DB---
     def parse_publication(self, response):
         status = response.status
@@ -134,5 +166,7 @@ class AtroSpider(scrapy.Spider):
             yield item
 
         else:
+            with open('fails.txt', 'a') as f:
+                f.write('fail\n')
             yield Request(url, self.parse_publication)
 
