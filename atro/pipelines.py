@@ -47,9 +47,15 @@ class AtroPipeline(object):
                 #Now that the item element is a string, we can split the string into parts. Now every word that is separated
                 #by a space is a single string in this list
                 otherinfolist = otherinfostr.split(" ")
+                #To get the publication year we need to separate the metadata by a dot, since the publication year follows
+                #the journal which ends in a dot.
+                otherinfolist2 = otherinfostr.split(".")
+                #Now the metadata is split into elements separated by dots. We still need to split the part containing the 
+                #publication year by spaces to separate the actual publication year from the others. 
+                publicationyearlist = otherinfolist2[1].split(' ')
                 #Since we know that the publication year is the first word in the list (the first element [0] is a space) 
-                #we can specify otherinfolist[1] to get the publication year
-                f.write('publication year: {0}\n'.format(otherinfolist[1],))
+                #we can specify publicationyearlist[1] to get the publication year 
+                f.write('publication year: {0}\n'.format(publicationyearlist[1],))
                 #Now we want to find the doi of the publication. We know that the html element on PubMed follows the syntax
                 #"doi: xxx" where xxx is the actual doi code. So the list element we want to find is the next element after 
                 #the word "doi". 
@@ -65,7 +71,7 @@ class AtroPipeline(object):
                 except:
                     #Some publications don't have a doi
                     print "No doi for publication available"
-
+                f.write('journal: {0}\n'.format(otherinfolist2[0],))
             #Abstracts on PubMed are sometimes grouped into different parts, for example: introduction, methods, results...
             #We want to have the whole abstract in a single string so we can put it to the database, that's why we need to
             #append the strings in the item together.
@@ -75,18 +81,23 @@ class AtroPipeline(object):
                 ab += str(b.encode('utf8'))+' '
             #We want to remove the last space in the end of the abstract
             ab = ab[:-1]
-            f.write('abstract: {0}\n'.format(ab.encode('utf8'),))
-
+            try:
+                f.write('abstract: {0}\n'.format(ab.encode('utf8'),))
+            except:
+                print "UTF8 coding error"
             #The keywords on PubMed are grouped together in a single html element, where the keywords are separated 
             #by semicolons. Since we have a separate table for keywords, we want to get the individual keywords to their own
             #columns.
-            for k in item['keywords']:
-                keywordstr = str(k.encode('utf8'))
-                #Split the keywords by semicolons into strings in a list
-                keywordlist = keywordstr.split("; ")
-                #Iterate through the list and print the individual keywords
-                for key in keywordlist:
-                    f.write('keywords: {0}\n'.format(key.encode('utf8'),))
+            try:
+                for k in item['keywords']:
+                   keywordstr = str(k.encode('utf8'))
+                   #Split the keywords by semicolons into strings in a list
+                   keywordlist = keywordstr.split("; ")
+                   #Iterate through the list and print the individual keywords
+                   for key in keywordlist:
+                      f.write('keywords: {0}\n'.format(key.encode('utf8'),))
+            except:
+                print "No keywords available"
             f.write('Date crawled: {0}\n'.format(str(datetime.now()),))
             f.write('...\n')
 
