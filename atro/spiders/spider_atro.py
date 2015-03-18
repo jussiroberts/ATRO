@@ -34,17 +34,19 @@ class AtroSpider(scrapy.Spider):
             lastsearchterm = re.search('term=(.*)5BAuthor', lasturl)
             lastsearchterm = lastsearchterm.group(1)
             lastsearchterm = lastsearchterm[:-1]
+
             if 'page=' in lasturl:
                 lastpage = str(lasturl.index('page=') + 1)
             #    with open('latesturl.txt', 'a') as f:
             #        f.write(lastsearchterm+lastpage)
             else:
                 lastpage = str(1)
-                tempsearchterm = 'b'
-                alphabetlocater = alphabet.index(tempsearchterm) + 1
-                newalphabet = alphabet[alphabetlocater:]
-          #      with open('newalphalist.txt', 'a') as f:
-          #          f.write(lastpage)
+
+            tempsearchterm = 'b'
+            alphabetlocater = alphabet.index(tempsearchterm) + 1
+            newalphabet = alphabet[alphabetlocater:]
+    #      with open('newalphalist.txt', 'a') as f:
+    #          f.write(lastpage)
 
     #TODO: check if first crawl during runtime and crawl with 'lastsearchterm' + 'lastpage'
     #    if firstcrawl == True:
@@ -104,7 +106,7 @@ class AtroSpider(scrapy.Spider):
 
             with open('latesturl.txt', 'w') as f:
                 f.write(response.url)
-                
+
         with open('pages.txt', 'a') as f:  
              
             pages = hxs.xpath('//div[@class="h"]/h2/text()').extract()
