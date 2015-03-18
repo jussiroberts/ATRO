@@ -11,7 +11,7 @@ from datetime import datetime
 class AtroPipeline(object):
     def process_item(self, item, spider):
         #Write metadata to a txt file for testing purposes until database is available again
-        with open('atro1.txt', 'a') as f:
+        with open('atro1.txt', 'a') as f, open('excepts.txt', 'a') as fb:
             #Since the metadata is saved to "dictionary" containers they have to be iterated through to get the individual 
             #elements
 
@@ -23,13 +23,18 @@ class AtroPipeline(object):
                     #For example: the string "Test."'s last element is a dot. t[-1] points to that element. Now since we want
                     #to get all elements before that dot we specify t[:-1]
                     t = t[:-1]
-                    f.write('title: {0}\n'.format(t.encode('utf8'),))
+                    try:
+                        f.write('title: {0}\n'.format(t.encode('utf8'),))
+                    except:
+                        fb.write('No title available\n')
                 else:   
                     f.write('title: {0}\n'.format(t.encode('utf8'),))
 
             for a in item['author']:
-                f.write('author: {0}\n'.format(a.encode('utf8'),))
-
+                try:
+                    f.write('author: {0}\n'.format(a.encode('utf8'),))
+                except:
+                    fb.write('No author available\n')
             #for j in item['journal']:
                 #Remove the dot in the end
                 #if j.endswith('.'):
@@ -55,7 +60,10 @@ class AtroPipeline(object):
                 publicationyearlist = otherinfolist2[1].split(' ')
                 #Since we know that the publication year is the first word in the list (the first element [0] is a space) 
                 #we can specify publicationyearlist[1] to get the publication year 
-                f.write('publication year: {0}\n'.format(publicationyearlist[1],))
+                try:
+                    f.write('publication year: {0}\n'.format(publicationyearlist[1],))
+                except:
+                    fb.write('No publication year available\n')
                 #Now we want to find the doi of the publication. We know that the html element on PubMed follows the syntax
                 #"doi: xxx" where xxx is the actual doi code. So the list element we want to find is the next element after 
                 #the word "doi". 
@@ -70,8 +78,11 @@ class AtroPipeline(object):
                         f.write('doi: {0}\n'.format(otherinfolist[index],))
                 except:
                     #Some publications don't have a doi
-                    print "No doi for publication available"
-                f.write('journal: {0}\n'.format(otherinfolist2[0],))
+                    fb.write('No doi available\n')
+                try:
+                    f.write('journal: {0}\n'.format(otherinfolist2[0],))
+                except:
+                    fb.write('No journal available\n')
             #Abstracts on PubMed are sometimes grouped into different parts, for example: introduction, methods, results...
             #We want to have the whole abstract in a single string so we can put it to the database, that's why we need to
             #append the strings in the item together.
@@ -84,7 +95,7 @@ class AtroPipeline(object):
             try:
                 f.write('abstract: {0}\n'.format(ab.encode('utf8'),))
             except:
-                print "UTF8 coding error"
+                fb.write('No abstract available\n')
             #The keywords on PubMed are grouped together in a single html element, where the keywords are separated 
             #by semicolons. Since we have a separate table for keywords, we want to get the individual keywords to their own
             #columns.
@@ -97,7 +108,7 @@ class AtroPipeline(object):
                    for key in keywordlist:
                       f.write('keywords: {0}\n'.format(key.encode('utf8'),))
             except:
-                print "No keywords available"
+                fb.write('No keywords available\n')
             f.write('Date crawled: {0}\n'.format(str(datetime.now()),))
             f.write('...\n')
 
