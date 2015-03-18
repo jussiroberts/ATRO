@@ -12,20 +12,48 @@ from lxml import etree
 import time
 import re
 import math
-
+import os
 #e.g >>> start_urls = ['http://www.a.com/%d_%d_%d' %(n,n+1,n+2) for n in range(0, 26)]
 
 class AtroSpider(scrapy.Spider):
     name = "atrobot"
     allowed_domains = ["www.ncbi.nlm.nih.gov"]
-    
     #rules = (
        
     #    Rule(SgmlLinkExtractor(allow=[r'.*',], restrict_xpaths=('//div[@class="pag"]/a/@href')), follow=True),
     #)
     
     def start_requests(self):
-        alphabet = 'a'
+        alphabet = 'abcdefgh'
+        fname = 'latesturl.txt'
+
+    #Check last crawled URL from text-file and make it the starting url
+        if os.path.isfile(fname):
+            f = open('latesturl.txt', 'r')
+            lasturl = f.readline()
+            lastsearchterm = re.search('term=(.*)5BAuthor', lasturl)
+            lastsearchterm = lastsearchterm.group(1)
+            lastsearchterm = lastsearchterm[:-1]
+            if 'page=' in lasturl:
+                lastpage = str(lasturl.index('page=') + 1)
+            #    with open('latesturl.txt', 'a') as f:
+            #        f.write(lastsearchterm+lastpage)
+            else:
+                lastpage = str(1)
+                tempsearchterm = 'b'
+                alphabetlocater = alphabet.index(tempsearchterm) + 1
+                newalphabet = alphabet[alphabetlocater:]
+          #      with open('newalphalist.txt', 'a') as f:
+          #          f.write(lastpage)
+
+    #TODO: check if first crawl during runtime and crawl with 'lastsearchterm' + 'lastpage'
+    #    if firstcrawl == True:
+    #       searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+lastsearchterm+'[Author]&page='+lastpage
+    #       firstcrawl = False
+    #       yield Request(searchterm, self.parse)
+
+    #TODO: only move to next for-loop once previous is finished. 
+    #      use 'newalphabet' instead of 'alphabet' if previous crawls exist.
         for alpha in alphabet:
             searchterm = alpha
             searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+'[Author]&page=1'
@@ -73,11 +101,13 @@ class AtroSpider(scrapy.Spider):
                 parsedhrefs.append(link)
             with open('parsedURLS.txt', 'a') as f:
                 f.write(link+'\n')
-        with open('pages.txt', 'a') as f:
-            
+
+            with open('latesturl.txt', 'w') as f:
+                f.write(response.url)
+                
+        with open('pages.txt', 'a') as f:  
              
             pages = hxs.xpath('//div[@class="h"]/h2/text()').extract()
-            
             
             numbers = int(re.search(r'\d+', pages[0]).group())
             intpages = str(int(math.ceil(float(numbers)/10)))
@@ -103,7 +133,6 @@ class AtroSpider(scrapy.Spider):
         #intpages = int(re.match(r'\d+', pages).group())
         #print intpages
 
-
         for link in parsedhrefs:
             url = base_url + link
 
@@ -121,8 +150,6 @@ class AtroSpider(scrapy.Spider):
     def parse_publication(self, response):
         status = response.status
         url = response.url
-
-
 
         if status == 200:
             hxs = Selector(response)

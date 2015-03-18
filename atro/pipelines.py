@@ -4,7 +4,7 @@
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
-import psycopg2
+#import psycopg2
 from datetime import datetime
 
 #The pipeline processes all items that are yielded by the spider. Each item contains relevant metadata for one publication.
