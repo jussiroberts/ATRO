@@ -30,13 +30,13 @@ class AtroPipeline(object):
             for a in item['author']:
                 f.write('author: {0}\n'.format(a.encode('utf8'),))
 
-            for j in item['journal']:
+            #for j in item['journal']:
                 #Remove the dot in the end
-                if j.endswith('.'):
-                    j = j[:-1]
-                    f.write('journal: {0}\n'.format(j.encode('utf8'),))
-                else:
-                    f.write('journal: {0}\n'.format(j.encode('utf8'),))
+                #if j.endswith('.'):
+                #    j = j[:-1]
+                #    f.write('journal: {0}\n'.format(j.encode('utf8'),))
+                #else:
+                #    f.write('journal: {0}\n'.format(j.encode('utf8'),))
 
             #The item otherinfo contains some metadata that is grouped together in a single html element on PubMed.
             #We only want to get the publication year, which is the first word in the html element, as well as the doi which 
