@@ -6,10 +6,13 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #import psycopg2
 from datetime import datetime
+from wordcheck import Wordcheck
 
 #The pipeline processes all items that are yielded by the spider. Each item contains relevant metadata for one publication.
 class AtroPipeline(object):
     def process_item(self, item, spider):
+        w1 = Wordcheck()
+        publicationrank = 0
         #Write metadata to a txt file for testing purposes until database is available again
         with open('atro1.txt', 'a') as f, open('excepts.txt', 'a') as fb:
             #Since the metadata is saved to "dictionary" containers they have to be iterated through to get the individual 
@@ -92,6 +95,12 @@ class AtroPipeline(object):
                 ab += str(b.encode('utf8'))+' '
             #We want to remove the last space in the end of the abstract
             ab = ab[:-1]
+            publication_rank = w1.check(ab)
+            try:
+                f.write('publication rank: {0}\n'.format(publication_rank))
+
+            except:
+                fb.write('No publication rank\n')
             try:
                 f.write('abstract: {0}\n'.format(ab.encode('utf8'),))
             except:
@@ -113,45 +122,5 @@ class AtroPipeline(object):
             f.write('...\n')
 
 
-        #Database code needed later
-            """
-        try:
-            conn = psycopg2.connect("dbname='jonitestdb' user='jussi' host='localhost' password='helevetti'")
-        except:
-            print "Failed to establish connection to database."
-        cur = conn.cursor()
-
-        for t in item['title']:           
-            cur.execute("INSERT INTO publication (title) SELECT %s WHERE NOT EXISTS (SELECT title FROM publication WHERE title = %s);", (t,t))
-            conn.commit()
-
-        for a in item['author']:
-            #cur.execute("INSERT INTO author (name) VALUES (%s);", (a,))
-            cur.execute("INSERT INTO author (name) SELECT %s WHERE NOT EXISTS (SELECT name FROM author WHERE name = %s);", (a,a))
-            cur.execute("INSERT INTO author_publication (author_id, pub_id) SELECT author_id, pub_id FROM author, publication WHERE author.name = (%s) AND publication.title = (%s);", (a, t))
-            conn.commit()
-
-        for b in item['abstract']:
-            #ab = str(b.encode('utf8'))
-            #words = b.split(" ")
-            #print(words[2])
-            #cur.execute("UPDATE publication SET abstract = %s WHERE title = %s;", (words, t))
-            cur.execute("UPDATE publication SET abstract = %s WHERE title = %s;", (b, t))
-            conn.commit()
-
-        #DATE
-        #cur.execute("UPDATE publication SET datecrawled = %s WHERE title = %s;", (str(datetime.now()), t))
-        #conn.commit()
-
-        for k in item['keywords']:
-            keywordstr = str(k.encode('utf-8'))
-            keywordlist = keywordstr.split("; ")    
-            for key in keywordlist:
-                cur.execute("INSERT INTO keyword (keyword) values (%s);", (key,))
-                conn.commit()
-
-
-        cur.close()
-        conn.close()
-        """
+        
         return item

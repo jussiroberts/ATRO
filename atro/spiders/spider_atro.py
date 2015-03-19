@@ -24,7 +24,7 @@ class AtroSpider(scrapy.Spider):
     #)
     
     def start_requests(self):
-        alphabet = 'abcdefgh'
+        alphabet = 'a'
         fname = 'latesturl.txt'
 
     #Check last crawled URL from text-file and make it the starting url
