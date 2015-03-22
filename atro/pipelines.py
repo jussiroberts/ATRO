@@ -95,7 +95,11 @@ class AtroPipeline(object):
                 ab += str(b.encode('utf8'))+' '
             #We want to remove the last space in the end of the abstract
             ab = ab[:-1]
-            publication_rank = w1.check(ab)
+            try:
+                publication_rank = w1.check(ab)
+                
+            except:
+                fb.write('No abstract to search\n')
             try:
                 f.write('publication rank: {0}\n'.format(publication_rank))
 
