@@ -12,7 +12,7 @@ class Wordcheck():
 		abstractlist = abstract.split()
 		
 		
-		searchwords = ['neurocognitive', 'proximal humerus', 'extrahepatic biliary duct']	
+		searchwords = ['cancer', 'proximal humerus', 'extrahepatic biliary duct']	
 		for sword in searchwords:
 			for word in abstractlist:
 				my_regex = r"\b(?=\w)" + re.escape(sword) + r"\b(?!\w)"

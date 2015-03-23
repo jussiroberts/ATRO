@@ -159,7 +159,7 @@ class AtroSpider(scrapy.Spider):
             item['title'] = hxs.xpath('//div[@class="a"]/h2/text()').extract()
             item['author'] = hxs.xpath('//div[@class="auths"]/a/text()').extract()
             #item['journal'] = hxs.xpath('//div[@class="cit"]/a/@title').extract()
-            item['otherinfo'] = hxs.xpath('//div[@class="meta"]/p/text()').extract()
+            item['otherinfo'] = hxs.xpath('normalize-space(//div[@class="meta"]/p/text())').extract()
             item['abstract'] = hxs.xpath('//div[@class="ab"]/p//text()').extract()
             
             #item['abstract'] = hxs.xpath('//div[@class="abstr"]/text()').extract()
