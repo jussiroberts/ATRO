@@ -10,12 +10,12 @@ class Wordcheck():
         my_regex = 'null'
         wordcount = 0
         abstractlist = abstract.split()
-        f = open('searchwords_list.txt', 'r')
-        searchwords = f.readlines()
-        f = close()
+		
+        with open('searchwords_list.txt') as f:
+            searchwords = f.readlines()
         with open('kokkeilu.txt', 'a') as f:
-            for s in searchwords:
-                f.write('%s\n' % s)
+            for sword in searchwords:
+                f.write('{0}'.format(sword.encode('utf8'),))
 
 		#searchwords = ['cancer', 'proximal humerus', 'extrahepatic biliary duct']	
         for sword in searchwords:
