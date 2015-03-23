@@ -6,6 +6,7 @@
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 #import psycopg2
 from datetime import datetime
+from datetime import time
 from wordcheck import Wordcheck
 from dbconn import Dbconn
 
@@ -15,19 +16,19 @@ class AtroPipeline(object):
         db = Dbconn()
         w1 = Wordcheck()
         publication_rank = 0
-        doi = 0
-        datecrawled = 0
-        authorlist = []
-        keywordlist = []
-        journal = "null"
-        title = "null"
+        doi = "NULL"
+        date_crawled = "NULL"
+        author_list = []
+        keyword_list = []
+        journal = "NULL"
+        title = "NULL"
         for t in item['title']:   
             if t.endswith('.'):
                 t = t[:-1]
                 title = t
                         
         for a in item['author']:
-           authorlist.append(a)
+           author_list.append(a)
 
            
         for p in item['otherinfo']:
@@ -38,8 +39,8 @@ class AtroPipeline(object):
                 
             otherinfolist2 = otherinfostr.split(".")
                  
-            publicationyearlist = otherinfolist2[1].split(' ')
-            yearofpublication = publicationyearlist[1]
+            publication_year_list = otherinfolist2[1].split(' ')
+            year_of_publication = publication_year_list[1]
                
                
             try:    
@@ -80,17 +81,17 @@ class AtroPipeline(object):
             for k in item['keywords']:
                 keywordstr = str(k.encode('utf8'))
                 
-                keywordlist = keywordstr.split("; ")
+                keyword_list = keywordstr.split("; ")
                    
-                for key in keywordlist:
-                    keywordlist.append(key)
+                for key in keyword_list:
+                    keyword_list.append(key)
                   
         except:
                print "nothing"
             
-        datecrawled = str(datetime.now())
-         
+        date_crawled = str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
-        db.insert_publication(title, datecrawled, yearofpublication, doi, abstract, journal, publication_rank, authorlist, keywordlist)
+        if publication_rank > 0:
+            db.insert_publication(title, date_crawled, year_of_publication, doi, abstract, journal, publication_rank, author_list, keyword_list)
         
         return item
