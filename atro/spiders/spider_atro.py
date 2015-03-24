@@ -13,6 +13,7 @@ import time
 import re
 import math
 import os
+import psycopg2
 #e.g >>> start_urls = ['http://www.a.com/%d_%d_%d' %(n,n+1,n+2) for n in range(0, 26)]
 
 class AtroSpider(scrapy.Spider):
@@ -43,8 +44,8 @@ class AtroSpider(scrapy.Spider):
                 lastpage = str(1)
 
             tempsearchterm = 'b'
-            alphabetlocater = alphabet.index(tempsearchterm) + 1
-            newalphabet = alphabet[alphabetlocater:]
+     #       alphabetlocater = alphabet.index(tempsearchterm) + 1
+     #       newalphabet = alphabet[alphabetlocater:]
     #      with open('newalphalist.txt', 'a') as f:
     #          f.write(lastpage)
 
@@ -168,8 +169,46 @@ class AtroSpider(scrapy.Spider):
             #item['abstract'] = str(hxs.xpath('//div[@class="abstr"]/div[1]/p/text()').extract())
 
             item['keywords'] = hxs.xpath('//div[@class="keywords"]/p/text()').extract()
-            yield item
 
+            #Parse current searchterm from URL
+            searcht = re.search('from=(.*)5B', url)
+            searcht = searcht.group(1)
+            searcht = searcht[:-1]
+        
+            #Connect to database.
+            try:
+                conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='helevetti'")
+            except:
+                print "Failed to establish connection to database."
+            cur = conn.cursor()
+
+            #Check if current URL already exists and save it to the database accordingly. Yield 'item' if successful.
+            try: 
+                query = "SELECT EXISTS(SELECT url FROM visitedurls WHERE searchterm = %s AND url = %s);"
+                values = (searcht,url)
+                cur.execute(query, values)
+                urlexists = cur.fetchone()[0]
+                if urlexists==0:
+
+                    insert_query = "INSERT INTO visitedurls (searchterm, url) VALUES (%s, %s);" 
+                    insert_values = (searcht, url)
+                    cur.execute(insert_query,insert_values)
+            #       yield item
+            
+                    print "--------------------------------------------------------"
+                    print searcht
+                    print url
+                    print "--------------------------------------------------------"
+                else:
+                    print "URL already exists in database"
+            
+            except:
+                print "Error in DB-connection"
+
+            cur.close()
+            conn.close()
+
+            yield item
         else:
             with open('fails.txt', 'a') as f:
                 f.write('fail\n')
