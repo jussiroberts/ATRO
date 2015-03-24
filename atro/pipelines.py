@@ -23,25 +23,39 @@ class AtroPipeline(object):
         journal = "NULL"
         title = "NULL"
         for t in item['title']:   
-            if t.endswith('.'):
-                t = t[:-1]
-                title = t
+            try:
+                if t.endswith('.'):
+                    t = t[:-1]
+                    title = t
+                else:
+                    title = t
+            except:
+                print "title error"
                         
         for a in item['author']:
-           author_list.append(a)
+            if a not in author_list:
+                try:
+                    author_list.append(a)
+                except:
+                    print "author error"
 
            
         for p in item['otherinfo']:
+            try:    
+                otherinfostr = str(p.encode('utf8'))
                 
-            otherinfostr = str(p.encode('utf8'))
+                otherinfolist = otherinfostr.split(" ")
                 
-            otherinfolist = otherinfostr.split(" ")
-                
-            otherinfolist2 = otherinfostr.split(".")
-                 
-            publication_year_list = otherinfolist2[1].split(' ')
-            year_of_publication = publication_year_list[1]
-               
+                otherinfolist2 = otherinfostr.split(".")
+
+                year_of_publication = otherinfolist2[1][:5]
+            #year_of_publication = year_of_publication[:] 
+            #publication_year_list = otherinfolist2[1].split(' ')
+            #year_of_publication = publication_year_list[1]
+            
+                journal = otherinfolist2[0]
+            except:
+                print "otherinfo error"
                
             try:    
                 
@@ -52,30 +66,32 @@ class AtroPipeline(object):
                     
                 else:
                     doi = otherinfolist[index]
-                journal = otherinfolist2[0]
+                
             except:
-                print "nothing"
+                print "no DOI"
          
 
 
             
         ab = ''
-        for b in item['abstract']:
+        try:
+            for b in item['abstract']:
                 
-            ab += str(b.encode('utf8'))+' '
+                ab += str(b.encode('utf8'))+' '
          
-        ab = ab[:-1]
+            abstract = ab[:-1]
+        except:
+            abstract = "ERROR"
+            print "abstract error"
         try:
             publication_rank = w1.check(ab)
                 
         except:
-            print "nothing"
+            publication_rank = 999
+            print "error in publication rank"
        
 
-        try:
-            abstract = ab
-        except:
-            print "nothing"
+       
            
         try:
             for k in item['keywords']:
@@ -87,7 +103,7 @@ class AtroPipeline(object):
                     keyword_list.append(key)
                   
         except:
-               print "nothing"
+               print "no keywords"
             
         date_crawled = str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 

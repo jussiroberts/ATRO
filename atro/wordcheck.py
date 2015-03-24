@@ -11,19 +11,23 @@ class Wordcheck():
         wordcount = 0
         abstractlist = abstract.split()
 		
-        with open('searchwords_list.txt') as f:
-            searchwords = f.readlines()
-        with open('kokkeilu.txt', 'a') as f:
-            for sword in searchwords:
-                f.write('{0}'.format(sword.encode('utf8'),))
+        #with open('searchwords_list.txt') as f:
+            #searchwords = f.readlines()
+        #with open('kokkeilu.txt', 'a') as f:
+        #    for sword in searchwords:
+        #        f.write('{0}'.format(sword.encode('utf8'),))
+        searchwords = ['cancer', 'tumor', 'false-positive', 'high sGPT levels']
 
-		#searchwords = ['cancer', 'proximal humerus', 'extrahepatic biliary duct']	
         for sword in searchwords:
             for word in abstractlist:
                 my_regex = r"\b(?=\w)" + re.escape(sword) + r"\b(?!\w)"
-                nextwordindex = abstractlist.index(word)+1
-                nextword = abstractlist[nextwordindex]
-                nextnextword = abstractlist[nextwordindex+1]
+                try:
+
+                    nextwordindex = abstractlist.index(word)+1
+                    nextword = abstractlist[nextwordindex]
+                    nextnextword = abstractlist[nextwordindex+1]
+                except:
+                    print "end of abstract"
                 if (" ") in sword:
                     if re.search(my_regex, word+' '+nextword+' '+nextnextword, re.IGNORECASE):
                         wordcount = wordcount + 1

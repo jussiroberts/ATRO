@@ -15,41 +15,64 @@ class Dbconn():
             cur.execute("INSERT INTO publication (title) SELECT %s WHERE NOT EXISTS (SELECT title FROM publication WHERE title = %s);", (title,title))
             conn.commit()
         except:
-            print "nothing"
+            print "title error in dbconn"
         		
 		#author
-        for a in author_list:
-            cur.execute("INSERT INTO author (name) SELECT %s WHERE NOT EXISTS (SELECT name FROM author WHERE name = %s);", (a,a))
-            cur.execute("INSERT INTO author_publication (author_id, pub_id) SELECT author_id, pub_id FROM author, publication WHERE author.name = (%s) AND publication.title = (%s);", (a, title))
-            conn.commit()
-        
+        try:
+            for a in author_list:
+                cur.execute("INSERT INTO author (name) SELECT %s WHERE NOT EXISTS (SELECT name FROM author WHERE name = %s);", (a,a))
+                cur.execute("INSERT INTO author_publication (author_id, pub_id) SELECT author_id, pub_id FROM author, publication WHERE author.name = (%s) AND publication.title = (%s);", (a, title))
+                conn.commit()
+        except: 
+            print "author error in dbconn"
+
+                
 		#abstract
-        cur.execute("UPDATE publication SET abstract = %s WHERE title = %s;", (abstract, title))
-        conn.commit()
-		
-		#Publication rank
-        cur.execute("UPDATE publication SET publicationrank = %s WHERE title = %s;", (publication_rank, title))
-        conn.commit()
-
-        #journal name (ei toimi)
-        #cur.execute("INSERT INTO publication (journal) SELECT %s WHERE NOT EXISTS (SELECT title FROM publication WHERE journal = %s);", (journal,journal))
-        cur.execute("UPDATE publication SET journal = %s WHERE title = %s;", (journal, title))
-        conn.commit()
-        for k in keyword_list:
-            cur.execute("INSERT INTO keyword (keyword) values (%s);", (k,))
+        try:
+            cur.execute("UPDATE publication SET abstract = %s WHERE title = %s;", (abstract, title))
             conn.commit()
+        except:
+            print "abstract error in dbconn"
 
+		#Publication rank
+        try:
+            cur.execute("UPDATE publication SET publicationrank = %s WHERE title = %s;", (publication_rank, title))
+            conn.commit()
+        except:
+            print "publication rank in dbconn"
+        
+        
+        try:
+            cur.execute("UPDATE publication SET journal = %s WHERE title = %s;", (journal, title))
+            conn.commit()
+        except:
+            print "journal error in dbconn"
+
+        try:
+            for k in keyword_list:
+                cur.execute("INSERT INTO keyword (keyword) values (%s);", (k,))
+                conn.commit()
+        except: 
+            print "keyword error in dbconn"
         #doi
-        cur.execute("UPDATE publication SET doi = %s WHERE title = %s;", (doi, title))
-        conn.commit()
-		
+        try:
+            cur.execute("UPDATE publication SET doi = %s WHERE title = %s;", (doi, title))
+            conn.commit()
+        except:
+            print "doi error in dbconn"
+
         #datecrawled
-        cur.execute("UPDATE publication SET datecrawled = %s WHERE title = %s;", (date_crawled, title))
-        conn.commit()
-		
-        #datecrawled
-        cur.execute("UPDATE publication SET yearofpublication = %s WHERE title = %s;", (year_of_publication, title))
-        conn.commit()
-		
+        try:
+            cur.execute("UPDATE publication SET datecrawled = %s WHERE title = %s;", (date_crawled, title))
+            conn.commit()
+        except: 
+            print "datecrawled error in dbconn"
+
+        #yearofpublication
+        try:
+            cur.execute("UPDATE publication SET yearofpublication = %s WHERE title = %s;", (year_of_publication, title))
+            conn.commit()
+        except:
+            print "yearofpublication error in dbconn"
         cur.close()
         conn.close()
