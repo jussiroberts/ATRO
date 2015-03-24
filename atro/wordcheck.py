@@ -1,4 +1,5 @@
 import re
+from dbconn import Dbconn
 
 class Wordcheck():
 	#abstract = "this is a dummy abstract"
@@ -10,13 +11,9 @@ class Wordcheck():
         my_regex = 'null'
         wordcount = 0
         abstractlist = abstract.split()
-		
-        #with open('searchwords_list.txt') as f:
-            #searchwords = f.readlines()
-        #with open('kokkeilu.txt', 'a') as f:
-        #    for sword in searchwords:
-        #        f.write('{0}'.format(sword.encode('utf8'),))
-        searchwords = ['cancer', 'tumor', 'false-positive', 'high sGPT levels']
+        db = Dbconn()
+        
+        searchwords = db.retrieve_searchwords()
 
         for sword in searchwords:
             for word in abstractlist:
