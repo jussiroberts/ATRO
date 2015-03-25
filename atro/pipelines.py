@@ -84,11 +84,12 @@ class AtroPipeline(object):
             abstract = "ERROR"
             print "abstract error"
         try:
-            publication_rank = w1.check(ab)
+            publication_rank = w1.check(abstract)
                 
-        except:
+        except Exception, e:
             publication_rank = 999
             print "error in publication rank"
+            print str(e)
        
 
        
