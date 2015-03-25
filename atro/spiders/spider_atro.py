@@ -6,14 +6,13 @@ from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
 from scrapy.selector import Selector
 from scrapy.selector import Selector
 from scrapy.http     import Request
-#from pyvirtualdisplay import Display #only needed on the RaspberryPi
+from .. dbconn import Dbconn
 import lxml.html
 from lxml import etree
 import time
 import re
 import math
 import os
-import psycopg2
 #e.g >>> start_urls = ['http://www.a.com/%d_%d_%d' %(n,n+1,n+2) for n in range(0, 26)]
 
 class AtroSpider(scrapy.Spider):
@@ -31,22 +30,31 @@ class AtroSpider(scrapy.Spider):
             searchterm = alpha
             searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+'[Author]&page=1'
             yield Request(searchterm, self.parse)
-            time.sleep(0.5)
+            #time.sleep(0.5)
 
         for alpha in alphabet:
             for beta in alphabet:
                 searchterm = alpha+beta
                 searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+beta+'[Author]&page=1'
                 yield Request(searchterm, self.parse)
-                time.sleep(0.5)
+                #time.sleep(0.5)
 
         for alpha in alphabet:
             for beta in alphabet:
                 for gamma in alphabet:
                     searchterm = alpha+beta+gamma
-                    searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+beta+gamma+'*[Author]&page=1'
+                    searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+beta+gamma+'[Author]&page=1'
                     yield Request(searchterm, self.parse)
-                    time.sleep(0.5)
+                    #time.sleep(0.5)
+                    
+        for alpha in alphabet:
+            for beta in alphabet:
+                for gamma in alphabet:
+                    for delta in alphabet:
+                        searchterm = alpha+beta+gamma+delta
+                        searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+beta+gamma+delta+'*[Author]&page=1'
+                        yield Request(searchterm, self.parse)
+                        #time.sleep(0.5)
 
     def __init__(self, searchterm=None, *args, **kwargs):
         super(AtroSpider, self).__init__(*args, **kwargs)
@@ -120,6 +128,7 @@ class AtroSpider(scrapy.Spider):
     def parse_publication(self, response):
         status = response.status
         url = response.url
+        db = Dbconn()
 
         if status == 200:
             hxs = Selector(response)
@@ -141,41 +150,13 @@ class AtroSpider(scrapy.Spider):
             searcht = re.search('from=(.*)5B', url)
             searcht = searcht.group(1)
             searcht = searcht[:-1]
-        
-            #Connect to database.
-            try:
-                conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='helevetti'")
-            except:
-                print "Failed to establish connection to database."
-            cur = conn.cursor()
-
-            #Check if current URL already exists and save it to the database accordingly. Yield 'item' if successful.
-            try: 
-                query = "SELECT EXISTS(SELECT url FROM visitedurls WHERE searchterm = %s AND url = %s);"
-                values = (searcht,url)
-                cur.execute(query, values)
-                urlexists = cur.fetchone()[0]
-                if urlexists==0:
-
-                    insert_query = "INSERT INTO visitedurls (searchterm, url) VALUES (%s, %s);" 
-                    insert_values = (searcht, url)
-                    cur.execute(insert_query,insert_values)
-            #       yield item
             
-                    print "--------------------------------------------------------"
-                    print searcht
-                    print url
-                    print "--------------------------------------------------------"
-                else:
-                    print "URL already exists in database"
+            #and pass to database
+            success = db.check_visited_urls(searcht, url)
             
-            except:
-                print "Error in DB-connection"
-
-            cur.close()
-            conn.close()
-
-            yield item
+            if success == 1:
+                yield item
+            #yield items
         else:
             with open('fails.txt', 'a') as f:
                 f.write('fail\n')

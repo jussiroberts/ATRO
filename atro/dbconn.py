@@ -105,3 +105,36 @@ class Dbconn():
         conn.close()
         
         return searchwords
+        
+    @staticmethod
+    def check_visited_urls(searcht, url):
+    
+        try:
+            conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='helevetti'")
+        except:
+            print "Failed to establish connection to database"
+            
+        cur = conn.cursor()
+        
+        #Check if current URL already exists and save it to the database accordingly. Yield 'item' if successful.
+        try:
+            cur.execute("SELECT EXISTS(SELECT * FROM visitedurls WHERE searchterm = %s AND url = %s);", (searcht, url))
+            urlexists = cur.fetchone()[0]
+            
+            if urlexists == False:
+                cur.execute("INSERT INTO visitedurls (searchterm, url) VALUES (%s, %s);", (searcht, url))
+                conn.commit()
+                success = 1
+                print "URL has not been visited"
+                
+            else:
+                success = 0
+                print "URL has been previously visited"
+
+        except:
+            print "could not retrieve searchwords from database"
+            
+        cur.close()
+        conn.close()
+        
+        return success
