@@ -1,3 +1,7 @@
+ #######################################
+# A class for implementing database I/O #
+ #######################################
+ 
 import psycopg2
 
 class Dbconn():
@@ -91,13 +95,13 @@ class Dbconn():
         try:
             cur.execute("SELECT searchword FROM searchwords;")
             temp_searchwords = cur.fetchall()
+            for s in temp_searchwords:
+                searchwords.append(s[0])
+                
         except:
             print "Could not retrieve searchwords from database"
         
         cur.close()
         conn.close()
-        
-        for s in temp_searchwords:
-            searchwords.append(s[0])
         
         return searchwords

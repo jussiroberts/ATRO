@@ -1,10 +1,14 @@
+ #####################################################################################
+#This class implements a mechanism to check if the abstract of an article contains    #
+#any words that we might be interested in. It compares the words in the abstract to   #
+#the list of words in the searchwords table in the database. The more matching words, #
+#the higher the ranking of the article.                                               #
+ #####################################################################################
+
 import re
 from dbconn import Dbconn
 
 class Wordcheck():
-	#abstract = "this is a dummy abstract"
-	#searchwords = ['banana', 'apple', 'dummy']
-	#wordcount = 0
 
     @staticmethod
     def check(abstract):
