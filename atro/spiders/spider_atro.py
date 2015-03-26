@@ -73,7 +73,9 @@ class AtroSpider(scrapy.Spider):
     #    intpages = str(int(math.ceil(float(numbers)/10)))
     def parse(self, response):
         numbers = 0
+        counter = 0
         base_url = 'http://www.ncbi.nlm.nih.gov/m/pubmed'
+        db = Dbconn()
         hrefs = []
         parsedhrefs = []
         hxs = Selector(response) 
@@ -119,11 +121,26 @@ class AtroSpider(scrapy.Spider):
                 #f.write(c.encode('utf-8')+'\n')
         #intpages = int(re.match(r'\d+', pages).group())
         #print intpages
-
+        
+        
+        
         for link in parsedhrefs:
+            searchtermi = ""
             url = base_url + link
+            urli = str(url)
+            searchtermi = re.search('from=(.*)]', urli)
+            searchtermi = searchtermi.group(1)
+            searchtermi = searchtermi[:-7]
 
-            yield Request(url, self.parse_publication)
+            success = db.check_visited_urls(searchtermi, url)
+            
+            if success == 1:
+                yield Request(url, self.parse_publication)
+            
+            elif success == 0:
+                counter += 1
+                print counter
+                print "-----------------------------------------------------------------------------"
 
         #next_url = self.get_next_url()
         #if next_url:
@@ -139,7 +156,6 @@ class AtroSpider(scrapy.Spider):
     def parse_publication(self, response):
         status = response.status
         url = response.url
-        db = Dbconn()
 
         if status == 200:
             hxs = Selector(response)
@@ -157,17 +173,9 @@ class AtroSpider(scrapy.Spider):
 
             item['keywords'] = hxs.xpath('//div[@class="keywords"]/p/text()').extract()
 
-            #Parse current searchterm from URL
-            searcht = re.search('from=(.*)5B', url)
-            searcht = searcht.group(1)
-            searcht = searcht[:-1]
-            
-            #and pass to database
-            success = db.check_visited_urls(searcht, url)
-            
-            if success == 1:
-                yield item
-            #yield items
+
+            yield item
+
         else:
             with open('fails.txt', 'a') as f:
                 f.write('fail\n')

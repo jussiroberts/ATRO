@@ -115,7 +115,7 @@ class Dbconn():
         return searchwords
         
     @staticmethod
-    def check_visited_urls(searcht, url):
+    def check_visited_urls(searchtermi, url):
     
         try:
             conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='helevetti'")
@@ -126,11 +126,11 @@ class Dbconn():
         
         #Check if current URL already exists and save it to the database accordingly. Yield 'item' if successful.
         try:
-            cur.execute("SELECT EXISTS(SELECT * FROM visitedurls WHERE searchterm = %s AND url = %s);", (searcht, url))
+            cur.execute("SELECT EXISTS(SELECT * FROM visitedurls WHERE searchterm = %s AND url = %s);", (searchtermi, url))
             urlexists = cur.fetchone()[0]
             
             if urlexists == False:
-                cur.execute("INSERT INTO visitedurls (searchterm, url) VALUES (%s, %s);", (searcht, url))
+                cur.execute("INSERT INTO visitedurls (searchterm, url) VALUES (%s, %s);", (searchtermi, url))
                 conn.commit()
                 success = 1
                 print "URL has not been visited"
@@ -157,7 +157,7 @@ class Dbconn():
         cur = conn.cursor()
 
         
-        with open("searchwords_list.txt", "r") as wordinput, open('inserted_searchwords.txt', 'a') as wordoutput:
+        with open("searchwords_list.txt", "r") as wordinput, open('../inserted_searchwords.txt', 'a') as wordoutput:
             for line in wordinput:
                 line = line.strip()
                 try:
