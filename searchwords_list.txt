@@ -6,6 +6,9 @@ Amyotrophic Lateral Sclerosis
 Amyotrophic zLateral Sclerosis: blood 
 Ceruloplasmin 
 Ceruloplasmin: metabolism 
+cancer
+proximal humerus
+extrahepatic biliary duct
 Child 
 Child, Preschool 
 Female 
@@ -36,7 +39,7 @@ Denervation
 Motor Neurons 
 Muscles 
 Muscular Atrophy 
-Phosphorylases 
+Phosphorylases  
 Polyneuropathies
 Amyloidosis 
 Amyloidosis: metabolism 
@@ -45,7 +48,7 @@ Neurodegenerative Diseases
 Prions 
 Protein Folding 
 Signal Transduction
-Ceruloplasmin  
+Ceruloplasmin
 Copper
 Biological Markers 
 Case-Control Studies 

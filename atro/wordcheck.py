@@ -16,6 +16,7 @@ class Wordcheck():
         wordcount = 0
         abstractlist = abstract.split()
         db = Dbconn()
+        found_searchwords = []
         
         searchwords = db.retrieve_searchwords()
 
@@ -33,13 +34,11 @@ class Wordcheck():
                     except Exception, e:
                         print "End of abstract"
                         print str(e)
+                        break
                 if re.search(my_regex, multiword, re.IGNORECASE):
                     wordcount = wordcount + 1
-                    with open('foundsearchwords.txt', 'a') as f:
-                        f.write('search word: {0}\n'.format(sword.encode('utf8'),))
-                        f.write('word in abstract: {0}\n'.format(word.encode('utf8'),))
-                        f.write('words found: {0}\n'.format(wordcount,))
+                    found_searchwords.append(sword)
                     break
 
                 
-        return wordcount
+        return wordcount, found_searchwords

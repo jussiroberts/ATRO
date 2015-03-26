@@ -6,7 +6,7 @@ import psycopg2
 
 class Dbconn():
     @staticmethod
-    def insert_publication(title, date_crawled, year_of_publication, doi, abstract, journal, publication_rank, author_list, keyword_list):
+    def insert_publication(title, date_crawled, year_of_publication, doi, abstract, journal, publication_rank, author_list, keyword_list, found_searchwords):
     
         try:
             conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='helevetti'")
@@ -77,6 +77,14 @@ class Dbconn():
             conn.commit()
         except:
             print "Yearofpublication error in dbconn"
+
+        #found_searchwords
+        try:
+            for found in found_searchwords:
+                cur.execute("INSERT INTO searchword_publication (searchword_id, pub_id) SELECT searchword_id, pub_id FROM searchwords, publication WHERE searchwords.searchword = (%s) AND publication.title = (%s);", (found, title))
+                conn.commit()
+        except Exception, e:
+            print "Found_searchwords error", e
         cur.close()
         conn.close()
         
@@ -138,3 +146,27 @@ class Dbconn():
         conn.close()
         
         return success
+
+    @staticmethod
+    def insert_searchwords():
+        try:
+            conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='helevetti'")
+        except:
+            print "Failed to establish connection to database"
+
+        cur = conn.cursor()
+
+        
+        with open("searchwords_list.txt", "r") as wordinput, open('inserted_searchwords.txt', 'a') as wordoutput:
+            for line in wordinput:
+                line = line.strip()
+                try:
+                    #cur.execute("INSERT INTO searchwords (searchword) VALUES (%s);", (line,))
+                    cur.execute("INSERT INTO searchwords (searchword) SELECT %s WHERE NOT EXISTS (SELECT searchword FROM searchwords WHERE searchword = %s);", (line,line))
+                    conn.commit()
+                except Exception, e:
+                    wordoutput.write(str(e))
+                wordoutput.write(line+'\n')
+      
+        cur.close()
+        conn.close()

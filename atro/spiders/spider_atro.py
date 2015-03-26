@@ -58,6 +58,8 @@ class AtroSpider(scrapy.Spider):
 
     def __init__(self, searchterm=None, *args, **kwargs):
         super(AtroSpider, self).__init__(*args, **kwargs)
+        db = Dbconn()
+        db.insert_searchwords()
         print kwargs
 
         #self.start_urls = [
@@ -70,6 +72,7 @@ class AtroSpider(scrapy.Spider):
     #    numbers = int(re.search(r'\d+', pages[0]).group())
     #    intpages = str(int(math.ceil(float(numbers)/10)))
     def parse(self, response):
+        numbers = 0
         base_url = 'http://www.ncbi.nlm.nih.gov/m/pubmed'
         hrefs = []
         parsedhrefs = []
@@ -87,17 +90,23 @@ class AtroSpider(scrapy.Spider):
              
             pages = hxs.xpath('//div[@class="h"]/h2/text()').extract()
             
+            
             numbers = int(re.search(r'\d+', pages[0]).group())
             intpages = str(int(math.ceil(float(numbers)/10)))
+            
+            
             #f.write(intpages+'\n')
 
             #currentpage[1] = current page
             current = hxs.xpath('normalize-space(//div[@class="pag"]/span/text())').extract()
             currentpage = current[0].split(" ")
             f.write("Current page:")
+            
             f.write(currentpage[1].encode('utf-8')+'\n')
+            
+            
             nextpage = str(int(currentpage[1])+1)
-
+                  
             #f.write(nextpage+'\n')
 
             searcht = hxs.xpath('//div[@class="h"]/input/@value').extract()
@@ -119,9 +128,11 @@ class AtroSpider(scrapy.Spider):
         #next_url = self.get_next_url()
         #if next_url:
         #    yield Request(next_url, self.parse, dont_filter=True)
+        
         if int(currentpage[1])<int(intpages):
             next_url = base_url+'/?term='+currentsearchterm+'&page='+nextpage
-
+        
+            
         #next_url = base_url+'&page='+nextpage
             yield Request(next_url, self.parse)
         #---PARSE METADATA TO DB---
