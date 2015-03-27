@@ -4,7 +4,7 @@
 #the list of words in the searchwords table in the database. The more matching words, #
 #the higher the ranking of the article.                                               #
  #####################################################################################
-
+### Not working ATM
 import re
 from dbconn import Dbconn
 
