@@ -4,7 +4,7 @@
 #the list of words in the searchwords table in the database. The more matching words, #
 #the higher the ranking of the article.                                               #
  #####################################################################################
-### Not working ATM
+
 import re
 from dbconn import Dbconn
 
@@ -18,23 +18,21 @@ class Wordcheck():
         db = Dbconn()
         found_searchwords = []
         
+        #Get the searchwords from database
         searchwords = db.retrieve_searchwords()
 
+        print "Looking for searchwords in publication abstract"
         for sword in searchwords:
-            print sword
             for word in abstractlist:
                 my_regex = r"\b(?=\w)" + re.escape(sword) + r"\b(?!\w)"
-                
-                
                 words_in_searchword = sword.count(' ')+1
                 multiword = word
                 for i in range(1, words_in_searchword):
                     try:
                         multiword = multiword+' '+abstractlist[abstractlist.index(word)+i]
                     except Exception, e:
-                        print "End of abstract"
-                        print str(e)
                         break
+                #Check whether the word in abstract matches the word in searchwordlist
                 if re.search(my_regex, multiword, re.IGNORECASE):
                     wordcount = wordcount + 1
                     found_searchwords.append(sword)

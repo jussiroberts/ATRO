@@ -19,10 +19,10 @@ class AtroPipeline(object):
         doi = "NULL"
         date_crawled = "NULL"
         author_list = []
-        keyword_list = []
         journal = "NULL"
         title = "NULL"
         found_searchwords = []
+
         #Remove the dot in the end of the title
         for t in item['title']:   
             try:
@@ -52,7 +52,6 @@ class AtroPipeline(object):
 
                 year_of_publication = otherinfolist2[1][:5]
 
-            
                 journal = otherinfolist2[0]
             except:
                 print "otherinfo error"
@@ -93,26 +92,12 @@ class AtroPipeline(object):
             publication_rank = 999
             print "error in publication rank"
             print str(e)
-       
-
-       
         
-        try:
-            for k in item['keywords']:
-                keywordstr = str(k.encode('utf8'))
-                
-                keyword_list = keywordstr.split("; ")
-                   
-                for key in keyword_list:
-                    keyword_list.append(key)
-                  
-        except:
-               print "no keywords"
             
         date_crawled = str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
         #If any searchwords were found in the abstract, insert the publication to the database
         if publication_rank > 0:
-            db.insert_publication(title, date_crawled, year_of_publication, doi, abstract, journal, publication_rank, author_list, keyword_list, found_searchwords)
+            db.insert_publication(title, date_crawled, year_of_publication, doi, abstract, journal, publication_rank, author_list, found_searchwords)
         
         return item

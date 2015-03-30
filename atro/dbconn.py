@@ -5,8 +5,10 @@
 import psycopg2
 
 class Dbconn():
+
+    #Insert publication metadata to database
     @staticmethod
-    def insert_publication(title, date_crawled, year_of_publication, doi, abstract, journal, publication_rank, author_list, keyword_list, found_searchwords):
+    def insert_publication(title, date_crawled, year_of_publication, doi, abstract, journal, publication_rank, author_list, found_searchwords):
     
         try:
             conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='helevetti'")
@@ -20,7 +22,7 @@ class Dbconn():
         except:
             print "Title error in dbconn"
         		
-		#author
+		#authors
         try:
             for a in author_list:
                 cur.execute("INSERT INTO author (name) SELECT %s WHERE NOT EXISTS (SELECT name FROM author WHERE name = %s);", (a,a))
@@ -44,19 +46,13 @@ class Dbconn():
         except:
             print "Publication rank error in dbconn"
         
-        
+        #journal
         try:
             cur.execute("UPDATE publication SET journal = %s WHERE title = %s;", (journal, title))
             conn.commit()
         except:
             print "Journal error in dbconn"
 
-        try:
-            for k in keyword_list:
-                cur.execute("INSERT INTO keyword (keyword) values (%s);", (k,))
-                conn.commit()
-        except: 
-            print "Keyword error in dbconn"
         #doi
         try:
             cur.execute("UPDATE publication SET doi = %s WHERE title = %s;", (doi, title))
@@ -78,7 +74,7 @@ class Dbconn():
         except:
             print "Yearofpublication error in dbconn"
 
-        #found_searchwords
+        #found searchwords
         try:
             for found in found_searchwords:
                 cur.execute("INSERT INTO searchword_publication (searchword_id, pub_id) SELECT searchword_id, pub_id FROM searchwords, publication WHERE searchwords.searchword = (%s) AND publication.title = (%s);", (found, title))
@@ -88,6 +84,8 @@ class Dbconn():
         cur.close()
         conn.close()
         
+
+    #Get searchwords from database
     @staticmethod
     def retrieve_searchwords():
     
@@ -114,6 +112,7 @@ class Dbconn():
         
         return searchwords
         
+    #Check already visited URLs
     @staticmethod
     def check_visited_urls(searchtermi, url):
     
@@ -147,6 +146,7 @@ class Dbconn():
         
         return success
 
+    #Insert searchwords to database from a textfile
     @staticmethod
     def insert_searchwords():
         try:
@@ -160,6 +160,7 @@ class Dbconn():
         with open("searchwords_list.txt", "r") as wordinput, open('../inserted_searchwords.txt', 'a') as wordoutput:
             for line in wordinput:
                 line = line.strip()
+                line = line.lower()
                 try:
                     #cur.execute("INSERT INTO searchwords (searchword) VALUES (%s);", (line,))
                     cur.execute("INSERT INTO searchwords (searchword) SELECT %s WHERE NOT EXISTS (SELECT searchword FROM searchwords WHERE searchword = %s);", (line,line))
