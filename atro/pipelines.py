@@ -10,6 +10,7 @@ from datetime import time
 from wordcheck import Wordcheck
 from dbconn import Dbconn
 
+
 #The pipeline processes all items that are yielded by the spider. Each item contains relevant metadata for one publication.
 class AtroPipeline(object):
     def process_item(self, item, spider):
@@ -71,8 +72,10 @@ class AtroPipeline(object):
             abstract = "ERROR"
             print "abstract error"
 
+
         #Search for relevant keywords in the abstract
         try:
+
             publication_rank, found_searchwords = w1.check(abstract)        
         except Exception, e:
             publication_rank = 999

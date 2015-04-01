@@ -19,7 +19,7 @@ class Wordcheck():
         found_searchwords = []
         
         #Get the searchwords from database
-        searchwords = db.retrieve_searchwords()
+        searchwords = set(db.retrieve_searchwords())
 
         print "Looking for searchwords in publication abstract"
         for sword in searchwords:
