@@ -23,16 +23,15 @@ class AtroPipeline(object):
         title = "NULL"
         found_searchwords = []
 
-        #Remove the dot in the end of the title
-        for t in item['title']:   
-            try:
-                if t.endswith('.'):
-                    t = t[:-1]
-                    title = t
-                else:
-                    title = t
-            except:
-                print "title error"
+        #Remove the dot in the end of the title   
+        try:
+            if item['title'][0].endswith('.'):
+                t = item['title'][0][:-1]
+                title = t
+            else:
+                title = t
+        except:
+            print "title error"
                         
         for a in item['author']:
             if a not in author_list:
@@ -44,41 +43,29 @@ class AtroPipeline(object):
         #Get the year of publication, doi and journal info
         for p in item['otherinfo']:
             try:    
-                otherinfostr = str(p.encode('utf8'))
-                
+                otherinfostr = str(p.encode('utf8')) 
                 otherinfolist = otherinfostr.split(" ")
-                
                 otherinfolist2 = otherinfostr.split(".")
-
                 year_of_publication = otherinfolist2[1][:5]
-
                 journal = otherinfolist2[0]
             except:
                 print "otherinfo error"
                
             #Check whether the publication has a doi or not
-            try:    
-                
+            try:      
                 index = otherinfolist.index('doi:') + 1
-              
                 if otherinfolist[index].endswith('.'):
-                    doi = otherinfolist[index][:-1]
-                    
+                    doi = otherinfolist[index][:-1]   
                 else:
-                    doi = otherinfolist[index]
-                
+                    doi = otherinfolist[index]  
             except:
                 print "no DOI"
          
-
-
         #Append abstract groups together
         ab = ''
         try:
-            for b in item['abstract']:
-                
-                ab += str(b.encode('utf8'))+' '
-         
+            for b in item['abstract']:       
+                ab += str(b.encode('utf8'))+' ' 
             abstract = ab[:-1].strip()
         except:
             abstract = "ERROR"
@@ -86,18 +73,16 @@ class AtroPipeline(object):
 
         #Search for relevant keywords in the abstract
         try:
-            publication_rank, found_searchwords = w1.check(abstract)
-                
+            publication_rank, found_searchwords = w1.check(abstract)        
         except Exception, e:
             publication_rank = 999
             print "error in publication rank"
             print str(e)
-        
             
         date_crawled = str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-
+        metadata = dict(title = title, date_crawled = date_crawled, year_of_publication = year_of_publication, doi = doi, abstract = abstract, journal = journal, publication_rank = publication_rank, author_list = author_list, found_searchwords = found_searchwords)
+        
         #If any searchwords were found in the abstract, insert the publication to the database
         if publication_rank > 0:
-            db.insert_publication(title, date_crawled, year_of_publication, doi, abstract, journal, publication_rank, author_list, found_searchwords)
-        
+            db.insert_publication(metadata)
         return item

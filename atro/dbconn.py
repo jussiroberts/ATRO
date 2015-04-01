@@ -8,8 +8,8 @@ class Dbconn():
 
     #Insert publication metadata to database
     @staticmethod
-    def insert_publication(title, date_crawled, year_of_publication, doi, abstract, journal, publication_rank, author_list, found_searchwords):
-    
+    def insert_publication(metadata):
+
         try:
             conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='helevetti'")
         except:
@@ -17,16 +17,16 @@ class Dbconn():
         cur = conn.cursor()
         #title
         try: 
-            cur.execute("INSERT INTO publication (title) SELECT %s WHERE NOT EXISTS (SELECT title FROM publication WHERE title = %s);", (title,title))
+            cur.execute("INSERT INTO publication (title) SELECT %s WHERE NOT EXISTS (SELECT title FROM publication WHERE title = %s);", (metadata['title'], metadata['title']))
             conn.commit()
         except:
             print "Title error in dbconn"
         		
 		#authors
         try:
-            for a in author_list:
+            for a in metadata['author_list']:
                 cur.execute("INSERT INTO author (name) SELECT %s WHERE NOT EXISTS (SELECT name FROM author WHERE name = %s);", (a,a))
-                cur.execute("INSERT INTO author_publication (author_id, pub_id) SELECT author_id, pub_id FROM author, publication WHERE author.name = (%s) AND publication.title = (%s);", (a, title))
+                cur.execute("INSERT INTO author_publication (author_id, pub_id) SELECT author_id, pub_id FROM author, publication WHERE author.name = (%s) AND publication.title = (%s);", (a, metadata['title']))
                 conn.commit()
         except: 
             print "Author error in dbconn"
@@ -34,50 +34,50 @@ class Dbconn():
                 
 		#abstract
         try:
-            cur.execute("UPDATE publication SET abstract = %s WHERE title = %s;", (abstract, title))
+            cur.execute("UPDATE publication SET abstract = %s WHERE title = %s;", (metadata['abstract'], metadata['title']))
             conn.commit()
         except:
             print "Abstract error in dbconn"
 
 		#Publication rank
         try:
-            cur.execute("UPDATE publication SET publicationrank = %s WHERE title = %s;", (publication_rank, title))
+            cur.execute("UPDATE publication SET publicationrank = %s WHERE title = %s;", (metadata['publication_rank'], metadata['title']))
             conn.commit()
         except:
             print "Publication rank error in dbconn"
         
         #journal
         try:
-            cur.execute("UPDATE publication SET journal = %s WHERE title = %s;", (journal, title))
+            cur.execute("UPDATE publication SET journal = %s WHERE title = %s;", (metadata['journal'], metadata['title']))
             conn.commit()
         except:
             print "Journal error in dbconn"
 
         #doi
         try:
-            cur.execute("UPDATE publication SET doi = %s WHERE title = %s;", (doi, title))
+            cur.execute("UPDATE publication SET doi = %s WHERE title = %s;", (metadata['doi'], metadata['title']))
             conn.commit()
         except:
             print "DOI error in dbconn"
 
         #datecrawled
         try:
-            cur.execute("UPDATE publication SET datecrawled = %s WHERE title = %s;", (date_crawled, title))
+            cur.execute("UPDATE publication SET datecrawled = %s WHERE title = %s;", (metadata['date_crawled'], metadata['title']))
             conn.commit()
         except: 
             print "Datecrawled error in dbconn"
 
         #yearofpublication
         try:
-            cur.execute("UPDATE publication SET yearofpublication = %s WHERE title = %s;", (year_of_publication, title))
+            cur.execute("UPDATE publication SET yearofpublication = %s WHERE title = %s;", (metadata['year_of_publication'], metadata['title']))
             conn.commit()
         except:
             print "Yearofpublication error in dbconn"
 
         #found searchwords
         try:
-            for found in found_searchwords:
-                cur.execute("INSERT INTO searchword_publication (searchword_id, pub_id) SELECT searchword_id, pub_id FROM searchwords, publication WHERE searchwords.searchword = (%s) AND publication.title = (%s);", (found, title))
+            for found in metadata['found_searchwords']:
+                cur.execute("INSERT INTO searchword_publication (searchword_id, pub_id) SELECT searchword_id, pub_id FROM searchwords, publication WHERE searchwords.searchword = (%s) AND publication.title = (%s);", (found, metadata['title']))
                 conn.commit()
         except Exception, e:
             print "Found_searchwords error", e

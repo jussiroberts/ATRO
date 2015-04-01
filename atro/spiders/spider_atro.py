@@ -21,7 +21,7 @@ class AtroSpider(scrapy.Spider):
    
     #Algorithm for crawling PubMed author by author
     def start_requests(self):
-        alphabet = 'a'
+        alphabet = 'abcdefghijklmnopqrstuvwxyz'
    
         for alpha in alphabet:
             searchterm = alpha
