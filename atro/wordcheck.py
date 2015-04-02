@@ -23,9 +23,9 @@ class Wordcheck():
 
         print "Looking for searchwords in publication abstract"
         for sword in searchwords:
+            my_regex = r"\b(?=\w)" + re.escape(sword) + r"\b(?!\w)"
+            words_in_searchword = sword.count(' ')+1
             for word in abstractlist:
-                my_regex = r"\b(?=\w)" + re.escape(sword) + r"\b(?!\w)"
-                words_in_searchword = sword.count(' ')+1
                 multiword = word
                 for i in range(1, words_in_searchword):
                     try:
