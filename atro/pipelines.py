@@ -18,6 +18,7 @@ class AtroPipeline(object):
         w1 = Wordcheck()
         publication_rank = 0
         doi = "NULL"
+        pii = "NULL"
         date_crawled = "NULL"
         author_list = []
         journal = "NULL"
@@ -41,7 +42,7 @@ class AtroPipeline(object):
                 except:
                     print "author error"
 
-        #Get the year of publication, doi and journal info
+        #Get the year of publication, doi, pii and journal info
         for p in item['otherinfo']:
             try:    
                 otherinfostr = str(p.encode('utf8')) 
@@ -61,6 +62,23 @@ class AtroPipeline(object):
                     doi = otherinfolist[index]  
             except:
                 print "no DOI"
+
+            #incomplete code
+            try:
+                index = otherinfolist.index('pii:') + 1
+                if otherinfolist[index].endswith('.'):
+                    pii = otherinfolist[index][:-1]
+                    print pii
+                    print "-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-"
+                else if otherinfolist[index].endswith('doi:'):
+                    pii = otherinfolist[index][:-1]
+                    print pii
+                    print "**********************************************************************"
+                else:
+                    pii = otherinfolist[index]
+            except:
+                print "no PII"
+
          
         #Append abstract groups together
         ab = ''
