@@ -70,7 +70,7 @@ class AtroPipeline(object):
                     pii = otherinfolist[index][:-1]
                     print pii
                     print "-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-"
-                else if otherinfolist[index].endswith('doi:'):
+                elif otherinfolist[index].endswith('doi:'):
                     pii = otherinfolist[index][:-1]
                     print pii
                     print "**********************************************************************"
