@@ -47,8 +47,7 @@ class AtroSpider(scrapy.Spider):
                     for delta in alphabet:
                         searchterm = alpha+beta+gamma+delta
                         searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+beta+gamma+delta+'*[Author]&page=1'
-                        yield Request(searchterm, self.parse)
-                     
+                        yield Request(searchterm, self.parse)         
 
     def __init__(self, searchterm=None, *args, **kwargs):
         super(AtroSpider, self).__init__(*args, **kwargs)
@@ -71,9 +70,6 @@ class AtroSpider(scrapy.Spider):
                 link = link[1:]
                 parsedhrefs.append(link)
  
-
-        
-             
         pages = hxs.xpath('//div[@class="h"]/h2/text()').extract()
         numbers = int(re.search(r'\d+', pages[0]).group())
         intpages = str(int(math.ceil(float(numbers)/10)))
@@ -96,18 +92,9 @@ class AtroSpider(scrapy.Spider):
             
             if success == 1:
                 yield Request(url, self.parse_publication)
-            
-            elif success == 0:
-                counter += 1
-                print counter
-                print "-----------------------------------------------------------------------------"
-
-      
         
         if int(currentpage[1])<int(intpages):
             next_url = base_url+'/?term='+currentsearchterm+'&page='+nextpage
-        
-            
         
             yield Request(next_url, self.parse)
 
@@ -124,7 +111,6 @@ class AtroSpider(scrapy.Spider):
             item['otherinfo'] = hxs.xpath('normalize-space(//div[@class="meta"]/p/text())').extract()
             item['abstract'] = hxs.xpath('//div[@class="ab"]/p//text()').extract()
             item['keywords'] = hxs.xpath('//div[@class="keywords"]/p/text()').extract()
-
 
             yield item
 

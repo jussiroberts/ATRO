@@ -60,6 +60,13 @@ class Dbconn():
         except:
             print "DOI error in dbconn"
 
+        #pii
+        try:
+            cur.execute("UPDATE publication SET pii = %s WHERE title = %s;", (metadata['pii'], metadata['title']))
+            conn.commit()
+        except:
+            print "PII error in dbconn"
+
         #datecrawled
         try:
             cur.execute("UPDATE publication SET datecrawled = %s WHERE title = %s;", (metadata['date_crawled'], metadata['title']))
@@ -131,13 +138,9 @@ class Dbconn():
             if urlexists == False:
                 cur.execute("INSERT INTO visitedurls (searchterm, url) VALUES (%s, %s);", (searchtermi, url))
                 conn.commit()
-                success = 1
-                print "URL has not been visited"
-                
+                success = 1  
             else:
                 success = 0
-                print "URL has been previously visited"
-
         except:
             print "could not retrieve searchwords from database"
             
