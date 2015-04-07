@@ -63,23 +63,34 @@ class AtroSpider(scrapy.Spider):
         hrefs = []
         parsedhrefs = []
         hxs = Selector(response) 
+
+        #Get publication links from the first page
         links = hxs.xpath('//*[@class="d"]//li/a/@href').extract()
         hrefs.extend(links)
+
+        #Clean up the hrefs
         for link in hrefs:
             if link.startswith('.'):
                 link = link[1:]
                 parsedhrefs.append(link)
  
+        #Get the amount of pages
         pages = hxs.xpath('//div[@class="h"]/h2/text()').extract()
         numbers = int(re.search(r'\d+', pages[0]).group())
         intpages = str(int(math.ceil(float(numbers)/10)))
+
+        #Get the current page number
         current = hxs.xpath('normalize-space(//div[@class="pag"]/span/text())').extract()
         currentpage = current[0].split(" ")
+
+        #Get the next page number
         nextpage = str(int(currentpage[1])+1)
               
+        #Get the current searchterm
         searcht = hxs.xpath('//div[@class="h"]/input/@value').extract()
         currentsearchterm = searcht[0]
         
+        #Constuct a full URL from the hrefs and base_url and check whether they have been visited before or not
         for link in parsedhrefs:
             searchtermi = ""
             url = base_url + link
@@ -93,6 +104,7 @@ class AtroSpider(scrapy.Spider):
             if success == 1:
                 yield Request(url, self.parse_publication)
         
+        #Check if it's the last page
         if int(currentpage[1])<int(intpages):
             next_url = base_url+'/?term='+currentsearchterm+'&page='+nextpage
         

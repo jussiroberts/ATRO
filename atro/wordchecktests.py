@@ -28,6 +28,7 @@ class WordcheckTests(unittest.TestCase):
 		self.assertIn("activins", found_searchwords)
 		self.assertIn("activin receptors", found_searchwords)
 		self.assertIn("denervation", found_searchwords)
+		self.assertIn("kidney", found_searchwords)
 
 	def testFindLongSearchword(self):
 		wordcount, found_searchwords = self.w1.check("adaptor proteins, signal transducing: genetics")

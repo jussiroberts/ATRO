@@ -22,16 +22,6 @@ class AtroPipeline(object):
         except:
             print "title error"
         return title
-    
-    def process_authors(self, authorslist):
-        author_list = []
-        for a in authorslist:
-            if a not in author_list:
-                try:
-                    author_list.append(a)
-                except:
-                    print "author error"
-        return author_list
 
     def process_otherinfo(self, otherinfo):
         #Get the year of publication, doi, pii and journal info
@@ -95,7 +85,6 @@ class AtroPipeline(object):
         found_searchwords = []
 
         title = self.process_title(item['title'][0])
-        author_list = self.process_authors(item['author'])
         abstract = self.process_abstract(item['abstract'])
         year_of_publication, journal, doi, pii = self.process_otherinfo(item['otherinfo'][0])
           #Search for relevant keywords in the abstract
@@ -108,7 +97,7 @@ class AtroPipeline(object):
             print str(e)
             
         date_crawled = str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-        metadata = dict(title = title, date_crawled = date_crawled, year_of_publication = year_of_publication, doi = doi, pii = pii, abstract = abstract, journal = journal, publication_rank = publication_rank, author_list = author_list, found_searchwords = found_searchwords)
+        metadata = dict(title = title, date_crawled = date_crawled, year_of_publication = year_of_publication, doi = doi, pii = pii, abstract = abstract, journal = journal, publication_rank = publication_rank, author_list = item['author'], found_searchwords = found_searchwords)
         
         #If any searchwords were found in the abstract, insert the publication to the database
         if publication_rank > 0:
