@@ -87,6 +87,7 @@ class AtroPipeline(object):
         title = self.process_title(item['title'][0])
         abstract = self.process_abstract(item['abstract'])
         year_of_publication, journal, doi, pii = self.process_otherinfo(item['otherinfo'][0])
+        
           #Search for relevant keywords in the abstract
         try:
 
