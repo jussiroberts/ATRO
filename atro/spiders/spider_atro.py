@@ -75,7 +75,13 @@ class AtroSpider(scrapy.Spider):
                 parsedhrefs.append(link)
  
         #Get the amount of pages
+        """ OLD CODE FOR OLD PUBMED
         pages = hxs.xpath('//div[@class="h"]/h2/text()').extract()
+        numbers = int(re.search(r'\d+', pages[0]).group())
+        intpages = str(int(math.ceil(float(numbers)/10)))
+        """
+        #Get the amount of pages for the new version of pubmed mobile (8.4.2015)
+        pages = hxs.xpath('normalize-space(//span[@class="light_narrow_text"]/text()[last()])').extract()
         numbers = int(re.search(r'\d+', pages[0]).group())
         intpages = str(int(math.ceil(float(numbers)/10)))
 
