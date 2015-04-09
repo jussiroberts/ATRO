@@ -11,7 +11,7 @@ class Dbconn():
     def insert_publication(metadata):
 
         try:
-            conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='helevetti'")
+            conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='<atro>'")
         except:
             print "Failed to establish connection to database."
         cur = conn.cursor()
@@ -99,7 +99,7 @@ class Dbconn():
         searchwords = []
 
         try:
-            conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='helevetti'")
+            conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='<atro>'")
         except:
             print "Failed to establish connection to database"
         
@@ -124,7 +124,7 @@ class Dbconn():
     def check_visited_urls(searchtermi, url):
     
         try:
-            conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='helevetti'")
+            conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='<atro>'")
         except:
             print "Failed to establish connection to database"
             
@@ -153,7 +153,7 @@ class Dbconn():
     @staticmethod
     def insert_searchwords():
         try:
-            conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='helevetti'")
+            conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='<atro>'")
         except:
             print "Failed to establish connection to database"
 
