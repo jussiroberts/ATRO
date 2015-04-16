@@ -1,18 +1,13 @@
 import scrapy
 
 from atro.items import AtroItem
-from scrapy.contrib.spiders import CrawlSpider, Rule
-from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
-from scrapy.selector import Selector
 from scrapy.selector import Selector
 from scrapy.http     import Request
 from .. dbconn import Dbconn
 import lxml.html
 from lxml import etree
-import time
 import re
 import math
-import os
 
 
 class AtroSpider(scrapy.Spider):
@@ -47,14 +42,16 @@ class AtroSpider(scrapy.Spider):
                     for delta in alphabet:
                         searchterm = alpha+beta+gamma+delta
                         searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+beta+gamma+delta+'*[Author]&page=1'
-                        yield Request(searchterm, self.parse)         
+                        yield Request(searchterm, self.parse)   
 
+    #Class constructor                    
     def __init__(self, searchterm=None, *args, **kwargs):
         super(AtroSpider, self).__init__(*args, **kwargs)
         db = Dbconn()
         db.insert_searchwords()
         print kwargs
 
+    #Function to parse result pages
     def parse(self, response):
         numbers = 0
         counter = 0
@@ -74,12 +71,6 @@ class AtroSpider(scrapy.Spider):
                 link = link[1:]
                 parsedhrefs.append(link)
  
-        #Get the amount of pages
-        """ OLD CODE FOR OLD PUBMED
-        pages = hxs.xpath('//div[@class="h"]/h2/text()').extract()
-        numbers = int(re.search(r'\d+', pages[0]).group())
-        intpages = str(int(math.ceil(float(numbers)/10)))
-        """
         #Get the amount of pages for the new version of pubmed mobile (8.4.2015)
         pages = hxs.xpath('normalize-space(//span[@class="light_narrow_text"]/text()[last()])').extract()
         numbers = int(re.search(r'\d+', pages[0]).group())
@@ -96,7 +87,7 @@ class AtroSpider(scrapy.Spider):
         searcht = hxs.xpath('//div[@class="h"]/input/@value').extract()
         currentsearchterm = searcht[0]
         
-        #Constuct a full URL from the hrefs and base_url and check whether they have been visited before or not
+        #Construct a full URL from the hrefs and base_url and check whether they have been visited before or not
         for link in parsedhrefs:
             searchtermi = ""
             url = base_url + link
@@ -113,10 +104,9 @@ class AtroSpider(scrapy.Spider):
         #Check if it's the last page
         if int(currentpage[1])<int(intpages):
             next_url = base_url+'/?term='+currentsearchterm+'&page='+nextpage
-        
             yield Request(next_url, self.parse)
 
-    #Parse publication metadata
+    #Parse publication metadata, create an item for each publication
     def parse_publication(self, response):
         status = response.status
         url = response.url

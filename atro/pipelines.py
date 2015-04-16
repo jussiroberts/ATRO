@@ -14,8 +14,8 @@ from dbconn import Dbconn
 #The pipeline processes all items that are yielded by the spider. Each item contains relevant metadata for one publication.
 class AtroPipeline(object):
 
-    def process_title(self, title):
-        #Remove the dot in the end of the title   
+    #Remove the dot in the end of the title
+    def process_title(self, title):  
         try:
             if title.endswith('.'):
                 title = title[:-1]
@@ -23,8 +23,8 @@ class AtroPipeline(object):
             print "title error"
         return title
 
+    #Get the year of publication, doi, pii and journal info
     def process_otherinfo(self, otherinfo):
-        #Get the year of publication, doi, pii and journal info
         doi = "NULL"
         pii = "NULL"
         year_of_publication = "NULL"
@@ -62,9 +62,8 @@ class AtroPipeline(object):
 
         return year_of_publication, journal, doi, pii
         
-        
+    #Append abstract groups together    
     def process_abstract(self, abstractlist): 
-        #Append abstract groups together
         ab = ''
         try:
             for b in abstractlist:       
@@ -75,6 +74,7 @@ class AtroPipeline(object):
             print "abstract error"
         return abstract
 
+    #Process the publication's metadata    
     def process_item(self, item, spider):
         db = Dbconn()
         w1 = Wordcheck()
@@ -88,9 +88,8 @@ class AtroPipeline(object):
         abstract = self.process_abstract(item['abstract'])
         year_of_publication, journal, doi, pii = self.process_otherinfo(item['otherinfo'][0])
         
-          #Search for relevant keywords in the abstract
+        #Search for relevant keywords in the abstract
         try:
-
             publication_rank, found_searchwords = w1.check(abstract)        
         except Exception, e:
             publication_rank = 999

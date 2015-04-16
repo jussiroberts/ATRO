@@ -9,12 +9,12 @@ class Dbconn():
     #Insert publication metadata to database
     @staticmethod
     def insert_publication(metadata):
-
         try:
             conn = psycopg2.connect("dbname='postgres' user='postgres' host='localhost' password='<atro>'")
         except:
             print "Failed to establish connection to database."
         cur = conn.cursor()
+
         #title
         try: 
             cur.execute("INSERT INTO publication (title) SELECT %s WHERE NOT EXISTS (SELECT title FROM publication WHERE title = %s);", (metadata['title'], metadata['title']))
@@ -30,8 +30,7 @@ class Dbconn():
                 conn.commit()
         except: 
             print "Author error in dbconn"
-
-                
+             
 		#abstract
         try:
             cur.execute("UPDATE publication SET abstract = %s WHERE title = %s;", (metadata['abstract'], metadata['title']))
@@ -159,18 +158,14 @@ class Dbconn():
 
         cur = conn.cursor()
 
-        
-        with open("searchwords_list.txt", "r") as wordinput, open('../inserted_searchwords.txt', 'a') as wordoutput:
+        with open("searchwords_list.txt", "r") as wordinput:
             for line in wordinput:
                 line = line.strip()
                 line = line.lower()
                 try:
-                    #cur.execute("INSERT INTO searchwords (searchword) VALUES (%s);", (line,))
                     cur.execute("INSERT INTO searchwords (searchword) SELECT %s WHERE NOT EXISTS (SELECT searchword FROM searchwords WHERE searchword = %s);", (line,line))
                     conn.commit()
                 except Exception, e:
-                    wordoutput.write(str(e))
-                wordoutput.write(line+'\n')
-      
+                    print "couldn't insert searchwords to database"
         cur.close()
         conn.close()

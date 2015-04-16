@@ -9,7 +9,6 @@ import re
 from dbconn import Dbconn
 
 class Wordcheck():
-
     @staticmethod
     def check(abstract):
         my_regex = 'null'
