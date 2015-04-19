@@ -118,8 +118,6 @@ class AtroSpider(scrapy.Spider):
             item['author'] = hxs.xpath('//div[@class="auths"]/a/text()').extract()
             item['otherinfo'] = hxs.xpath('normalize-space(//div[@class="meta"]/p/text())').extract()
             item['abstract'] = hxs.xpath('//div[@class="ab"]/p//text()').extract()
-            item['keywords'] = hxs.xpath('//div[@class="keywords"]/p/text()').extract()
-
             yield item
 
         else:

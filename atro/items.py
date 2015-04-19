@@ -14,7 +14,6 @@ class AtroItem(scrapy.Item):
     title = scrapy.Field()
     author = scrapy.Field()
     abstract = scrapy.Field()
-    keywords = scrapy.Field()
     journal = scrapy.Field()
     otherinfo = scrapy.Field()
     pass

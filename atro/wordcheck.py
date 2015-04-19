@@ -35,7 +35,5 @@ class Wordcheck():
                 if re.search(my_regex, multiword, re.IGNORECASE):
                     wordcount = wordcount + 1
                     found_searchwords.append(sword)
-                    break
-
-                
+                    break               
         return wordcount, found_searchwords
