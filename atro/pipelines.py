@@ -97,7 +97,7 @@ class AtroPipeline(object):
             print str(e)
             
         date_crawled = str(datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-        metadata = dict(title = title, date_crawled = date_crawled, year_of_publication = year_of_publication, doi = doi, pii = pii, abstract = abstract, journal = journal, publication_rank = publication_rank, author_list = item['author'], found_searchwords = found_searchwords)
+        metadata = dict(title = title, date_crawled = date_crawled, year_of_publication = year_of_publication, doi = doi, pii = pii, abstract = abstract, journal = journal, publication_rank = publication_rank, author_list = set(item['author']), found_searchwords = found_searchwords)
         
         #If any searchwords were found in the abstract, insert the publication to the database
         if publication_rank > 0:

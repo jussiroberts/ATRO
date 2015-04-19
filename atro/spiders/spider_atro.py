@@ -17,7 +17,7 @@ class AtroSpider(scrapy.Spider):
     #Algorithm for crawling PubMed author by author
     def start_requests(self):
         alphabet = 'abcdefghijklmnopqrstuvwxyz'
-   
+ 
         for alpha in alphabet:
             searchterm = alpha
             searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+'[Author]&page=1'
@@ -43,7 +43,7 @@ class AtroSpider(scrapy.Spider):
                         searchterm = alpha+beta+gamma+delta
                         searchterm = "http://www.ncbi.nlm.nih.gov/m/pubmed?term="+alpha+beta+gamma+delta+'*[Author]&page=1'
                         yield Request(searchterm, self.parse)   
-
+                     
     #Class constructor                    
     def __init__(self, searchterm=None, *args, **kwargs):
         super(AtroSpider, self).__init__(*args, **kwargs)
@@ -53,6 +53,7 @@ class AtroSpider(scrapy.Spider):
 
     #Function to parse result pages
     def parse(self, response):
+        has_pages = 0
         numbers = 0
         counter = 0
         base_url = 'http://www.ncbi.nlm.nih.gov/m/pubmed'
@@ -73,16 +74,27 @@ class AtroSpider(scrapy.Spider):
  
         #Get the amount of pages for the new version of pubmed mobile (8.4.2015)
         pages = hxs.xpath('normalize-space(//span[@class="light_narrow_text"]/text()[last()])').extract()
-        numbers = int(re.search(r'\d+', pages[0]).group())
-        intpages = str(int(math.ceil(float(numbers)/10)))
+        try:
+            numbers = int(re.search(r'\d+', pages[0]).group())
+        except Exception, e:
+            print e
+        else: 
+        #If there are multiple result pages
+            has_pages = 1
 
-        #Get the current page number
-        current = hxs.xpath('normalize-space(//div[@class="pag"]/span/text())').extract()
-        currentpage = current[0].split(" ")
+        if(has_pages == 1):
+            intpages = str(int(math.ceil(float(numbers)/10)))
 
-        #Get the next page number
-        nextpage = str(int(currentpage[1])+1)
-              
+            #Get the current page number
+            current = hxs.xpath('normalize-space(//div[@class="pag"]/span/text())').extract()
+            currentpage = current[0].split(" ")
+
+            #Get the next page number
+            nextpage = str(int(currentpage[1])+1)
+        else:
+            currentpage = [1,1]
+            nextpage = 1  
+            intpages = 1
         #Get the current searchterm
         searcht = hxs.xpath('//div[@class="h"]/input/@value').extract()
         currentsearchterm = searcht[0]
@@ -93,8 +105,14 @@ class AtroSpider(scrapy.Spider):
             url = base_url + link
             urli = str(url)
             searchtermi = re.search('from=(.*)]', urli)
-            searchtermi = searchtermi.group(1)
-            searchtermi = searchtermi[:-7]
+            try:
+                searchtermi = searchtermi.group(1)
+
+                searchtermi = searchtermi[:-7]
+            except Exception, e:
+                searchtermi = "null"
+                print e
+
 
             success = db.check_visited_urls(searchtermi, url)
             
