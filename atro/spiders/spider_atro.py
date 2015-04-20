@@ -45,10 +45,11 @@ class AtroSpider(scrapy.Spider):
                         yield Request(searchterm, self.parse)   
                      
     #Class constructor                    
-    def __init__(self, searchterm=None, *args, **kwargs):
+    def __init__(self, new_searchwords=False, *args, **kwargs):
         super(AtroSpider, self).__init__(*args, **kwargs)
         db = Dbconn()
-        db.insert_searchwords()
+        if(new_searchwords == "True"):
+            db.insert_searchwords()
         print kwargs
 
     #Function to parse result pages

@@ -167,5 +167,6 @@ class Dbconn():
                     conn.commit()
                 except Exception, e:
                     print "couldn't insert searchwords to database"
+        print "Inserted new searchwords into the database"
         cur.close()
         conn.close()
