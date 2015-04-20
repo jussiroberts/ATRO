@@ -8,7 +8,7 @@
 #     http://doc.scrapy.org/en/latest/topics/settings.html
 #
 
-BOT_NAME = 'atrobot'
+BOT_NAME = 'atro'
 
 SPIDER_MODULES = ['atro.spiders']
 NEWSPIDER_MODULE = 'atro.spiders'
@@ -16,7 +16,7 @@ COOKIES_ENABLED = False
 #DOWNLOAD_DELAY = 0.25
 RANDOMIZE_DOWNLOAD_DELAY = True
 ROBOTSTXT_OBEY = True
-USER_AGENT = 'atrobot (+http://www.artemisproject.org/)'
+USER_AGENT = 'atro (+http://www.artemisproject.org/)'
 ITEM_PIPELINES = {
     'atro.pipelines.AtroPipeline': 300
 }

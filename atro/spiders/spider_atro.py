@@ -11,7 +11,7 @@ import math
 
 
 class AtroSpider(scrapy.Spider):
-    name = "atrobot"
+    name = "atro"
     allowed_domains = ["www.ncbi.nlm.nih.gov"]
    
     #Algorithm for crawling PubMed author by author
@@ -95,6 +95,7 @@ class AtroSpider(scrapy.Spider):
             currentpage = [1,1]
             nextpage = 1  
             intpages = 1
+
         #Get the current searchterm
         searcht = hxs.xpath('//div[@class="h"]/input/@value').extract()
         currentsearchterm = searcht[0]
@@ -107,15 +108,12 @@ class AtroSpider(scrapy.Spider):
             searchtermi = re.search('from=(.*)]', urli)
             try:
                 searchtermi = searchtermi.group(1)
-
                 searchtermi = searchtermi[:-7]
             except Exception, e:
                 searchtermi = "null"
                 print e
 
-
-            success = db.check_visited_urls(searchtermi, url)
-            
+            success = db.check_visited_urls(searchtermi, url)            
             if success == 1:
                 yield Request(url, self.parse_publication)
         
